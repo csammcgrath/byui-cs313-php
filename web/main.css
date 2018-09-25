@@ -28,7 +28,14 @@ a:hover {
 
 .masthead {
     margin-bottom: 2rem;
-    float: right;
+}
+
+.masthead-brand {
+	float: left;
+}
+
+.nav-masthead {
+	float: right;
 }
 
 .masthead-brand {
