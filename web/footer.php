@@ -1,6 +1,6 @@
 <?php
     echo '
-        <footer class="mastfoot mt-auto">
+        <footer class="footer mt-auto">
             <div class="inner">
                 <p>Made with ❤️ by Sam McGrath using Bootstrap</p>
             </div>
