@@ -1,0 +1,8 @@
+#slideshow, .img {
+    z-index: -99999;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: auto;
+    width: 100%;
+}
