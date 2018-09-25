@@ -19,26 +19,6 @@
     <?php include 'header.php' ?>
 
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-        <!-- background slideshows-->
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="https://picsum.photos/g/1900/1200?image=695" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://picsum.photos/g/1900/1200?image=483" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://picsum.photos/g/1900/1200?image=1026" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://picsum.photos/g/1900/1200?image=974" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://picsum.photos/g/1900/1200?image=580" alt="Third slide">
-            </div>
-        </div>
-        </div>
 
         <main role="main" class="inner cover">
             <h1 class="cover-heading">Sam McGrath - CS 313</h1>

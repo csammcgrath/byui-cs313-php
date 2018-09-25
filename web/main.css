@@ -4,3 +4,24 @@
 	background: no-repeat center center scroll;
 	background-size: cover;
 }
+
+a,
+a:focus,
+a:hover {
+	color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+	color: #333;
+	text-shadow: none;
+	/* Prevent inheritance from `body` */
+	background-color: #fff;
+	border: .05rem solid #fff;
+}
+
+.mastfoot {
+	color: lightgray;
+}
