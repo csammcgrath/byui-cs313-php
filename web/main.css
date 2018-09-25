@@ -17,10 +17,10 @@ body {
     background-color: darkgray;
 }
 
-.link-top-active {
+.link-top-active:hover {
     border-bottom: .25rem solid white;
 }
 
-.link-top-not-active {
+.link-top-not-active:hover {
     border-bottom: .25rem solid gray;
 }
