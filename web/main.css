@@ -17,6 +17,10 @@ body {
     background-color: darkgray;
 }
 
-.link-top {
-    border-bottom: .25rem solid transparent;
+.link-top-active {
+    border-bottom: .25rem solid white;
+}
+
+.link-top-not-active {
+    border-bottom: .25rem solid gray;
 }
