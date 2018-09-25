@@ -1,6 +1,6 @@
 <?php
     echo '
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top link-top">
             <a class="navbar-brand" href="#">Sam McGrath</a>
 
             <div class="collapse navbar-collapse">
