@@ -22,7 +22,7 @@
     <main role="main" class="container">
       <div class="intro">
         <h1>Sam McGrath</h1>
-        <p class="lead">Avid software developer, sports fan (golf, baseball and basketball) and lover of the Office./p>
+        <p>Avid software developer, sports fan (golf, baseball and basketball) and lover of the Office.</p>
       </div>
 
     </div>
