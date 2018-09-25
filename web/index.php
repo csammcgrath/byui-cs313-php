@@ -16,16 +16,29 @@
 </head>
 
 <body class="text-center">
+    <?php include 'header.php' ?>
 
-    <div id="slideshow" class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
         <!-- background slideshows-->
-        <img src="https://picsum.photos/g/1900/1200?image=695" />
-        <img src="https://picsum.photos/g/1900/1200?image=483" />
-        <img src="https://picsum.photos/g/1900/1200?image=1026" />
-        <img src="https://picsum.photos/g/1900/1200?image=974" />
-        <img src="https://picsum.photos/g/1900/1200?image=580" />
-
-        <?php include 'header.php' ?>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://picsum.photos/g/1900/1200?image=695" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://picsum.photos/g/1900/1200?image=483" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://picsum.photos/g/1900/1200?image=1026" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://picsum.photos/g/1900/1200?image=974" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://picsum.photos/g/1900/1200?image=580" alt="Third slide">
+            </div>
+        </div>
+        </div>
 
         <main role="main" class="inner cover">
             <h1 class="cover-heading">Sam McGrath - CS 313</h1>
@@ -44,7 +57,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
     <script src="scripts.js"></script>
 </body>
 
