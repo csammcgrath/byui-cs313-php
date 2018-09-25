@@ -17,8 +17,8 @@ body {
     background-color: darkgray;
 }
 
-.link-bottom-navbar {
-    border-bottom: .25 solid transparent;
+.link-top {
+    border-bottom: .25rem solid transparent;
 }
 
 .link-top-active:hover {
