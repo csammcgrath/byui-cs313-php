@@ -27,7 +27,8 @@ a:hover {
 }
 
 .masthead {
-	margin-bottom: 2rem;
+    margin-bottom: 2rem;
+    float: right;
 }
 
 .masthead-brand {
