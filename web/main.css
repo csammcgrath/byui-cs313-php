@@ -1,8 +1,10 @@
-#slideshow, .img {
+#slideshow, img {
     z-index: -99999;
     top: 0;
     left: 0;
     position: fixed;
     height: auto;
+    min-height: 100%;
     width: 100%;
+    min-width: 1024px;
 }
