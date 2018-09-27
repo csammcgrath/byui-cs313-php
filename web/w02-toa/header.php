@@ -5,7 +5,7 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link <?php if ($_SERVER[\'REQUEST_URI\'] == \'about-us.php\') echo \'active\' ?>" href="./about-us.php">About us</a>
+                        <a class="nav-link <?php echo $_SERVER[\'REQUEST_URI\'] ?>" href="./about-us.php">About us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./home.php">Home</a>
