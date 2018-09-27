@@ -22,7 +22,7 @@
             <h1 class="display-4">Ice Cream Corp.</h1>
             <p class="lead">
                 Every single day, we create the most freshest, home-made like ice cream.
-                Millions of people (especiaglly from Walmart) all over world come to the store.
+                Millions of people (especially from Walmart) all over world come to the store.
             </p>
         </div>
     </div>
