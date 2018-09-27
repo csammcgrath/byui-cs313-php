@@ -24,7 +24,7 @@
                         <a class='nav-link$home' href='./home.php'>Home</a>
                     </li>
                     <li class='nav-item'>
-                        <a class='nav-link$login' href='./login.php'>Login</a>
+                        <a class='nav-link$loging' href='./login.php'>Login</a>
                     </li>
                 </ul>
             </div>
