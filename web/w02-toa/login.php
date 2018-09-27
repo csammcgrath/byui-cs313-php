@@ -18,9 +18,12 @@
     <?php include 'header.php' ?>
 
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container pt-4">
             <h1 class="display-4">Ice Cream Corp.</h1>
-            <p class="lead"></p>
+            <p class="lead">
+                <button type="button" class="btn btn-success">Log in as Administrator</button>
+                <button type="button" class="btn btn-success">Log in as Tester</button>
+            </p>
         </div>
     </div>
 

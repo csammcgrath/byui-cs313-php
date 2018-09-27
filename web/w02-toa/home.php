@@ -18,9 +18,9 @@
     <?php include 'header.php' ?>
 
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container pt-4">
             <h1 class="display-4">Ice Cream Corp.</h1>
-            <p class="lead"></p>
+            <p class="lead">Welcome. You are not logged in.</p>
         </div>
     </div>
 

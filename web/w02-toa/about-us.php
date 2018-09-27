@@ -20,7 +20,10 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container pt-4">
             <h1 class="display-4">Ice Cream Corp.</h1>
-            <p class="lead"></p>
+            <p class="lead">
+                Every single day, we create the most freshest, home-made like ice cream.
+                Millions of people (especially from Walmart) all over world come to the store.
+            </p>
         </div>
     </div>
 
