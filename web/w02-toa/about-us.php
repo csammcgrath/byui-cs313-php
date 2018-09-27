@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link href="... .css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
             <h1 class="display-4">Ice Cream Corp.</h1>
             <p class="lead">
                 Every single day, we create the most freshest, home-made like ice cream.
-                Millions of people (especially from Walmart) all over world come to the store.
+                Millions of people (especiaglly from Walmart) all over world come to the store.
             </p>
         </div>
     </div>

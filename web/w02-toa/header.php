@@ -5,13 +5,13 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+                        <a class="nav-link <?php if basename(__FILE__) == \"about-us\" echo \'active\' ?>" href="./about-us.php">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="./home.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="./login.php">Login</a>
                     </li>
                 </ul>
             </div>
