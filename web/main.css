@@ -35,3 +35,8 @@ body {
 .active {
     color: white;
 }
+
+.carousel {
+    width: 400px;
+    height: 400px;
+}
