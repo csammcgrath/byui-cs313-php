@@ -24,7 +24,7 @@
             <div class="content">
                 <h1 class="headerStyle">Sam McGrath</h1>
 
-                <div id="carousel1" class="carousel slide" data-ride="carousel" data-interval="1000" data-pause=false>
+                <div id="carousel1" class="carousel slide" data-ride="carousel" data-pause=false>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./images/main/pic1-1.jpeg" alt="First slide">
@@ -53,7 +53,7 @@
             <div class="content">
                 <h1 class="headerStyle">Avid software developer, golfer and lover of the Office</h1>
 
-                <div id="carousel2" class="carousel slide" data-ride="carousel">
+                <div id="carousel2" class="carousel slide" data-ride="carousel" data-pause=false>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./images/main/pic4-1.jpeg" alt="First slide">
