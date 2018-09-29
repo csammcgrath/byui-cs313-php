@@ -20,6 +20,7 @@
 
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
         <section class="intro">  
+            <a name="home"></a>
             <div class="content">
                 <h1 class="headerStyle">Sam McGrath</h1>
 
