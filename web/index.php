@@ -50,8 +50,7 @@
         <section class="intro">  
             <div class="content">
                 <h1>Avid software developer, golfer and lover of the Office</h1>
-            </div>
-            <div id="carousel2" class="carousel slide" data-ride="carousel">
+                <div id="carousel2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./images/main/pic4-1.jpeg" alt="First slide">
@@ -67,6 +66,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
         <section class="intro">  
