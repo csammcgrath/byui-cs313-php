@@ -31,15 +31,15 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/main/pic2-1.jpeg" alt="First slide">
+                            <img src="./images/main/pic2-1.jpeg" alt="Second slide">
                             <div class="carousel-caption">
                                 <h1>Cairo, Egypt</h1>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/main/pic3-1.jpeg" alt="First slide">
+                            <img src="./images/main/pic3-1.jpeg" alt="Third slide">
                             <div class="carousel-caption">
-                                <p>Smithfield, Utah - Utah Ogden Mission (2013-2015)</p>
+                                <p>Smithfield, Utah - Utah Ogden Mission</p>
                             </div>
                         </div>
                     </div>
@@ -49,8 +49,24 @@
 
         <section class="intro">  
             <div class="content">
-                <h1>Avid software developer</h1>
+                <h1>Avid software developer, golfer and lover of the Office</h1>
             </div>
+            <div id="carousel2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/main/pic4-1.jpeg" alt="First slide">
+                            <div class="carousel-caption">
+                                <h1>Golf in Saudi Arabia</h1>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/main/pic5-1.png" alt="Second slide">
+                            <div class="carousel-caption">
+                                <h1>Jim and Dwight</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
 
         <section class="intro">  
