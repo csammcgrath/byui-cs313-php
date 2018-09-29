@@ -35,18 +35,3 @@ body {
 .active {
     color: white;
 }
-
-/* 
-Credit: https: //stackoverflow.com/questions/29038596/bootstrap-fixed-header-and-footer-with-scrolling-body-content-area-in-fluid-cont/29039176#29039176
-Bootstrap sticky footer scrolls with the page so this fixes it.
-*/
-body {
-	overflow: hidden;
-}
-
-#theContent {
-	max-height: calc(100% - 120px);
-	overflow-y: scroll;
-	padding: 0px 10%;
-	margin-top: 60px;
-}
