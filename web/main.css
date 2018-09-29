@@ -64,3 +64,7 @@ section:nth-child(even) {
 .card-deck {
     justify-content: space-around;
 }
+
+.projectHeader {
+    margin-bottom: 1.5rem;
+}
