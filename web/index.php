@@ -18,10 +18,10 @@
 <body class="text-center">
     <?php require 'header.php' ?>
 
-    <div class="col-centered cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
         <section class="intro">  
             <div class="content">
-                <h1>Sam McGrath</h1>
+                <h1 class="headerStyle">Sam McGrath</h1>
 
                 <div id="carousel1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -50,7 +50,7 @@
 
         <section class="intro">  
             <div class="content">
-                <h1>Avid software developer, golfer and lover of the Office</h1>
+                <h1 class="headerStyle">Avid software developer, golfer and lover of the Office</h1>
 
                 <div id="carousel2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">

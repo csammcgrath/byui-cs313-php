@@ -16,11 +16,6 @@ body {
 	vertical-align: middle;
 }
 
-.col-centered {
-	float: none;
-	margin: 0 auto;
-}
-
 .headerStyle {
 	font-size: 3em;
 	display: block;
