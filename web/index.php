@@ -70,6 +70,40 @@
                 </div>
             </div>
         </section>
+
+        <section class="intro">  
+            <div class="content">
+                <h1 class="headerStyle">Projects</h1>
+
+                <div class="card-deck">
+                    <div class="card mb-4">
+                        <img src="./images/main/comingSoon.png" alt="Coming soon">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Shopping Card</h5>
+                            <p class="card-text">
+                                Interactive shopping cart - coming soon...
+                            </p>
+                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
+                                Page
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="card mb-4">
+                        <img src="./images/main/comingSoon.png" alt="Coming soon">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Project</h5>
+                            <p class="card-text">
+                                Project
+                            </p>
+                            <a href="http://www.byui.edu/disability-services" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
+                                Page
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+        </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
