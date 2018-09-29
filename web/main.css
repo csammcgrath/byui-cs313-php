@@ -1,5 +1,4 @@
 .intro {
-    padding: 3rem 1.5rem;
     text-align: center;
 }
 
@@ -8,11 +7,10 @@ body {
 }
 
 .intro {
-	height: 100vh;
+	height: 85vh;
 }
 
 .content {
-	display: table-cell;
 	vertical-align: middle;
 }
 
