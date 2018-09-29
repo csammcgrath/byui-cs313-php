@@ -21,7 +21,35 @@
         <section class="intro">  
             <div class="content">
                 <h1>Sam McGrath</h1>
-                <p>Avid software developer</p>
+
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./images/main/pic1.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>Neuschwanstein Castle</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/main/pic2.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>Cairo, Egypt</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/main/pic3.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>Smithfield, Utah - Utah Ogden Mission (2013-2015)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">  
+            <div class="content">
+                <h1>Avid software developer</h1>
             </div>
         </section>
 
