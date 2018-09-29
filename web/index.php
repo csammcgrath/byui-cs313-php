@@ -71,7 +71,8 @@
             </div>
         </section>
 
-        <section class="intro">  
+        <section class="intro">
+            <a name="projects"></a>  
             <div class="content">
                 <h1 class="headerStyle projectHeader">Projects</h1>
 
@@ -79,7 +80,7 @@
                     <div class="card mb-4">
                         <img src="./images/main/comingSoon.png" alt="Coming soon">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Shopping Cart</h5>
+                            <h5 class="card-title">W03 Shopping Cart</h5>
                             <p class="card-text">
                                 Interactive shopping cart - coming soon...
                             </p>
@@ -88,18 +89,54 @@
                             </a>
                         </div>
                     </div>
-                    <!-- <div class="card mb-4">
+                    <div class="card mb-4">
                         <img src="./images/main/comingSoon.png" alt="Coming soon">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Project</h5>
+                            <h5 class="card-title">W04 Assignment</h5>
                             <p class="card-text">
-                                Project
+                                Insert assignment description
                             </p>
-                            <a href="http://www.byui.edu/disability-services" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
+                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
                                 Page
                             </a>
                         </div>
-                    </div> -->
+                    </div>
+                    <div class="card mb-4">
+                        <img src="./images/main/comingSoon.png" alt="Coming soon">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">W05 Assignment</h5>
+                            <p class="card-text">
+                                Insert assignment description
+                            </p>
+                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
+                                Page
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="./images/main/comingSoon.png" alt="Coming soon">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">W06 Assignment</h5>
+                            <p class="card-text">
+                                Insert assignment description
+                            </p>
+                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
+                                Page
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="./images/main/comingSoon.png" alt="Coming soon">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">W07 Assignment</h5>
+                            <p class="card-text">
+                                Insert assignment description
+                            </p>
+                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
+                                Page
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
             </div>

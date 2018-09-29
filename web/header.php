@@ -7,11 +7,11 @@
 
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item <?php if ($file === 'home') echo 'active'; ?>">
+            <li class="nav-item activef">
                 <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="nav-item <?php if ($file === 'projects') echo 'active'; ?>">
-                <a class="nav-link" href="#">Projects</a>
+            <li class="nav-item ">
+                <a class="nav-link" href="#projects">Projects</a>
             </li>
         </ul>
     </div>
