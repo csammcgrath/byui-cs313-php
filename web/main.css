@@ -7,6 +7,23 @@ body {
     padding-top: 5rem;
 }
 
+html,
+body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+section {
+	display: block;
+	height: 100%;
+	width: 100%;
+	padding: 60px;
+	padding-left: 120px;
+	box-sizing: border-box;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -17,14 +34,6 @@ body {
     background-color: darkgray;
 }
 
-.link-top {
-    border-bottom: .25rem solid transparent;
-}
-
-.link-top-active:hover {
-    border-bottom: .25rem solid white;
-}
-
-.link-top-not-active:hover {
-    border-bottom: .25rem solid gray;
+.active {
+    color: white;
 }

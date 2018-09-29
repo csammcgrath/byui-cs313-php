@@ -27,8 +27,8 @@
         <div class="container pt-4">
             <h1 class="display-4">Ice Cream Corp.</h1>
             <p class="lead">
-                <button type="button" class="btn btn-success" onClick="<?php $_SESSION['type'] = 'admin' ?>">Log in as Administrator</button>
-                <button type="button" class="btn btn-success" onClick="<?php $_SESSION['type'] = 'tester' ?>">Log in as Tester</button>
+                <button type="button" class="btn btn-success" id="admin"">Log in as Administrator</button>
+                <button type="button" class="btn btn-success" id="tester"">Log in as Tester</button>
                 <?php
                     echo $_SESSION['type'];
                 ?>
@@ -39,6 +39,20 @@
     <?php include 'footer.php' ?>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>
+    $("admin").click(() => {
+        $.get("session_admin.php", (data, status) => {
+
+        });
+    });
+    $("test").click(() => {
+        $.get("session_tester.php", (data, status) => {
+
+        });
+    });
+    </script>
 </body>
 
 </html>
