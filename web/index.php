@@ -73,13 +73,13 @@
 
         <section class="intro">  
             <div class="content">
-                <h1 class="headerStyle">Projects</h1>
+                <h1 class="headerStyle projectHeader">Projects</h1>
 
                 <div class="card-deck">
                     <div class="card mb-4">
                         <img src="./images/main/comingSoon.png" alt="Coming soon">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Shopping Card</h5>
+                            <h5 class="card-title">Shopping Cart</h5>
                             <p class="card-text">
                                 Interactive shopping cart - coming soon...
                             </p>
