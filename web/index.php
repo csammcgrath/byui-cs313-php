@@ -17,7 +17,7 @@
 
 <body class="text-center">
     <?php require 'header.php' ?>
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column theContent">
         <section class="intro">  
             <div class="content">
                 <h1>Sam McGrath</h1>
