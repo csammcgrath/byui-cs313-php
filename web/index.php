@@ -27,7 +27,7 @@
                         <div class="carousel-item active">
                             <img src="./images/main/pic1-1.jpeg" alt="First slide">
                             <div class="carousel-caption">
-                                <h1>Neuschwanstein Castle</h1>
+                                <p>Neuschwanstein Castle</p>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -39,7 +39,7 @@
                         <div class="carousel-item">
                             <img src="./images/main/pic3-1.jpeg" alt="First slide">
                             <div class="carousel-caption">
-                                <h1>Smithfield, Utah - Utah Ogden Mission (2013-2015)</h1>
+                                <p>Smithfield, Utah - Utah Ogden Mission (2013-2015)</p>
                             </div>
                         </div>
                     </div>
