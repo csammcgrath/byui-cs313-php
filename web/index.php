@@ -24,7 +24,7 @@
             <div class="content">
                 <h1 class="headerStyle">Sam McGrath</h1>
 
-                <div id="carousel1" class="carousel slide" data-ride="carousel">
+                <div id="carousel1" class="carousel slide" data-ride="carousel" data-interval="1000" data-pause=false>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./images/main/pic1-1.jpeg" alt="First slide">
