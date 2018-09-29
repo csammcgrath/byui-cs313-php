@@ -17,7 +17,8 @@
 
 <body class="text-center">
     <?php require 'header.php' ?>
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
+    <div class="col-centered cover-container d-flex h-100 p-3 mx-auto flex-column">
         <section class="intro">  
             <div class="content">
                 <h1>Sam McGrath</h1>
@@ -50,6 +51,7 @@
         <section class="intro">  
             <div class="content">
                 <h1>Avid software developer, golfer and lover of the Office</h1>
+
                 <div id="carousel2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -68,19 +70,8 @@
                 </div>
             </div>
         </section>
-
-        <section class="intro">  
-            <div class="content">
-                <h1>Golfer</h1>
-            </div>
-        </section>
-
-        <section class="intro">  
-            <div class="content">
-                <h1>Lover of the Office</h1>
-            </div>
-        </section>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
