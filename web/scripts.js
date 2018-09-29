@@ -1,9 +1,7 @@
 $('#carousel1').carousel({
-    pause: false,
-    interval: 1000
+    pause: false
 });
 
 $('#carousel2').carousel({
-	pause: false,
-	interval: 1000
+	pause: false
 });
