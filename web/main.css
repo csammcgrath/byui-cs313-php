@@ -7,21 +7,19 @@ body {
     padding-top: 5rem;
 }
 
-html,
-body {
-	margin: 0;
-	height: 100%;
-	width: 100%;
-	padding: 0;
+.intro {
+	height: 100vh;
 }
 
-section {
+.content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.headerStyle {
+	font-size: 3em;
 	display: block;
-	height: 100%;
-	width: 100%;
-	padding: 60px;
-	padding-left: 120px;
-	box-sizing: border-box;
+	font-weight: 300;
 }
 
 .footer {

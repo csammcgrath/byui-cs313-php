@@ -18,19 +18,24 @@
 <body class="text-center">
     <?php require 'header.php' ?>
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-        <section class="personal">
-            <h1>Test</h1>
+        <section class="intro">  
+            <div class="content">
+                <h1>Sam McGrath</h1>
+                <p>Avid software developer</p>
+            </div>
         </section>
 
-        <section>
-            <h1>Sam McGrath</h1>
-            <p>Avid software developer, sports fan (golf, baseball and basketball) and lover of the Office.</p>
+        <section class="intro">  
+            <div class="content">
+                <h1>Golfer</h1>
+            </div>
         </section>
 
-        <div class="intro">
-            <h1>Sam McGrath</h1>
-            <p>Avid software developer, sports fan (golf, baseball and basketball) and lover of the Office.</p>
-        </div>
+        <section class="intro">  
+            <div class="content">
+                <h1>Lover of the Office</h1>
+            </div>
+        </section>
     </div>
     <?php require 'footer.php' ?>
 
