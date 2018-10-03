@@ -138,7 +138,7 @@
             <form action="checkout.php" method="post">
                 <div class="row">
                     <div class="col-lg-12">
-                        <input type="submit" class="btn btn-primary float-right m-3" value="Checkout"></input>
+                        <input type="submit" name="hermioneGranger" class="btn btn-primary float-right m-3" value="Checkout"></input>
                     </div>
                 </div>
             </form>
@@ -152,7 +152,7 @@
                             <p class="card-text">
                                 11" holly, phoenix feather (nice and supple)
                             </p>
-                            <input type="submit" name='harryPotter' class="btn btn-primary mt-auto" value="Add to cart"> 
+                            <input type="submit" name="harryPotter" class="btn btn-primary mt-auto" value="Add to cart"> 
                         </div>
                         <div class="card-footer text-muted">
                             <?php echo $_SESSION["harryPotter"]; ?>
@@ -165,10 +165,10 @@
                             <p class="card-text">
                                 10 3/4" vine, dragon heartstring
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="hermioneGranger" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["hermioneGranger"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4" id="viktorKrum">
@@ -178,10 +178,10 @@
                             <p class="card-text">
                                 10 1/4" hornbeam, dragon heartstring (rigid)
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="viktorKrum" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["viktorKrum"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4" id="dracoMalfoy">
@@ -191,10 +191,10 @@
                             <p class="card-text">
                                 10" hawthorn, unicorn hair (reasonably springy)
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="dracoMalfoy" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["dracoMalfoy"]; ?>
                         </div>
                     </div>
                 </div>
@@ -206,10 +206,10 @@
                                 <p class="card-text">
                                     12" ash, unicorn hair
                                 </p>
-                                <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                                <input type="submit" name="ronWeasley1" class="btn btn-primary mt-auto" value="Add to cart">
                             </div>
                             <div class="card-footer text-muted">
-                                $199.99
+                                <?php echo $_SESSION["ronWeasley1"]; ?>
                             </div>
                         </div>
                     <div class="card mb-4" id="ronWeasley2">
@@ -219,10 +219,10 @@
                             <p class="card-text">
                                 14" willow, unicorn hair
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="ronWeasley2" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["ronWeasley2"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4" id="horaceSlughorn">
@@ -232,10 +232,10 @@
                             <p class="card-text">
                                 10 1/4" cedar, dragon heartstring (fairly flexible)
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="horaceSlughorn" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["horaceSlughorn"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4" id="elderWand">
@@ -245,10 +245,10 @@
                             <p class="card-text">
                                 15" elder, Thestral hair
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="elderWand" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["elderWand"]; ?>
                         </div>
                     </div>
                 </div>
@@ -260,10 +260,10 @@
                             <p class="card-text">
                                 13" cherry, unicorn hair
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="nevilleLongbottom" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["nevilleLongbottom"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4" id="remusLupin">
@@ -273,10 +273,10 @@
                             <p class="card-text">
                                 10 1/4" cypress, unicorn hair, pliable
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="remusLupin" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["remusLupin"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4" id="fleurDelacour">
@@ -286,10 +286,10 @@
                             <p class="card-text">
                                 9 1/2" rosewood, Veela hair (inflexible)
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="fleurDelacour" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["fleurDelacour"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4" id="cedricDiggory">
@@ -299,10 +299,10 @@
                             <p class="card-text">
                                 12 1/4" ash, unicorn hair (pleasantly springy)
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="cedricDiggory" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["cedricDiggory"]; ?>
                         </div>
                     </div>
                 </div>
@@ -314,10 +314,10 @@
                             <p class="card-text">
                                 13 1/2" yew, phoenix feather
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="voldemort" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["voldemort"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4" id="bellatrixLestrange">
@@ -327,10 +327,10 @@
                             <p class="card-text">
                                 12 3/4" walnut, dragon heartstring, unyielding
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="bellatrixLestrange" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["bellatrixLestrange"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4" id="jamesPotter">
@@ -340,10 +340,10 @@
                             <p class="card-text">
                                 11" mahogany (pliable)
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="jamesPotter" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["jamesPotter"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4" id="ginnyWeasley">
@@ -353,10 +353,10 @@
                             <p class="card-text">
                                 10 1/2" yew wood
                             </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            <input type="submit" name="ginnyWeasley" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["ginnyWeasley"]; ?>
                         </div>
                     </div>
                 </div>
