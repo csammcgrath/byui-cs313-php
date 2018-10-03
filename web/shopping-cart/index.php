@@ -1,3 +1,10 @@
+<?php
+    session_start();
+
+    
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -10,6 +17,7 @@
 
     <title>Ozzy's Wizard Shop</title>
 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
@@ -33,6 +41,14 @@
         </header>
         <header class="jumbotron my-4">
             <h1>Wand Selection</h1>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="btn-group pull-right" role="group">
+                        <button type="button" class="btn btn-primary">&nbsp;&nbsp;Checkout<span class="fa fa-arrow-right" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                 <div class="card-deck">
                     <div class="card mb-4">
