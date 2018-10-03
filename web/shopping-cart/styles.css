@@ -1,12 +1,5 @@
 .card .btn-primary {
-	background-color: darkslategray;
-	border-color: darkslategray;
 	text-transform: uppercase;
-}
-
-.card .btn-primary:hover {
-	background-color: rgb(35, 59, 59);
-	border-color: gb(35, 59, 59);
 }
 
 .card-img-top {
