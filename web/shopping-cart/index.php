@@ -38,7 +38,7 @@
                 <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Harry Potter's Wand</h5>
                 <p class="card-text">
-                    11" holly, phoenix feather 
+                    11" holly, phoenix feather (nice and supple)
                 </p>
                 <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
                     Add to cart
@@ -55,6 +55,30 @@
                 <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
                     Add to cart
                 </a>
+            </div>
+            <div class="card mb-4">
+                <img src="../images/wands/viktorkrum.jpg" alt="Viktor Krum">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Viktor Krum's Wand</h5>
+                    <p class="card-text">
+                        10 1/4" hornbeam, dragon heartstring (rigid)
+                    </p>
+                    <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                        Add to cart
+                    </a>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <img src="../images/wands/dracomalfoy.jpg" alt="Draco Malfoy">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Draco Malfoy's Wand</h5>
+                    <p class="card-text">
+                        10" hawthorn, unicorn hair (reasonably springy)
+                    </p>
+                    <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                        Add to cart
+                    </a>
+                </div>
             </div>
         </div>
     </div>
