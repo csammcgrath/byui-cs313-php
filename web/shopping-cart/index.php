@@ -42,10 +42,8 @@
         <header class="jumbotron my-4">
             <h1>Wand Selection</h1>
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="btn-group float-right m-3" role="group">
-                        <button type="button" class="btn btn-primary">&nbsp;&nbsp;Checkout<span class="fa fa-arrow-right" aria-hidden="true"></span></button>
-                    </div>
+                <div class="col-lg-12">
+                    <button type="button" class="btn btn-primary float-right">Checkout&nbsp;<span class="fa fa-arrow-right"></span></button>
                 </div>
             </div>
 
