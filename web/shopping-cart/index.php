@@ -53,9 +53,6 @@
                                 </a>
                             </div>  
                         </div>
-                        <div class="card-footer text-muted">
-                            $199.99
-                        </div>
                     </div>
                     <div class="card mb-4">
                         <img src="../images/wands/hermione.jpg" alt="Hermione Granger">
@@ -66,9 +63,6 @@
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
-                        <div class="card-footer text-muted">
-                            $199.99
-                        </div>
                     </div>
                     <div class="card mb-4">
                         <img src="../images/wands/viktorkrum.jpg" alt="Viktor Krum">
@@ -77,20 +71,7 @@
                             <p class="card-text">
                                 10 1/4" hornbeam, dragon heartstring (rigid)
                             </p>
-                            <div class="inlineDisplay">
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                    Add to cart
-                                </a>
-                            </div> 
-                        </div>
-                        <div class="card-footer text-muted">
-                            $199.99
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -100,20 +81,7 @@
                             <p class="card-text">
                                 10" hawthorn, unicorn hair (reasonably springy)
                             </p>
-                            <div class="inlineDisplay">
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                    Add to cart
-                                </a>
-                            </div> 
-                        </div>
-                        <div class="card-footer text-muted">
-                            $199.99
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                     </div>
                 </div>
@@ -125,20 +93,7 @@
                             <p class="card-text">
                                 12" ash, unicorn hair
                             </p>
-                            <div class="inlineDisplay">
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                    Add to cart
-                                </a>
-                            </div> 
-                            <div class="card-footer text-muted">
-                                $199.99
-                            </div>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -148,20 +103,7 @@
                             <p class="card-text">
                                 14" willow, unicorn hair
                             </p>
-                            <div class="inlineDisplay">
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                    Add to cart
-                                </a>
-                            </div> 
-                            <div class="card-footer text-muted">
-                                $199.99
-                            </div>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -171,22 +113,9 @@
                             <p class="card-text">
                                 10 1/4" cedar, dragon heartstring (fairly flexible)
                             </p>
-                            <div class="inlineDisplay">
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                    Add to cart
-                                </a>
-                            </div> 
+                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
                                 Add to cart
                             </a>
-                            <div class="card-footer text-muted">
-                                $199.99
-                            </div>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -196,20 +125,7 @@
                             <p class="card-text">
                                 15" elder, Thestral hair
                             </p>
-                            <div class="inlineDisplay">
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                    Add to cart
-                                </a>
-                            </div> 
-                        </div>
-                        <div class="card-footer text-muted">
-                            $199.99
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                     </div>
                 </div>
@@ -221,20 +137,7 @@
                             <p class="card-text">
                                 13" cherry, unicorn hair
                             </p>
-                            <div class="inlineDisplay">
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                    Add to cart
-                                </a>
-                            </div> 
-                            <div class="card-footer text-muted">
-                                $199.99
-                            </div>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -244,20 +147,7 @@
                             <p class="card-text">
                                 10 1/4" cypress, unicorn hair, pliable
                             </p>
-                            <div class="inlineDisplay">
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                    Add to cart
-                                </a>
-                            </div> 
-                            <div class="card-footer text-muted">
-                                $199.99
-                            </div>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -267,20 +157,7 @@
                             <p class="card-text">
                                 9 1/2" rosewood, Veela hair (inflexible)
                             </p>
-                            <div class="inlineDisplay">
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                    Add to cart
-                                </a>
-                            </div> 
-                            <div class="card-footer text-muted">
-                                $199.99
-                            </div>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -290,21 +167,8 @@
                             <p class="card-text">
                                 12 1/4" ash, unicorn hair (pleasantly springy)
                             </p>
-                            <div class="inlineDisplay">
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                    Add to cart
-                                </a>
-                            </div>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
-                        <div class="card-footer text-muted">
-                                $199.99
-                            </div>
                     </div>
                 </div>
                 <div class="card-deck">
@@ -315,20 +179,7 @@
                             <p class="card-text">
                                 13 1/2" yew, phoenix feather
                             </p>
-                            <div class="inlineDisplay">
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                    Add to cart
-                                </a>
-                            </div> 
-                            <div class="card-footer text-muted">
-                                $199.99
-                            </div>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -340,9 +191,6 @@
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
-                        <div class="card-footer text-muted">
-                                $199.99
-                            </div>
                     </div>
                     <div class="card mb-4">
                         <img src="../images/wands/jamespotter.jpg" alt="James Potter">
@@ -351,20 +199,7 @@
                             <p class="card-text">
                                 11" mahogany (pliable)
                             </p>
-                            <div class="inlineDisplay">
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                    Add to cart
-                                </a>
-                            </div> 
-                            <div class="card-footer text-muted">
-                                $199.99
-                            </div>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -374,20 +209,7 @@
                             <p class="card-text">
                                 Yew wood
                             </p>
-                            <div class="inlineDisplay">
-                                <select>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                    Add to cart
-                                </a>
-                            </div> 
-                            <div class="card-footer text-muted">
-                                $199.99
-                            </div>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                     </div>
                 </div>
