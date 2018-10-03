@@ -33,7 +33,7 @@
         </header>
         <header class="jumbotron my-4">
             <h1>Wand Selection</h1>
-            <form action="shopping_cart.php" method="post">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                 <div class="card-deck">
                     <div class="card mb-4">
                             <img src="../images/wands/harrypotter.jpg" alt="Harry Potter">
