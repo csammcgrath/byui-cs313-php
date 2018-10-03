@@ -152,11 +152,10 @@
                             <p class="card-text">
                                 11" holly, phoenix feather (nice and supple)
                             </p>
-                            <input type="submit" name='harry' class="btn btn-primary mt-auto" value="Add to cart"> 
+                            <input type="submit" name='harryPotter' class="btn btn-primary mt-auto" value="Add to cart"> 
                         </div>
                         <div class="card-footer text-muted">
                             <?php echo $_SESSION["harryPotter"]; ?>
-                            <?php echo var_dump($_POST); ?>
                         </div>
                     </div>
                     <div class="card mb-4" id="hermioneGranger">
