@@ -42,9 +42,7 @@
                             <p class="card-text">
                                 11" holly, phoenix feather (nice and supple)
                             </p>
-                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                Add to cart
-                            </a>  
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart"> 
                         </div>
                         <div class="card-footer text-muted">
                             $199.99
@@ -124,9 +122,7 @@
                             <p class="card-text">
                                 10 1/4" cedar, dragon heartstring (fairly flexible)
                             </p>
-                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                                Add to cart
-                            </a>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
                             $199.99
