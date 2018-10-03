@@ -32,181 +32,181 @@
         </header>
         <header class="jumbotron my-4">
             <h1>Wand Selection</h1>
+            <form action="shopping_cart.php" method="post">
+                <div class="card-deck">
+                    <div class="card mb-4">
+                            <img src="../images/wands/harrypotter.jpg" alt="Harry Potter">
+                            <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Harry Potter's Wand</h5>
+                            <p class="card-text">
+                                11" holly, phoenix feather (nice and supple)
+                            </p>
+                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="../images/wands/hermione.jpg" alt="Hermione Granger">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Hermione Granger's Wand</h5>
+                            <p class="card-text">
+                                10 3/4" vine, dragon heartstring
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="../images/wands/viktorkrum.jpg" alt="Viktor Krum">
+                        <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Viktor Krum's Wand</h5>
+                            <p class="card-text">
+                                10 1/4" hornbeam, dragon heartstring (rigid)
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="../images/wands/dracomalfoy.jpg" alt="Draco Malfoy">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Draco Malfoy's Wand</h5>
+                            <p class="card-text">
+                                10" hawthorn, unicorn hair (reasonably springy)
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck">
+                        <div class="card mb-4">
+                            <img src="../images/wands/ronFirst.jpg" alt="Ron Weasley's First Wand">
+                            <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Ron Weasley's First Wand</h5>
+                            <p class="card-text">
+                                12" ash, unicorn hair
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="../images/wands/ronSecond.jpg" alt="Ron Weasley's Second Wand">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Ron Weasley's Second Wand</h5>
+                            <p class="card-text">
+                                14" willow, unicorn hair
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="../images/wands/horaceslughorn.jpg" alt="Horace Slughorn">
+                        <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Horace Slughorn's Wand</h5>
+                            <p class="card-text">
+                                10 1/4" cedar, dragon heartstring (fairly flexible)
+                            </p>
+                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="../images/wands/elderwand.jpg" alt="The Elder Wand">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">The Elder Wand</h5>
+                            <p class="card-text">
+                                15" elder, Thestral hair
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck">
+                        <div class="card mb-4">
+                            <img src="../images/wands/nevillelongbottom.jpg" alt="Neville Longbottom">
+                            <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Neville Longbottom's Wand</h5>
+                            <p class="card-text">
+                                13" cherry, unicorn hair
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="../images/wands/remus.jpg" alt="Remus Lupin">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Remus Lupin's Wand</h5>
+                            <p class="card-text">
+                                10 1/4" cypress, unicorn hair, pliable
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="../images/wands/fleur.jpg" alt="Fleur Delacour'">
+                        <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Fleur Delacour's Wand</h5>
+                            <p class="card-text">
+                                9 1/2" rosewood, Veela hair (inflexible)
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="../images/wands/cedric.jpg" alt="Cedric Diggory">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Cedric Diggory's Wand</h5>
+                            <p class="card-text">
+                                12 1/4" ash, unicorn hair (pleasantly springy)
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck">
+                        <div class="card mb-4">
+                            <img src="../images/wands/voldemort.jpg" alt="Lord Voldemort">
+                            <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Lord Voldemort's Wand</h5>
+                            <p class="card-text">
+                                13 1/2" yew, phoenix feather
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="../images/wands/bellatrix.jpg" alt="Bellatrix Lestrange">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Bellatrix Lestrange's Wand</h5>
+                            <p class="card-text">
+                                12 3/4" walnut, dragon heartstring, unyielding
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="../images/wands/jamespotter.jpg" alt="James Potter">
+                        <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">James Potter's Wand</h5>
+                            <p class="card-text">
+                                11" mahogany (pliable)
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="../images/wands/ginny.jpg" alt="Ginny Weasley">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Ginny Weasley's Wand</h5>
+                            <p class="card-text">
+                                Yew wood
+                            </p>
+                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+            </form>
         </header>
-        <form action="shopping_cart.php" method="post">
-            <div class="card-deck">
-                <div class="card mb-4">
-                        <img src="../images/wands/harrypotter.jpg" alt="Harry Potter">
-                        <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Harry Potter's Wand</h5>
-                        <p class="card-text">
-                            11" holly, phoenix feather (nice and supple)
-                        </p>
-                        <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                            Add to cart
-                        </a>
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="../images/wands/hermione.jpg" alt="Hermione Granger">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Hermione Granger's Wand</h5>
-                        <p class="card-text">
-                            10 3/4" vine, dragon heartstring
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="../images/wands/viktorkrum.jpg" alt="Viktor Krum">
-                    <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Viktor Krum's Wand</h5>
-                        <p class="card-text">
-                            10 1/4" hornbeam, dragon heartstring (rigid)
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="../images/wands/dracomalfoy.jpg" alt="Draco Malfoy">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Draco Malfoy's Wand</h5>
-                        <p class="card-text">
-                            10" hawthorn, unicorn hair (reasonably springy)
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-            </div>
-            <div class="card-deck">
-                    <div class="card mb-4">
-                        <img src="../images/wands/ronFirst.jpg" alt="Ron Weasley's First Wand">
-                        <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Ron Weasley's First Wand</h5>
-                        <p class="card-text">
-                            12" ash, unicorn hair
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="../images/wands/ronSecond.jpg" alt="Ron Weasley's Second Wand">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Ron Weasley's Second Wand</h5>
-                        <p class="card-text">
-                            14" willow, unicorn hair
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="../images/wands/horaceslughorn.jpg" alt="Horace Slughorn">
-                    <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Horace Slughorn's Wand</h5>
-                        <p class="card-text">
-                            10 1/4" cedar, dragon heartstring (fairly flexible)
-                        </p>
-                        <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
-                            Add to cart
-                        </a>
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="../images/wands/elderwand.jpg" alt="The Elder Wand">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">The Elder Wand</h5>
-                        <p class="card-text">
-                            15" elder, Thestral hair
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-            </div>
-            <div class="card-deck">
-                    <div class="card mb-4">
-                        <img src="../images/wands/nevillelongbottom.jpg" alt="Neville Longbottom">
-                        <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Neville Longbottom's Wand</h5>
-                        <p class="card-text">
-                            13" cherry, unicorn hair
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="../images/wands/remus.jpg" alt="Remus Lupin">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Remus Lupin's Wand</h5>
-                        <p class="card-text">
-                            10 1/4" cypress, unicorn hair, pliable
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="../images/wands/fleur.jpg" alt="Fleur Delacour'">
-                    <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Fleur Delacour's Wand</h5>
-                        <p class="card-text">
-                            9 1/2" rosewood, Veela hair (inflexible)
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="../images/wands/cedric.jpg" alt="Cedric Diggory">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Cedric Diggory's Wand</h5>
-                        <p class="card-text">
-                            12 1/4" ash, unicorn hair (pleasantly springy)
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-            </div>
-            <div class="card-deck">
-                    <div class="card mb-4">
-                        <img src="../images/wands/voldemort.jpg" alt="Lord Voldemort">
-                        <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Lord Voldemort's Wand</h5>
-                        <p class="card-text">
-                            13 1/2" yew, phoenix feather
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="../images/wands/bellatrix.jpg" alt="Bellatrix Lestrange">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Bellatrix Lestrange's Wand</h5>
-                        <p class="card-text">
-                            12 3/4" walnut, dragon heartstring, unyielding
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="../images/wands/jamespotter.jpg" alt="James Potter">
-                    <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">James Potter's Wand</h5>
-                        <p class="card-text">
-                            11" mahogany (pliable)
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="../images/wands/ginny.jpg" alt="Ginny Weasley">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Ginny Weasley's Wand</h5>
-                        <p class="card-text">
-                            Yew wood
-                        </p>
-                        <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
-                    </div>
-                </div>
-            </div>
-        </form>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
