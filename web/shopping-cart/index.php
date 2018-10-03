@@ -143,11 +143,11 @@
                 </div>
             </form>
 
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <div class="card-deck">
-                    <div class="card mb-4" id="harryPotter">
+                    <div class="card mb-4">
                             <img src="../images/wands/harrypotter.jpg" alt="Harry Potter">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body d-flex flex-column" id="harryPotter">
                             <h5 class="card-title">Harry Potter's Wand</h5>
                             <p class="card-text">
                                 11" holly, phoenix feather (nice and supple)
