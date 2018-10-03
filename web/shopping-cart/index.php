@@ -41,11 +41,13 @@
         </header>
         <header class="jumbotron my-4">
             <h1>Wand Selection</h1>
-            <div class="row">
-                <div class="col-lg-12">
-                    <button type="button" class="btn btn-primary float-right m-3">Checkout&nbsp;<span class="fa fa-arrow-right"></span></button>
+            <form action="checkout.php" method="post">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input type="submit" class="btn btn-primary float-right m-3">Checkout&nbsp;<span class="fa fa-arrow-right"></span></input>
+                    </div>
                 </div>
-            </div>
+            </form
 
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                 <div class="card-deck">
