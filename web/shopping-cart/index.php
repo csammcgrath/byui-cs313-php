@@ -2,8 +2,7 @@
     session_start();
 
     if (isset($_POST["harryPotter"])) {
-        echo 'harryPotter';
-        $_SESSION["harryPotter"] = $_POST["harryPotter"];
+        $_SESSION["harryPotter"] = 1;
     } else {
         $_SESSION["harryPotter"] = 0;
     }
