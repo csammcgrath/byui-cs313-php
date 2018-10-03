@@ -244,7 +244,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Ginny Weasley's Wand</h5>
                             <p class="card-text">
-                                Yew wood
+                                10 1/2" yew wood
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
@@ -254,6 +254,9 @@
                     </div>
                 </div>
             </form>
+            <h5 class="text-center">
+                All credit for above and additional information can be found <a href="http://harrypotter.wikia.com/wiki/Wand_wood" target="_blank"  rel="noopener">here</a>
+            </h5>
         </header>
     </div>
 
