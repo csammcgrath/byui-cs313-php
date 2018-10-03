@@ -156,6 +156,7 @@
                         </div>
                         <div class="card-footer text-muted">
                             <?php echo $_SESSION["harryPotter"]; ?>
+                            <?php echo var_dump($_POST); ?>
                         </div>
                     </div>
                     <div class="card mb-4" id="hermioneGranger">
