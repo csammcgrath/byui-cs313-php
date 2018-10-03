@@ -26,5 +26,5 @@
 }
 
 body {
-    background-image: url('../images/wands/backgroundimage.png')
+    background-image: url('../images/wands/backgroundimage.png') no-repeat center center fixed;
 }
