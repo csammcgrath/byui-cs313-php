@@ -41,6 +41,12 @@
                             <p class="card-text">
                                 11" holly, phoenix feather (nice and supple)
                             </p>
+                            <select>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
                             <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
                                 Add to cart
                             </a>
