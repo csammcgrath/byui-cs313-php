@@ -45,6 +45,9 @@
                                 Add to cart
                             </a>  
                         </div>
+                        <div class="card-footer text-muted">
+                            $199.99
+                        </div>
                     </div>
                     <div class="card mb-4">
                         <img src="../images/wands/hermione.jpg" alt="Hermione Granger">
@@ -54,6 +57,9 @@
                                 10 3/4" vine, dragon heartstring
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                        <div class="card-footer text-muted">
+                            $199.99
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -65,6 +71,9 @@
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
+                        <div class="card-footer text-muted">
+                            $199.99
+                        </div>
                     </div>
                     <div class="card mb-4">
                         <img src="../images/wands/dracomalfoy.jpg" alt="Draco Malfoy">
@@ -75,19 +84,25 @@
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
+                        <div class="card-footer text-muted">
+                            $199.99
+                        </div>
                     </div>
                 </div>
                 <div class="card-deck">
                         <div class="card mb-4">
                             <img src="../images/wands/ronFirst.jpg" alt="Ron Weasley's First Wand">
                             <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Ron Weasley's First Wand</h5>
-                            <p class="card-text">
-                                12" ash, unicorn hair
-                            </p>
-                            <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                                <h5 class="card-title">Ron Weasley's First Wand</h5>
+                                <p class="card-text">
+                                    12" ash, unicorn hair
+                                </p>
+                                <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                            </div>
+                            <div class="card-footer text-muted">
+                                $199.99
+                            </div>
                         </div>
-                    </div>
                     <div class="card mb-4">
                         <img src="../images/wands/ronSecond.jpg" alt="Ron Weasley's Second Wand">
                         <div class="card-body d-flex flex-column">
@@ -96,6 +111,9 @@
                                 14" willow, unicorn hair
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                        <div class="card-footer text-muted">
+                            $199.99
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -109,6 +127,9 @@
                                 Add to cart
                             </a>
                         </div>
+                        <div class="card-footer text-muted">
+                            $199.99
+                        </div>
                     </div>
                     <div class="card mb-4">
                         <img src="../images/wands/elderwand.jpg" alt="The Elder Wand">
@@ -118,6 +139,9 @@
                                 15" elder, Thestral hair
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                        <div class="card-footer text-muted">
+                            $199.99
                         </div>
                     </div>
                 </div>
@@ -131,6 +155,9 @@
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
+                        <div class="card-footer text-muted">
+                            $199.99
+                        </div>
                     </div>
                     <div class="card mb-4">
                         <img src="../images/wands/remus.jpg" alt="Remus Lupin">
@@ -140,6 +167,9 @@
                                 10 1/4" cypress, unicorn hair, pliable
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                        <div class="card-footer text-muted">
+                            $199.99
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -151,6 +181,9 @@
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
+                        <div class="card-footer text-muted">
+                            $199.99
+                        </div>
                     </div>
                     <div class="card mb-4">
                         <img src="../images/wands/cedric.jpg" alt="Cedric Diggory">
@@ -160,6 +193,9 @@
                                 12 1/4" ash, unicorn hair (pleasantly springy)
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                        <div class="card-footer text-muted">
+                            $199.99
                         </div>
                     </div>
                 </div>
@@ -173,6 +209,9 @@
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
+                        <div class="card-footer text-muted">
+                            $199.99
+                        </div>
                     </div>
                     <div class="card mb-4">
                         <img src="../images/wands/bellatrix.jpg" alt="Bellatrix Lestrange">
@@ -182,6 +221,9 @@
                                 12 3/4" walnut, dragon heartstring, unyielding
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                        <div class="card-footer text-muted">
+                            $199.99
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -193,6 +235,9 @@
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
+                        <div class="card-footer text-muted">
+                            $199.99
+                        </div>
                     </div>
                     <div class="card mb-4">
                         <img src="../images/wands/ginny.jpg" alt="Ginny Weasley">
@@ -202,6 +247,9 @@
                                 Yew wood
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
+                        </div>
+                        <div class="card-footer text-muted">
+                            $199.99
                         </div>
                     </div>
                 </div>
