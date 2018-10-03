@@ -81,6 +81,7 @@
                 </div>
             </div>
         </div>
+        <h1>Wand Selection</h1>
         <div class="card-deck">
                 <div class="card mb-4">
                     <img src="../images/wands/ronFirst.jpg" alt="Ron Weasley's First Wand">
