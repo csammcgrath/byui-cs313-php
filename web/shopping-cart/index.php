@@ -43,7 +43,7 @@
             <h1>Wand Selection</h1>
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="btn-group pull-right" role="group">
+                    <div class="btn-group float-right m-3" role="group">
                         <button type="button" class="btn btn-primary">&nbsp;&nbsp;Checkout<span class="fa fa-arrow-right" aria-hidden="true"></span></button>
                     </div>
                 </div>
