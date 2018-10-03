@@ -1,8 +1,103 @@
 <?php
     session_start();
 
-    var_dump($_POST['harry']);
+    if (isset($_POST["harryPotter"])) {
+        echo 'harryPotter';
+        $_SESSION["harryPotter"] = $_POST["harryPotter"];
+    } else {
+        $_SESSION["harryPotter"] = 0;
+    }
 
+    if (isset($_POST["hermioneGranger"])) {
+        $_SESSION["hermioneGranger"] = $_POST["hermioneGranger"];
+    } else {
+        $_SESSION["hermioneGranger"] = 0;
+    }
+
+    if (isset($_POST["viktorKrum"])) {
+        $_SESSION["viktorKrum"] = $_POST["viktorKrum"];
+    } else {
+        $_SESSION["viktorKrum"] = 0;
+    }
+
+    if (isset($_POST["dracoMalfoy"])) {
+        $_SESSION["dracoMalfoy"] = $_POST["dracoMalfoy"];
+    } else {
+        $_SESSION["dracoMalfoy"] = 0;
+    }
+
+    if (isset($_POST["ronWeasley1"])) {
+        $_SESSION["ronWeasley1"] = $_POST["ronWeasley1"];
+    } else {
+        $_SESSION["ronWeasley1"] = 0;
+    }
+
+    if (isset($_POST["ronWeasley2"])) {
+        $_SESSION["ronWeasley2"] = $_POST["ronWeasley2"];
+    } else {
+        $_SESSION["ronWeasley2"] = 0;
+    }
+
+    if (isset($_POST["horaceSlughorn"])) {
+        $_SESSION["horaceSlughorn"] = $_POST["horaceSlughorn"];
+    } else {
+        $_SESSION["horaceSlughorn"] = 0;
+    }
+
+    if (isset($_POST["elderWand"])) {
+        $_SESSION["elderWand"] = $_POST["elderWand"];
+    } else {
+        $_SESSION["elderWand"] = 0;
+    }
+
+    if (isset($_POST["nevilleLongbottom"])) {
+        $_SESSION["nevilleLongbottom"] = $_POST["nevilleLongbottom"];
+    } else {
+        $_SESSION["nevilleLongbottom"] = 0;
+    }
+
+    if (isset($_POST["remusLupin"])) {
+        $_SESSION["remusLupin"] = $_POST["remusLupin"];
+    } else {
+        $_SESSION["remusLupin"] = 0;
+    }
+
+    if (isset($_POST["fleurDelacour"])) {
+        $_SESSION["fleurDelacour"] = $_POST["fleurDelacour"];
+    } else {
+        $_SESSION["fleurDelacour"] = 0;
+    }
+
+    if (isset($_POST["cedricDiggory"])) {
+        $_SESSION["cedricDiggory"] = $_POST["cedricDiggory"];
+    } else {
+        $_SESSION["cedricDiggory"] = 0;
+    }
+
+    if (isset($_POST["voldemort"])) {
+        $_SESSION["voldemort"] = $_POST["voldemort"];
+    } else {
+        $_SESSION["voldemort"] = 0;
+    }
+
+    if (isset($_POST["bellatrixLestrange"])) {
+        $_SESSION["bellatrixLestrange"] = $_POST["bellatrixLestrange"];
+    } else {
+        $_SESSION["bellatrixLestrange"] = 0;
+    }
+
+    if (isset($_POST["jamesPotter"])) {
+        $_SESSION["jamesPotter"] = $_POST["jamesPotter"];
+    } else {
+        $_SESSION["jamesPotter"] = 0;
+    }
+
+    if (isset($_POST["ginnyWeasley"])) {
+        echo 'ginnyWeasley';
+        $_SESSION["ginnyWeasley"] = $_POST["ginnyWeasley"];
+    } else {
+        $_SESSION["ginnyWeasley"] = 0;
+    }
 ?>
 
 <!doctype html>
@@ -29,7 +124,7 @@
             <h1 class="display-3">Ozzy's Wizard Shop</h1>
             <p class="lead">
                 Ollivander's Shop as shown in Harry Potter is the most popular wizard shop. At Ozzy's Wizard shop, we strive to achieve what Garick Ollivander has, including customer service and quality wands.
-                <hr >
+                <hr>
                 <blockquote class="lead">
                     <p class="mb-0">
                         "Only a minority of trees can produce wand quality wood (just as a minority of humans can produce magic). It takes years of experience to tell which ones have the gift, although the job is made easier if Bowtruckles are found nesting in the leaves, as they never inhabit mundane trees."
@@ -47,11 +142,11 @@
                         <input type="submit" class="btn btn-primary float-right m-3" value="Checkout"></input>
                     </div>
                 </div>
-            </form
+            </form>
 
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                 <div class="card-deck">
-                    <div class="card mb-4">
+                    <div class="card mb-4" id="harryPotter">
                             <img src="../images/wands/harrypotter.jpg" alt="Harry Potter">
                             <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Harry Potter's Wand</h5>
@@ -64,7 +159,7 @@
                             $199.99
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4" id="hermioneGranger">
                         <img src="../images/wands/hermione.jpg" alt="Hermione Granger">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Hermione Granger's Wand</h5>
@@ -77,7 +172,7 @@
                             $199.99
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4" id="viktorKrum">
                         <img src="../images/wands/viktorkrum.jpg" alt="Viktor Krum">
                         <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Viktor Krum's Wand</h5>
@@ -90,7 +185,7 @@
                             $199.99
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4" id="dracoMalfoy">
                         <img src="../images/wands/dracomalfoy.jpg" alt="Draco Malfoy">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Draco Malfoy's Wand</h5>
@@ -105,7 +200,7 @@
                     </div>
                 </div>
                 <div class="card-deck">
-                        <div class="card mb-4">
+                        <div class="card mb-4" id="ronWeasley1">
                             <img src="../images/wands/ronFirst.jpg" alt="Ron Weasley's First Wand">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Ron Weasley's First Wand</h5>
@@ -118,7 +213,7 @@
                                 $199.99
                             </div>
                         </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4" id="ronWeasley2">
                         <img src="../images/wands/ronSecond.jpg" alt="Ron Weasley's Second Wand">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Ron Weasley's Second Wand</h5>
@@ -131,7 +226,7 @@
                             $199.99
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4" id="horaceSlughorn">
                         <img src="../images/wands/horaceslughorn.jpg" alt="Horace Slughorn">
                         <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Horace Slughorn's Wand</h5>
@@ -144,7 +239,7 @@
                             $199.99
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4" id="elderWand">
                         <img src="../images/wands/elderwand.jpg" alt="The Elder Wand">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">The Elder Wand</h5>
@@ -159,7 +254,7 @@
                     </div>
                 </div>
                 <div class="card-deck">
-                        <div class="card mb-4">
+                        <div class="card mb-4" id="nevilleLongbottom">
                             <img src="../images/wands/nevillelongbottom.jpg" alt="Neville Longbottom">
                             <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Neville Longbottom's Wand</h5>
@@ -172,7 +267,7 @@
                             $199.99
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4" id="remusLupin">
                         <img src="../images/wands/remus.jpg" alt="Remus Lupin">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Remus Lupin's Wand</h5>
@@ -185,7 +280,7 @@
                             $199.99
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4" id="fleurDelacour">
                         <img src="../images/wands/fleur.jpg" alt="Fleur Delacour'">
                         <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Fleur Delacour's Wand</h5>
@@ -198,7 +293,7 @@
                             $199.99
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4" id="cedricDiggory">
                         <img src="../images/wands/cedric.jpg" alt="Cedric Diggory">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Cedric Diggory's Wand</h5>
@@ -213,7 +308,7 @@
                     </div>
                 </div>
                 <div class="card-deck">
-                        <div class="card mb-4">
+                        <div class="card mb-4" id="voldemort">
                             <img src="../images/wands/voldemort.jpg" alt="Lord Voldemort">
                             <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Lord Voldemort's Wand</h5>
@@ -226,7 +321,7 @@
                             $199.99
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4" id="bellatrixLestrange">
                         <img src="../images/wands/bellatrix.jpg" alt="Bellatrix Lestrange">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Bellatrix Lestrange's Wand</h5>
@@ -239,7 +334,7 @@
                             $199.99
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4" id="jamesPotter">
                         <img src="../images/wands/jamespotter.jpg" alt="James Potter">
                         <div class="card-body d-flex flex-column">
                         <h5 class="card-title">James Potter's Wand</h5>
@@ -252,7 +347,7 @@
                             $199.99
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4" id="ginnyWeasley">
                         <img src="../images/wands/ginny.jpg" alt="Ginny Weasley">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Ginny Weasley's Wand</h5>
