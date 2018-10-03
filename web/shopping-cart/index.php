@@ -3,7 +3,7 @@
 
     if (isset($_POST["harryPotter"])) {
         $_SESSION["harryPotter"] = 1;
-    } else {
+    } else if (!isset($_POST["harryPotter"])) {
         $_SESSION["harryPotter"] = 0;
     }
 
