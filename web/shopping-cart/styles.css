@@ -30,6 +30,11 @@ body {
     background-size: cover;
 }
 
+/* overriding bootstrap's hr settings here */
 hr {
-    width: 75%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+    border-top: 1px solid black;
+    width: 80%;
 }
