@@ -18,19 +18,21 @@
 <body class="text-center">
     <div class="container">
         <header class="jumbotron my-4">
-        <h1 class="display-3">Ozzy's Wizard Shop</h1>
-        <p class="lead">
-            Ollivander's Shop as shown in Harry Potter is the most popular wizard shop. At Ozzy's Wizard shop, we strive to achieve what Ollivander has including customer service.
-    
-            <blockquote class="blockquote text-center">
-               <p class="mb-0">
-                    "Only a minority of trees can produce wand quality wood (just as a minority of humans can produce magic). It takes years of experience to tell which ones have the gift, although the job is made easier if Bowtruckles are found nesting in the leaves, as they never inhabit mundane trees."
-                </p>
-               <footer class="blockquote-footer">Garrick Ollivander</cite></footer>
-            </blockquote>
-        </p>
-      </header>
-        <h1>Wand Selection</h1>
+            <h1 class="display-3">Ozzy's Wizard Shop</h1>
+            <p class="lead">
+                Ollivander's Shop as shown in Harry Potter is the most popular wizard shop. At Ozzy's Wizard shop, we strive to achieve what Ollivander has including customer service.
+        
+                <blockquote class="blockquote text-center">
+                <p class="mb-0">
+                        "Only a minority of trees can produce wand quality wood (just as a minority of humans can produce magic). It takes years of experience to tell which ones have the gift, although the job is made easier if Bowtruckles are found nesting in the leaves, as they never inhabit mundane trees."
+                    </p>
+                <footer class="blockquote-footer">Garrick Ollivander</cite></footer>
+                </blockquote>
+            </p>
+        </header>
+        <header class="jumbotron my-4">
+            <h1>Wand Selection</h1>
+        </header>
         <form action="shopping_cart.php" method="post">
             <div class="card-deck">
                 <div class="card mb-4">
