@@ -16,7 +16,6 @@
 </head>
 
 <body class="text-center">
-    <?php require 'header.php' ?>
 
     <div class="container">
         <header class="jumbotron my-4">
