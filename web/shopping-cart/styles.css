@@ -29,3 +29,7 @@ body {
     background-image: url('../images/wands/backgroundimage.png');
     background-size: cover;
 }
+
+hr {
+    width: 75%;
+}
