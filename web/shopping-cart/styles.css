@@ -24,3 +24,7 @@
 .card-deck {
 	justify-content: space-around;
 }
+
+body {
+    background-image: url('../images/wands/backgroundimage.png')
+}
