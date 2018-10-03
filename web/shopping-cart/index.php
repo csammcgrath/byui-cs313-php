@@ -156,7 +156,7 @@
                             <input type="submit" name='harry' class="btn btn-primary mt-auto" value="Add to cart"> 
                         </div>
                         <div class="card-footer text-muted">
-                            $199.99
+                            <?php echo $_SESSION["harryPotter"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4" id="hermioneGranger">
