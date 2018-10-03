@@ -20,7 +20,7 @@
         <header class="jumbotron my-4">
             <h1 class="display-3">Ozzy's Wizard Shop</h1>
             <p class="lead">
-                Ollivander's Shop as shown in Harry Potter is the most popular wizard shop. At Ozzy's Wizard shop, we strive to achieve what Ollivander has including customer service.
+                Ollivander's Shop as shown in Harry Potter is the most popular wizard shop. At Ozzy's Wizard shop, we strive to achieve what Garick Ollivander has, including customer service and quality wands.
                 <hr >
                 <blockquote class="lead">
                     <p class="mb-0">
