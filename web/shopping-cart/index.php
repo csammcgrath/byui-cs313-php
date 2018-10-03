@@ -158,9 +158,9 @@
                             <?php echo $_SESSION["harryPotter"]; ?>
                         </div>
                     </div>
-                    <div class="card mb-4" id="hermioneGranger">
+                    <div class="card mb-4">
                         <img src="../images/wands/hermione.jpg" alt="Hermione Granger">
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column" id="hermioneGranger">
                             <h5 class="card-title">Hermione Granger's Wand</h5>
                             <p class="card-text">
                                 10 3/4" vine, dragon heartstring
@@ -171,9 +171,9 @@
                             <?php echo $_SESSION["hermioneGranger"]; ?>
                         </div>
                     </div>
-                    <div class="card mb-4" id="viktorKrum">
+                    <div class="card mb-4">
                         <img src="../images/wands/viktorkrum.jpg" alt="Viktor Krum">
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column" id="viktorKrum">
                         <h5 class="card-title">Viktor Krum's Wand</h5>
                             <p class="card-text">
                                 10 1/4" hornbeam, dragon heartstring (rigid)
@@ -184,9 +184,9 @@
                             <?php echo $_SESSION["viktorKrum"]; ?>
                         </div>
                     </div>
-                    <div class="card mb-4" id="dracoMalfoy">
+                    <div class="card mb-4">
                         <img src="../images/wands/dracomalfoy.jpg" alt="Draco Malfoy">
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column" id="dracoMalfoy">
                             <h5 class="card-title">Draco Malfoy's Wand</h5>
                             <p class="card-text">
                                 10" hawthorn, unicorn hair (reasonably springy)
@@ -199,9 +199,9 @@
                     </div>
                 </div>
                 <div class="card-deck">
-                        <div class="card mb-4" id="ronWeasley1">
+                        <div class="card mb-4">
                             <img src="../images/wands/ronFirst.jpg" alt="Ron Weasley's First Wand">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body d-flex flex-column" id="ronWeasley1">
                                 <h5 class="card-title">Ron Weasley's First Wand</h5>
                                 <p class="card-text">
                                     12" ash, unicorn hair
@@ -212,9 +212,9 @@
                                 <?php echo $_SESSION["ronWeasley1"]; ?>
                             </div>
                         </div>
-                    <div class="card mb-4" id="ronWeasley2">
+                    <div class="card mb-4">
                         <img src="../images/wands/ronSecond.jpg" alt="Ron Weasley's Second Wand">
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column" id="ronWeasley2">
                             <h5 class="card-title">Ron Weasley's Second Wand</h5>
                             <p class="card-text">
                                 14" willow, unicorn hair
@@ -225,9 +225,9 @@
                             <?php echo $_SESSION["ronWeasley2"]; ?>
                         </div>
                     </div>
-                    <div class="card mb-4" id="horaceSlughorn">
+                    <div class="card mb-4">
                         <img src="../images/wands/horaceslughorn.jpg" alt="Horace Slughorn">
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column" id="horaceSlughorn">
                         <h5 class="card-title">Horace Slughorn's Wand</h5>
                             <p class="card-text">
                                 10 1/4" cedar, dragon heartstring (fairly flexible)
@@ -238,9 +238,9 @@
                             <?php echo $_SESSION["horaceSlughorn"]; ?>
                         </div>
                     </div>
-                    <div class="card mb-4" id="elderWand">
+                    <div class="card mb-4">
                         <img src="../images/wands/elderwand.jpg" alt="The Elder Wand">
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column" id="elderWand">
                             <h5 class="card-title">The Elder Wand</h5>
                             <p class="card-text">
                                 15" elder, Thestral hair
@@ -253,9 +253,9 @@
                     </div>
                 </div>
                 <div class="card-deck">
-                        <div class="card mb-4" id="nevilleLongbottom">
+                        <div class="card mb-4">
                             <img src="../images/wands/nevillelongbottom.jpg" alt="Neville Longbottom">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body d-flex flex-column" id="nevilleLongbottom">
                             <h5 class="card-title">Neville Longbottom's Wand</h5>
                             <p class="card-text">
                                 13" cherry, unicorn hair
@@ -266,9 +266,9 @@
                             <?php echo $_SESSION["nevilleLongbottom"]; ?>
                         </div>
                     </div>
-                    <div class="card mb-4" id="remusLupin">
+                    <div class="card mb-4">
                         <img src="../images/wands/remus.jpg" alt="Remus Lupin">
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column" id="remusLupin">
                             <h5 class="card-title">Remus Lupin's Wand</h5>
                             <p class="card-text">
                                 10 1/4" cypress, unicorn hair, pliable
@@ -279,9 +279,9 @@
                             <?php echo $_SESSION["remusLupin"]; ?>
                         </div>
                     </div>
-                    <div class="card mb-4" id="fleurDelacour">
-                        <img src="../images/wands/fleur.jpg" alt="Fleur Delacour'">
-                        <div class="card-body d-flex flex-column">
+                    <div class="card mb-4">
+                        <img src="../images/wands/fleur.jpg" alt="Fleur Delacour">
+                        <div class="card-body d-flex flex-column" id="fleurDelacour">
                         <h5 class="card-title">Fleur Delacour's Wand</h5>
                             <p class="card-text">
                                 9 1/2" rosewood, Veela hair (inflexible)
@@ -292,9 +292,9 @@
                             <?php echo $_SESSION["fleurDelacour"]; ?>
                         </div>
                     </div>
-                    <div class="card mb-4" id="cedricDiggory">
+                    <div class="card mb-4">
                         <img src="../images/wands/cedric.jpg" alt="Cedric Diggory">
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column" id="cedricDiggory">
                             <h5 class="card-title">Cedric Diggory's Wand</h5>
                             <p class="card-text">
                                 12 1/4" ash, unicorn hair (pleasantly springy)
@@ -307,9 +307,9 @@
                     </div>
                 </div>
                 <div class="card-deck">
-                        <div class="card mb-4" id="voldemort">
+                        <div class="card mb-4">
                             <img src="../images/wands/voldemort.jpg" alt="Lord Voldemort">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body d-flex flex-column" id="voldemort">
                             <h5 class="card-title">Lord Voldemort's Wand</h5>
                             <p class="card-text">
                                 13 1/2" yew, phoenix feather
@@ -320,9 +320,9 @@
                             <?php echo $_SESSION["voldemort"]; ?>
                         </div>
                     </div>
-                    <div class="card mb-4" id="bellatrixLestrange">
+                    <div class="card mb-4">
                         <img src="../images/wands/bellatrix.jpg" alt="Bellatrix Lestrange">
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column" id="bellatrixLestrange">
                             <h5 class="card-title">Bellatrix Lestrange's Wand</h5>
                             <p class="card-text">
                                 12 3/4" walnut, dragon heartstring, unyielding
@@ -333,9 +333,9 @@
                             <?php echo $_SESSION["bellatrixLestrange"]; ?>
                         </div>
                     </div>
-                    <div class="card mb-4" id="jamesPotter">
+                    <div class="card mb-4">
                         <img src="../images/wands/jamespotter.jpg" alt="James Potter">
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column" id="jamesPotter">
                         <h5 class="card-title">James Potter's Wand</h5>
                             <p class="card-text">
                                 11" mahogany (pliable)
@@ -346,9 +346,9 @@
                             <?php echo $_SESSION["jamesPotter"]; ?>
                         </div>
                     </div>
-                    <div class="card mb-4" id="ginnyWeasley">
+                    <div class="card mb-4">
                         <img src="../images/wands/ginny.jpg" alt="Ginny Weasley">
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column" id="ginnyWeasley">
                             <h5 class="card-title">Ginny Weasley's Wand</h5>
                             <p class="card-text">
                                 10 1/2" yew wood
