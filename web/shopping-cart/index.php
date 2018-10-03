@@ -44,7 +44,7 @@
             <form action="checkout.php" method="post">
                 <div class="row">
                     <div class="col-lg-12">
-                        <input type="submit" class="btn btn-primary float-right m-3">Checkout&nbsp;<span class="fa fa-arrow-right"></span></input>
+                        <input type="submit" class="btn btn-primary float-right m-3" value="Checkout" placeholder="&#xf061;"></input>
                     </div>
                 </div>
             </form
