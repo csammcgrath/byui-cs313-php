@@ -66,6 +66,9 @@
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
+                        <div class="card-footer text-muted">
+                            $199.99
+                        </div>
                     </div>
                     <div class="card mb-4">
                         <img src="../images/wands/viktorkrum.jpg" alt="Viktor Krum">
@@ -86,6 +89,9 @@
                                 </a>
                             </div> 
                         </div>
+                        <div class="card-footer text-muted">
+                            $199.99
+                        </div>
                     </div>
                     <div class="card mb-4">
                         <img src="../images/wands/dracomalfoy.jpg" alt="Draco Malfoy">
@@ -105,6 +111,9 @@
                                     Add to cart
                                 </a>
                             </div> 
+                        </div>
+                        <div class="card-footer text-muted">
+                            $199.99
                         </div>
                     </div>
                 </div>
@@ -127,6 +136,9 @@
                                     Add to cart
                                 </a>
                             </div> 
+                            <div class="card-footer text-muted">
+                                $199.99
+                            </div>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -147,6 +159,9 @@
                                     Add to cart
                                 </a>
                             </div> 
+                            <div class="card-footer text-muted">
+                                $199.99
+                            </div>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -169,6 +184,9 @@
                             </div> 
                                 Add to cart
                             </a>
+                            <div class="card-footer text-muted">
+                                $199.99
+                            </div>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -189,6 +207,9 @@
                                     Add to cart
                                 </a>
                             </div> 
+                        </div>
+                        <div class="card-footer text-muted">
+                            $199.99
                         </div>
                     </div>
                 </div>
@@ -211,6 +232,9 @@
                                     Add to cart
                                 </a>
                             </div> 
+                            <div class="card-footer text-muted">
+                                $199.99
+                            </div>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -231,6 +255,9 @@
                                     Add to cart
                                 </a>
                             </div> 
+                            <div class="card-footer text-muted">
+                                $199.99
+                            </div>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -251,6 +278,9 @@
                                     Add to cart
                                 </a>
                             </div> 
+                            <div class="card-footer text-muted">
+                                $199.99
+                            </div>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -270,8 +300,11 @@
                                 <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
                                     Add to cart
                                 </a>
-                            </div> 
+                            </div>
                         </div>
+                        <div class="card-footer text-muted">
+                                $199.99
+                            </div>
                     </div>
                 </div>
                 <div class="card-deck">
@@ -293,6 +326,9 @@
                                     Add to cart
                                 </a>
                             </div> 
+                            <div class="card-footer text-muted">
+                                $199.99
+                            </div>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -304,6 +340,9 @@
                             </p>
                             <input type="submit" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
+                        <div class="card-footer text-muted">
+                                $199.99
+                            </div>
                     </div>
                     <div class="card mb-4">
                         <img src="../images/wands/jamespotter.jpg" alt="James Potter">
@@ -323,6 +362,9 @@
                                     Add to cart
                                 </a>
                             </div> 
+                            <div class="card-footer text-muted">
+                                $199.99
+                            </div>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -343,6 +385,9 @@
                                     Add to cart
                                 </a>
                             </div> 
+                            <div class="card-footer text-muted">
+                                $199.99
+                            </div>
                         </div>
                     </div>
                 </div>
