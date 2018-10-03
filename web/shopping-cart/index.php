@@ -143,7 +143,7 @@
                 </div>
             </form>
 
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <form action="" method="post">
                 <div class="card-deck">
                     <div class="card mb-4">
                             <img src="../images/wands/harrypotter.jpg" alt="Harry Potter">
