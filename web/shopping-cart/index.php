@@ -3,98 +3,98 @@
 
     if (isset($_POST["harryPotter"])) {
         $_SESSION["harryPotter"] = 1;
-    } else if (!isset($_POST["harryPotter"])) {
+    } else if (!isset($_SESSION["harryPotter"])) {
         $_SESSION["harryPotter"] = 0;
     }
 
     if (isset($_POST["hermioneGranger"])) {
         $_SESSION["hermioneGranger"] = $_POST["hermioneGranger"];
-    } else {
+    } else if (!isset($_SESSION["hermioneGranger"])) {
         $_SESSION["hermioneGranger"] = 0;
     }
 
     if (isset($_POST["viktorKrum"])) {
         $_SESSION["viktorKrum"] = $_POST["viktorKrum"];
-    } else {
+    } else if (!isset($_SESSION["viktorKrum"])) {
         $_SESSION["viktorKrum"] = 0;
     }
 
     if (isset($_POST["dracoMalfoy"])) {
         $_SESSION["dracoMalfoy"] = $_POST["dracoMalfoy"];
-    } else {
+    } else if (!isset($_SESSION["dracoMalfoy"])) {
         $_SESSION["dracoMalfoy"] = 0;
     }
 
     if (isset($_POST["ronWeasley1"])) {
         $_SESSION["ronWeasley1"] = $_POST["ronWeasley1"];
-    } else {
+    } else if (!isset($_SESSION["ronWeasley1"])) {
         $_SESSION["ronWeasley1"] = 0;
     }
 
     if (isset($_POST["ronWeasley2"])) {
         $_SESSION["ronWeasley2"] = $_POST["ronWeasley2"];
-    } else {
+    } else if (!isset($_SESSION["ronWeasley2"])) {
         $_SESSION["ronWeasley2"] = 0;
     }
 
     if (isset($_POST["horaceSlughorn"])) {
         $_SESSION["horaceSlughorn"] = $_POST["horaceSlughorn"];
-    } else {
+    } else if (!isset($_SESSION["horaceSlughorn"])) {
         $_SESSION["horaceSlughorn"] = 0;
     }
 
     if (isset($_POST["elderWand"])) {
         $_SESSION["elderWand"] = $_POST["elderWand"];
-    } else {
+    } else if (!isset($_SESSION["elderWand"])) {
         $_SESSION["elderWand"] = 0;
     }
 
     if (isset($_POST["nevilleLongbottom"])) {
         $_SESSION["nevilleLongbottom"] = $_POST["nevilleLongbottom"];
-    } else {
+    } else if (!isset($_SESSION["nevilleLongbottom"])) {
         $_SESSION["nevilleLongbottom"] = 0;
     }
 
     if (isset($_POST["remusLupin"])) {
         $_SESSION["remusLupin"] = $_POST["remusLupin"];
-    } else {
+    } else if (!isset($_SESSION["remusLupin"])) {
         $_SESSION["remusLupin"] = 0;
     }
 
     if (isset($_POST["fleurDelacour"])) {
         $_SESSION["fleurDelacour"] = $_POST["fleurDelacour"];
-    } else {
+    } else if (!isset($_SESSION["fleurDelacour"])) {
         $_SESSION["fleurDelacour"] = 0;
     }
 
     if (isset($_POST["cedricDiggory"])) {
         $_SESSION["cedricDiggory"] = $_POST["cedricDiggory"];
-    } else {
+    } else if (!isset($_SESSION["cedricDiggory"])) {
         $_SESSION["cedricDiggory"] = 0;
     }
 
     if (isset($_POST["voldemort"])) {
         $_SESSION["voldemort"] = $_POST["voldemort"];
-    } else {
+    } else if (!isset($_SESSION["voldemort"])) {
         $_SESSION["voldemort"] = 0;
     }
 
     if (isset($_POST["bellatrixLestrange"])) {
         $_SESSION["bellatrixLestrange"] = $_POST["bellatrixLestrange"];
-    } else {
+    } else if (!isset($_SESSION["bellatrixLestrange"])) {
         $_SESSION["bellatrixLestrange"] = 0;
     }
 
     if (isset($_POST["jamesPotter"])) {
         $_SESSION["jamesPotter"] = $_POST["jamesPotter"];
-    } else {
+    } else if (!isset($_SESSION["jamesPotter"])) {
         $_SESSION["jamesPotter"] = 0;
     }
 
     if (isset($_POST["ginnyWeasley"])) {
         echo 'ginnyWeasley';
         $_SESSION["ginnyWeasley"] = $_POST["ginnyWeasley"];
-    } else {
+    } else if (!isset($_SESSION["ginnyWeasley"])) {
         $_SESSION["ginnyWeasley"] = 0;
     }
 ?>
