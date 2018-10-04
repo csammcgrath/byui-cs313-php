@@ -94,6 +94,7 @@
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["harryPotter"]["price"]; ?>
+                            <?php var_dump($_POST) ?>
                         </div>
                     </div>
                     <div class="card mb-4">
