@@ -69,10 +69,8 @@
 														<h6>$" . $props['price'] ."</h6>
 													</div>
 													<div class='col-2 col-sm-2 col-md-2 text-right m-auto'>
-														<form method='post'>
-															<button type='button' name='" . $name . "' class='btn btn-outline-danger btn-xs' formaction=''>
-																<i class='fas fa-trash'></i>
-															</button>
+														<form action='' method='post'>
+															<input type='submit' name='" . $name . "' class='fas fa-trash'></input>
 														</form>
 													</div>
 												</div>
