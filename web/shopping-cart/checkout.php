@@ -110,7 +110,7 @@
 							<div class="row">
 								<div class="col-12 col-md-4">
 									<form action="./index.phpg">
-										<button class="btn btn-warning mb-5"type="submit"><i class='fas fa-arrow-left'></i>&nbsp;Go back</button>
+										<button class="btn btn-warning mb-5" name="back" type="submit"><i class='fas fa-arrow-left'></i>&nbsp;Go back</button>
 									</form>
 								</div>
 								<div class="col-12 col-md-4">
