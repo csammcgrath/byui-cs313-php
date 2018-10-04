@@ -69,7 +69,7 @@
             <form action="checkout.php" method="post">
                 <div class="row">
                     <div class="col-lg-12">
-                        <button type="submit" class="btn btn-primary float-right m-3" formaction="checkout.php">Checkout&nbsp;<i class='fas fa-arrow-right'></button>
+                        <input type="submit" class="btn btn-primary float-right m-3" value="Checkout"></input>
                     </div>
                 </div>
             </form>
