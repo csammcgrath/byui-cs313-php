@@ -12,6 +12,17 @@
 		}
 	}
 	$_SESSION['total'] = $total;
+
+	function isEmpty($arr) {
+		$val = true;
+		foreach ($arr as $name => $props) {
+			if ($props['quantity'] == 1) {
+				$val = false;
+			}
+		}
+
+		return $val;
+	}
 ?>
 
 <!doctype html>
@@ -54,7 +65,7 @@
 				<div class="container">
 					<div class="card">
 						<?php
-							if (sizeof($_SESSION['cart']) >= 1) {
+							if (isEmpty($_SESSION['cart'])) {
 								foreach ($_SESSION['cart'] as $name => $props) {
 									if ($props['quantity'] == 1) {
 										echo "
