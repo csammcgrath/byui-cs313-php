@@ -86,7 +86,13 @@
                             <p class="card-text">
                                 11" holly, phoenix feather (nice and supple)
                             </p>
-                            <input type="submit" name="harryPotter" class="btn btn-primary mt-auto" value="Add to cart"> 
+                            <?php
+                                if ($_SESSION["cart"]["harryPotter"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='harryPotter' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["harryPotter"]["price"]; ?>
