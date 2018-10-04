@@ -1,25 +1,26 @@
 <?php
     session_start();
 
+    $cart = array(
+        'harryPotter' => array('price' => 685, 'quantity' => 0),
+        'hermioneGranger' => array('price' => 145, 'quantity' => 0),
+        'viktorKrum' => array('price' => 95, 'quantity' => 0),
+        'dracoMalfoy' => array('price' => 125, 'quantity' => 0),
+        'ronWeasley1' => array('price' => 45, 'quantity' => 0),
+        'ronWeasley2' => array('price' => 55, 'quantity' => 0),
+        'horaceSlughorn' => array('price' => 105, 'quantity' => 0),
+        'elderWand' => array('price' => 535, 'quantity' => 0),
+        'nevilleLongbottom' => array('price' => 85, 'quantity' => 0),
+        'remusLupin' => array('price' => 389, 'quantity' => 0),
+        'fleurDelacour' => array('price' => 273, 'quantity' => 0),
+        'cedricDiggory' => array('price' => 199, 'quantity' => 0),
+        'voldemort' => array('price' => 666, 'quantity' => 0),
+        'bellatrixLestrange' => array('price' => 485, 'quantity' => 0),
+        'jamesPotter' => array('price' => 684, 'quantity' => 0),
+        'ginnyWeasley' => array('price' => 75, 'quantity' => 0),
+    );
+
     if (!isset($_SESSION["activeSession"])) {
-        $cart = array(
-            'harryPotter' => array('price' => 685, 'quantity' => 0),
-            'hermioneGranger' => array('price' => 145, 'quantity' => 0),
-            'viktorKrum' => array('price' => 95, 'quantity' => 0),
-            'dracoMalfoy' => array('price' => 125, 'quantity' => 0),
-            'ronWeasley1' => array('price' => 45, 'quantity' => 0),
-            'ronWeasley2' => array('price' => 55, 'quantity' => 0),
-            'horaceSlughorn' => array('price' => 105, 'quantity' => 0),
-            'elderWand' => array('price' => 535, 'quantity' => 0),
-            'nevilleLongbottom' => array('price' => 85, 'quantity' => 0),
-            'remusLupin' => array('price' => 389, 'quantity' => 0),
-            'fleurDelacour' => array('price' => 273, 'quantity' => 0),
-            'cedricDiggory' => array('price' => 199, 'quantity' => 0),
-            'voldemort' => array('price' => 666, 'quantity' => 0),
-            'bellatrixLestrange' => array('price' => 485, 'quantity' => 0),
-            'jamesPotter' => array('price' => 684, 'quantity' => 0),
-            'ginnyWeasley' => array('price' => 75, 'quantity' => 0),
-        );
         $_SESSION["activeSession"] = true;
         $_SESSION["cart"] = $cart;
     } else {
