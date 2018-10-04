@@ -94,7 +94,7 @@
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["harryPotter"]["price"]; ?>
-                            <?php var_dump($_POST) ?>
+                            <?php var_dump($_SESSION["cart"]["harryPotter"]["quantity"]); ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -114,6 +114,7 @@
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["hermioneGranger"]["price"]; ?>
+                            <?php var_dump($_SESSION["cart"]["hermioneGranger"]["quantity"]); ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -133,6 +134,7 @@
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["viktorKrum"]["price"]; ?>
+                            <?php var_dump($_SESSION["cart"]["viktorKrum"]["quantity"]); ?>
                         </div>
                     </div>
                     <div class="card mb-4">
