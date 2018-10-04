@@ -28,8 +28,8 @@
         $_SESSION["cart"] = $cart;
     }
 
-    if (isset($_POST["name"])) {
-        $_SESSION["cart"][$_POST["name"]]["quantity"]++;
+    if (isset($_POST)) {
+        $_SESSION["cart"][key($_POST)]["quantity"]++;
     }
 ?>
 
