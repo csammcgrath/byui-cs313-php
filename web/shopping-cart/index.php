@@ -23,10 +23,13 @@
     if (!isset($_SESSION["activeSession"])) {
         $_SESSION["activeSession"] = true;
         $_SESSION["cart"] = $cart;
+    } else {
+        session_destroy();
     }
 
     if (isset($_POST)) {
         $_SESSION["cart"][key($_POST)]["quantity"]++;
+        $cart = $_SESSION["cart"];
     }
 ?>
 
