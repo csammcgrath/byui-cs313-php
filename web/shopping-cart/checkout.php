@@ -44,14 +44,7 @@
 			</p>
 		</header>
 		<header class="jumbotron my-4">
-			<h1>Wand Selection</h1>
-			<form action="checkout.php" method="post">
-				<div class="row">
-					<div class="col-lg-12">
-						<input type="submit" class="btn btn-primary float-right m-3" value="Checkout"></input>
-					</div>
-				</div>
-			</form>
+			<h1>Your cart:</h1>
 			<form action="" method="post">
 				<div class="container">
 					<div class="card">
@@ -73,7 +66,7 @@
 													</div>
 													<div class='col-2 col-sm-2 col-md-2 text-right m-auto'>
 														<button type='button' class='btn btn-outline-danger btn-xs'>
-														<i class='fas fa-trash'></i>
+															<i class='fas fa-trash'></i>
 														</button>
 													</div>
 												</div>
@@ -84,14 +77,17 @@
 								}
 							}
 						?>
-						<div class="card-footer">
-							<div class="pull-left">
-								<input type="submit" class="btn btn-default" value="Go back">
-							</div>
-							<div class="pull-right" style="margin: 10px">
-								<input type="submit" class="btn-primary pull-right" value="Checkout">
-								<div class="pull-right" style="margin: 5px">
-									Total price: <b>$<?php echo $total; ?></b>
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<form>
+										<button class="btn btn-warning" type="submit" formaction="">Go back<i class='fas fa-arrow-left'></i></button>
+									</form>
+								</div>
+								<div class="col-12 col-md-6">
+									<form>
+										<button class="btn btn-success" type="submit" formaction="">Proceed<i class='fas fa-arrow-right'></i></button>
+									</form>
 								</div>
 							</div>
 						</div>
