@@ -1,101 +1,29 @@
 <?php
     session_start();
 
-    if (isset($_POST["harryPotter"])) {
-        $_SESSION["harryPotter"] = 1;
-    } else if (!isset($_SESSION["harryPotter"])) {
-        $_SESSION["harryPotter"] = 0;
-    }
+    $cart = array(
+        'harryPotter' => array('price' => 185, 'quantity' => 0),
+        'hermioneGranger' => array('price' => 185, 'quantity' => 0),
+        'viktorKrum' => array('price' => 185, 'quantity' => 0),
+        'dracoMalfoy' => array('price' => 185, 'quantity' => 0),
+        'ronWeasley1' => array('price' => 185, 'quantity' => 0),
+        'ronWeasley2' => array('price' => 185, 'quantity' => 0),
+        'horaceSlughorn' => array('price' => 185, 'quantity' => 0),
+        'elderWand' => array('price' => 185, 'quantity' => 0),
+        'nevilleLongbottom' => array('price' => 185, 'quantity' => 0),
+        'remusLupin' => array('price' => 185, 'quantity' => 0),
+        'fleurDelacour' => array('price' => 185, 'quantity' => 0),
+        'cedricDiggory' => array('price' => 185, 'quantity' => 0),
+        'voldemort' => array('price' => 185, 'quantity' => 0),
+        'bellatrixLestrange' => array('price' => 185, 'quantity' => 0),
+        'jamesPotter' => array('price' => 185, 'quantity' => 0),
+        'ginnyWeasley' => array('price' => 185, 'quantity' => 0),
+    );
 
-    if (isset($_POST["hermioneGranger"])) {
-        $_SESSION["hermioneGranger"] = 1;
-    } else if (!isset($_SESSION["hermioneGranger"])) {
-        $_SESSION["hermioneGranger"] = 0;
-    }
+    $_SESSION["cart"] = $cart;
 
-    if (isset($_POST["viktorKrum"])) {
-        $_SESSION["viktorKrum"] = 1;
-    } else if (!isset($_SESSION["viktorKrum"])) {
-        $_SESSION["viktorKrum"] = 0;
-    }
-
-    if (isset($_POST["dracoMalfoy"])) {
-        $_SESSION["dracoMalfoy"] = 1;
-    } else if (!isset($_SESSION["dracoMalfoy"])) {
-        $_SESSION["dracoMalfoy"] = 0;
-    }
-
-    if (isset($_POST["ronWeasley1"])) {
-        $_SESSION["ronWeasley1"] = 1;
-    } else if (!isset($_SESSION["ronWeasley1"])) {
-        $_SESSION["ronWeasley1"] = 0;
-    }
-
-    if (isset($_POST["ronWeasley2"])) {
-        $_SESSION["ronWeasley2"] = 1;
-    } else if (!isset($_SESSION["ronWeasley2"])) {
-        $_SESSION["ronWeasley2"] = 0;
-    }
-
-    if (isset($_POST["horaceSlughorn"])) {
-        $_SESSION["horaceSlughorn"] = 1;
-    } else if (!isset($_SESSION["horaceSlughorn"])) {
-        $_SESSION["horaceSlughorn"] = 0;
-    }
-
-    if (isset($_POST["elderWand"])) {
-        $_SESSION["elderWand"] = 1;
-    } else if (!isset($_SESSION["elderWand"])) {
-        $_SESSION["elderWand"] = 0;
-    }
-
-    if (isset($_POST["nevilleLongbottom"])) {
-        $_SESSION["nevilleLongbottom"] = 1;
-    } else if (!isset($_SESSION["nevilleLongbottom"])) {
-        $_SESSION["nevilleLongbottom"] = 0;
-    }
-
-    if (isset($_POST["remusLupin"])) {
-        $_SESSION["remusLupin"] = 1;
-    } else if (!isset($_SESSION["remusLupin"])) {
-        $_SESSION["remusLupin"] = 0;
-    }
-
-    if (isset($_POST["fleurDelacour"])) {
-        $_SESSION["fleurDelacour"] = 1;
-    } else if (!isset($_SESSION["fleurDelacour"])) {
-        $_SESSION["fleurDelacour"] = 0;
-    }
-
-    if (isset($_POST["cedricDiggory"])) {
-        $_SESSION["cedricDiggory"] = 1;
-    } else if (!isset($_SESSION["cedricDiggory"])) {
-        $_SESSION["cedricDiggory"] = 0;
-    }
-
-    if (isset($_POST["voldemort"])) {
-        $_SESSION["voldemort"] = 1;
-    } else if (!isset($_SESSION["voldemort"])) {
-        $_SESSION["voldemort"] = 0;
-    }
-
-    if (isset($_POST["bellatrixLestrange"])) {
-        $_SESSION["bellatrixLestrange"] = 1;
-    } else if (!isset($_SESSION["bellatrixLestrange"])) {
-        $_SESSION["bellatrixLestrange"] = 0;
-    }
-
-    if (isset($_POST["jamesPotter"])) {
-        $_SESSION["jamesPotter"] = 1;
-    } else if (!isset($_SESSION["jamesPotter"])) {
-        $_SESSION["jamesPotter"] = 0;
-    }
-
-    if (isset($_POST["ginnyWeasley"])) {
-        echo 'ginnyWeasley';
-        $_SESSION["ginnyWeasley"] = 1;
-    } else if (!isset($_SESSION["ginnyWeasley"])) {
-        $_SESSION["ginnyWeasley"] = 0;
+    if (isset($_POST["name"])) {
+        $_SESSION["cart"][$_POST["name"]["quantity"]]++;
     }
 ?>
 
