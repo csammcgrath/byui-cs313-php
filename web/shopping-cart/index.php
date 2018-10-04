@@ -21,14 +21,9 @@
             'ginnyWeasley' => array('price' => 75, 'quantity' => 0),
         );
         $_SESSION["activeSession"] = true;
+        $_SESSION["cart"] = $cart;
     } else {
         session_destroy();
-    }
-    
-    
-
-    if (!isset($_SESSION["cart"])) {
-        $_SESSION["cart"] = $cart;
     }
 
     if (isset($_POST)) {
