@@ -20,7 +20,7 @@
         'ginnyWeasley' => array('price' => 75, 'quantity' => 0, 'img' => '../images/wands/ginny.jpg', 'name' => 'Ginny Weasley\'s Wand')
     );
 
-    if ($_SESSION["activeSession"] != true) {
+    if (!isset($_SESSION["activeSession"])) {
         $_SESSION["activeSession"] = true;
         $_SESSION["cart"] = $cart;
     } 
