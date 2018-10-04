@@ -108,7 +108,13 @@
                             <p class="card-text">
                                 10 3/4" vine, dragon heartstring
                             </p>
-                            <input type="submit" name="hermioneGranger" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["hermioneGranger"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='hermioneGranger' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["hermioneGranger"]["price"]; ?>
@@ -121,7 +127,13 @@
                             <p class="card-text">
                                 10 1/4" hornbeam, dragon heartstring (rigid)
                             </p>
-                            <input type="submit" name="viktorKrum" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["viktorKrum"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='viktorKrum' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["viktorKrum"]["price"]; ?>
@@ -134,7 +146,13 @@
                             <p class="card-text">
                                 10" hawthorn, unicorn hair (reasonably springy)
                             </p>
-                            <input type="submit" name="dracoMalfoy" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["dracoMalfoy"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='dracoMalfoy' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["dracoMalfoy"]["price"]; ?>
@@ -149,7 +167,13 @@
                                 <p class="card-text">
                                     12" ash, unicorn hair
                                 </p>
-                                <input type="submit" name="ronWeasley1" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["ronWeasley1"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='ronWeasley1' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                             </div>
                             <div class="card-footer text-muted">
                                 $<?php echo $_SESSION["cart"]["ronWeasley1"]["price"]; ?>
@@ -162,7 +186,13 @@
                             <p class="card-text">
                                 14" willow, unicorn hair
                             </p>
-                            <input type="submit" name="ronWeasley2" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["ronWeasley2"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='ronWeasley2' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["ronWeasley2"]["price"]; ?>
@@ -175,7 +205,13 @@
                             <p class="card-text">
                                 10 1/4" cedar, dragon heartstring (fairly flexible)
                             </p>
-                            <input type="submit" name="horaceSlughorn" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["horaceSlughorn"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='horaceSlughorn' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["horaceSlughorn"]["price"]; ?>
@@ -188,7 +224,13 @@
                             <p class="card-text">
                                 15" elder, Thestral hair
                             </p>
-                            <input type="submit" name="elderWand" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["elderWand"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='elderWand' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["elderWand"]["price"]; ?>
@@ -203,7 +245,13 @@
                             <p class="card-text">
                                 13" cherry, unicorn hair
                             </p>
-                            <input type="submit" name="nevilleLongbottom" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["nevilleLongbottom"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='nevilleLongbottom' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["nevilleLongbottom"]["price"]; ?>
@@ -216,7 +264,13 @@
                             <p class="card-text">
                                 10 1/4" cypress, unicorn hair, pliable
                             </p>
-                            <input type="submit" name="remusLupin" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["remusLupin"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='remusLupin' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["remusLupin"]["price"]; ?>
@@ -229,7 +283,13 @@
                             <p class="card-text">
                                 9 1/2" rosewood, Veela hair (inflexible)
                             </p>
-                            <input type="submit" name="fleurDelacour" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["fleurDelacour"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='fleurDelacour' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["fleurDelacour"]["price"]; ?>
@@ -242,7 +302,13 @@
                             <p class="card-text">
                                 12 1/4" ash, unicorn hair (pleasantly springy)
                             </p>
-                            <input type="submit" name="cedricDiggory" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["cedricDiggory"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='cedricDiggory' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["cedricDiggory"]["price"]; ?>
@@ -257,7 +323,13 @@
                             <p class="card-text">
                                 13 1/2" yew, phoenix feather
                             </p>
-                            <input type="submit" name="voldemort" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["voldemort"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='voldemort' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["voldemort"]["price"]; ?>
@@ -270,7 +342,13 @@
                             <p class="card-text">
                                 12 3/4" walnut, dragon heartstring (unyielding)
                             </p>
-                            <input type="submit" name="bellatrixLestrange" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["bellatrixLestrange"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='bellatrixLestrange' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["bellatrixLestrange"]["price"]; ?>
@@ -283,7 +361,13 @@
                             <p class="card-text">
                                 11" mahogany (pliable)
                             </p>
-                            <input type="submit" name="jamesPotter" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["jamesPotter"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='jamesPotter' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["jamesPotter"]["price"]; ?>
@@ -296,7 +380,13 @@
                             <p class="card-text">
                                 10 1/2" yew wood
                             </p>
-                            <input type="submit" name="ginnyWeasley" class="btn btn-primary mt-auto" value="Add to cart">
+                            <?php
+                                if ($_SESSION["cart"]["ginnyWeasley"]["quantity"] == 1) {
+                                    echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
+                                } else {
+                                    echo "<input type='submit' name='ginnyWeasley' class='btn btn-primary mt-auto' value='Add to cart'>"; 
+                                }
+                            ?>
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["ginnyWeasley"]["price"]; ?>
