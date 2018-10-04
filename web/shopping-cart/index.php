@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    if (!isset($_SESSION["activeSession"])) {
+    if (!isset($_SESSION["activeSession"]) && $_SESSION["activeSession"] == true) {
         $cart = array(
             'harryPotter' => array('price' => 685, 'quantity' => 0),
             'hermioneGranger' => array('price' => 145, 'quantity' => 0),
