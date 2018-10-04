@@ -57,28 +57,31 @@
 					<div class="card">
 						<?php
 							foreach ($cart as $name => $props) {
-								echo "
-									<div class='card-body'>
-									<div class='row'>
-										<div class='col-12 col-sm-12 col-md-2 text-center'>
-											<img src=" . $props['img'] . " alt=" . $name ." width='120' height='80'>
-										</div>
-										<div class='col-12 text-sm-center col-sm-12 text-md-left col-md-6'>
-											<h4 class='product-name'>" . $props['name'] . "</h4>
-										</div>
-										<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-right row'>
-											<div class='col-3 col-sm-3 col-md-6 text-md-right m-auto'>
-												<h6>$" . $props['price'] ."</h6>
+								if ($props['quantity'] == 1) {
+									echo "
+										<div class='card-body'>
+											<div class='row'>
+												<div class='col-12 col-sm-12 col-md-2 text-center'>
+													<img src=" . $props['img'] . " alt=" . $name ." width='120' height='80'>
+												</div>
+												<div class='col-12 text-sm-center col-sm-12 text-md-left col-md-6'>
+													<h4 class='product-name'>" . $props['name'] . "</h4>
+												</div>
+												<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-right row'>
+													<div class='col-3 col-sm-3 col-md-6 text-md-right m-auto'>
+														<h6>$" . $props['price'] ."</h6>
+													</div>
+													<div class='col-2 col-sm-2 col-md-2 text-right m-auto'>
+														<button type='button' class='btn btn-outline-danger btn-xs'>
+														<i class='fa fa-trash'></i>
+														</button>
+													</div>
+												</div>
 											</div>
-											<div class='col-2 col-sm-2 col-md-2 text-right m-auto'>
-												<button type='button' class='btn btn-outline-danger btn-xs'>
-												<i class='fa fa-trash'></i>
-												</button>
-											</div>
 										</div>
-									</div>
-									<br>
-								";
+										<br>
+									";
+								}
 							}
 						?>
 						<div class="card-footer">
