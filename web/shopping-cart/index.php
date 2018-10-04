@@ -90,7 +90,7 @@
                         </div>
                         <div class="card-footer text-muted">
                             <?php echo $_SESSION["cart"]["harryPotter"]["quantity"]; ?>
-                            <?php echo var_dump([$_SESSION["cart"]]); ?>
+                            <?php echo var_dump($_POST["name"]); ?>
                         </div>
                     </div>
                     <div class="card mb-4">
