@@ -2,7 +2,7 @@
 	session_start();
 
 	$total = 0;
-	foreach ($cart as $name => $props) {
+	foreach ($_SESSION['cart'] as $name => $props) {
 		if ($props['quantity'] == 1) {
 			$total += $props['price'];
 		}
@@ -56,7 +56,7 @@
 				<div class="container">
 					<div class="card">
 						<?php
-							foreach ($cart as $name => $props) {
+							foreach ($_SESSION['cart'] as $name => $props) {
 								if ($props['quantity'] == 1) {
 									echo "
 										<div class='card-body'>
