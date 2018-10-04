@@ -79,14 +79,14 @@
 
                 <div class="card-deck">
                     <div class="card mb-4">
-                        <img src="./images/main/comingSoon.png" alt="Coming soon">
+                        <img src="./images/main/shoppingCart.svg" alt="Shopping Cart">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">W03 Shopping Cart</h5>
                             <p class="card-text">
-                                Interactive shopping cart - coming soon...
+                                Ozzy's Wizard Shop - Buy your wands here!
                             </p>
-                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
-                                Page
+                            <a href="./shopping-cart/index.php" target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                Visit Page
                             </a>
                         </div>
                     </div>
