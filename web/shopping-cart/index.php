@@ -1,6 +1,5 @@
 <?php
     session_start();
-    session_destroy();
 
     $cart = array(
         'harryPotter' => array('price' => 685, 'quantity' => 0),
