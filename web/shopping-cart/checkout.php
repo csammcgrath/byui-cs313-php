@@ -65,7 +65,7 @@
 				<div class="container">
 					<div class="card">
 						<?php
-							if (isEmpty($_SESSION['cart'])) {
+							if (!isEmpty($_SESSION['cart'])) {
 								foreach ($_SESSION['cart'] as $name => $props) {
 									if ($props['quantity'] == 1) {
 										echo "
