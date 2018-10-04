@@ -7,6 +7,7 @@
 			$total += $props['price'];
 		}
 	}
+	$_SESSION['total'] = $total;
 ?>
 
 <!doctype html>
@@ -45,6 +46,9 @@
 		</header>
 		<header class="jumbotron my-4">
 			<h1>Your cart:</h1>
+			<?php
+				var_dump($_POST);
+			?>
 			<form action="" method="post">
 				<div class="container">
 					<div class="card">
@@ -65,9 +69,11 @@
 														<h6>$" . $props['price'] ."</h6>
 													</div>
 													<div class='col-2 col-sm-2 col-md-2 text-right m-auto'>
-														<button type='button' class='btn btn-outline-danger btn-xs'>
-															<i class='fas fa-trash'></i>
-														</button>
+														<form method='post'>
+															<button type='button' name='" . $name . "' class='btn btn-outline-danger btn-xs' formaction=''>
+																<i class='fas fa-trash'></i>
+															</button>
+														</form>
 													</div>
 												</div>
 											</div>
