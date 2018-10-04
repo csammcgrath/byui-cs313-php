@@ -20,10 +20,10 @@
         'ginnyWeasley' => array('price' => 75, 'quantity' => 0),
     );
 
-    if (empty($_SESSION["activeSession"])) {
+    if ($_SESSION["activeSession"] != true) {
         $_SESSION["activeSession"] = true;
         $_SESSION["cart"] = $cart;
-    }
+    } 
 
     if (isset($_POST)) {
         $_SESSION["cart"][key($_POST)]["quantity"]++;
