@@ -24,12 +24,12 @@
         $_SESSION["activeSession"] = true;
         $_SESSION["cart"] = $cart;
     } else {
+        $_SESSION["destroyed"] = true;
         session_destroy();
     }
 
     if (isset($_POST)) {
         $_SESSION["cart"][key($_POST)]["quantity"]++;
-        $cart = $_SESSION["cart"];
     }
 ?>
 
@@ -97,7 +97,7 @@
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["harryPotter"]["price"]; ?>
                             <?php var_dump($_SESSION["cart"]["harryPotter"]["quantity"]); ?>
-                            <?php var_dump($_SESSION["activeSession"]); ?>
+                            <?php var_dump($_SESSION["destroyed"]); ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -118,7 +118,7 @@
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["hermioneGranger"]["price"]; ?>
                             <?php var_dump($_SESSION["cart"]["hermioneGranger"]["quantity"]); ?>
-                            <?php var_dump($_SESSION["activeSession"]); ?>
+                            <?php var_dump($_SESSION["destroyed"]); ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -139,7 +139,7 @@
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["viktorKrum"]["price"]; ?>
                             <?php var_dump($_SESSION["cart"]["viktorKrum"]["quantity"]); ?>
-                            <?php var_dump($_SESSION["activeSession"]); ?>
+                            <?php var_dump($_SESSION["destroyed"]); ?>
                         </div>
                     </div>
                     <div class="card mb-4">
