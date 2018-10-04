@@ -23,8 +23,6 @@
     if (!isset($_SESSION["activeSession"])) {
         $_SESSION["activeSession"] = true;
         $_SESSION["cart"] = $cart;
-    } else {
-        session_destroy();
     }
 
     if (isset($_POST)) {
