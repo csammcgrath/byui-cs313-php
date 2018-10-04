@@ -81,12 +81,12 @@
 							<div class="row">
 								<div class="col-12 col-md-4">
 									<form>
-										<button class="btn btn-warning" type="submit" formaction="">Go back<i class='fas fa-arrow-left'></i></button>
+										<button class="btn btn-warning mb-5" type="submit" formaction="">Go back<i class='fas fa-arrow-left'></i></button>
 									</form>
 								</div>
 								<div class="col-12 col-md-4">
 									<b>
-										Total: <?php echo $total; ?>
+										Total: $<?php echo $total; ?>
 									</b>
 								</div>
 								<div class="col-12 col-md-4">
