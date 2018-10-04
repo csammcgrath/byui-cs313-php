@@ -20,9 +20,12 @@
             'jamesPotter' => array('price' => 684, 'quantity' => 0),
             'ginnyWeasley' => array('price' => 75, 'quantity' => 0),
         );
+        $_SESSION["activeSession"] = true;
+    } else {
+        session_destroy();
     }
     
-    $_SESSION["activeSession"] = true;
+    
 
     if (!isset($_SESSION["cart"])) {
         $_SESSION["cart"] = $cart;
