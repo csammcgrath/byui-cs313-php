@@ -1,6 +1,10 @@
 <?php
 	session_start();
 
+	if (isset($_POST)) {
+        $_SESSION["cart"][key($_POST)]["quantity"] = 0;
+    }
+
 	$total = 0;
 	foreach ($_SESSION['cart'] as $name => $props) {
 		if ($props['quantity'] == 1) {
