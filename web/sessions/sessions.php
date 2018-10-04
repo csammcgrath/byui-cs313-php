@@ -6,7 +6,7 @@
 <html>
 
 <head>
-    <title>Awesome</html>
+    <title>Awesome</title>
 </head>
 <body>
     <p>This is a page!</html>
