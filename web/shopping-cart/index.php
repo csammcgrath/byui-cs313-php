@@ -2,22 +2,22 @@
     session_start();
 
     $cart = array(
-        'harryPotter' => array('price' => 685, 'quantity' => 0),
-        'hermioneGranger' => array('price' => 145, 'quantity' => 0),
-        'viktorKrum' => array('price' => 95, 'quantity' => 0),
-        'dracoMalfoy' => array('price' => 125, 'quantity' => 0),
-        'ronWeasley1' => array('price' => 45, 'quantity' => 0),
-        'ronWeasley2' => array('price' => 55, 'quantity' => 0),
-        'horaceSlughorn' => array('price' => 105, 'quantity' => 0),
-        'elderWand' => array('price' => 535, 'quantity' => 0),
-        'nevilleLongbottom' => array('price' => 85, 'quantity' => 0),
-        'remusLupin' => array('price' => 389, 'quantity' => 0),
-        'fleurDelacour' => array('price' => 273, 'quantity' => 0),
-        'cedricDiggory' => array('price' => 199, 'quantity' => 0),
-        'voldemort' => array('price' => 666, 'quantity' => 0),
-        'bellatrixLestrange' => array('price' => 485, 'quantity' => 0),
-        'jamesPotter' => array('price' => 684, 'quantity' => 0),
-        'ginnyWeasley' => array('price' => 75, 'quantity' => 0),
+        'harryPotter' => array('price' => 685, 'quantity' => 0, 'img' => '../images/wands/harrypotter.jpg', 'name' => 'Harry Potter\'s Wand'),
+        'hermioneGranger' => array('price' => 145, 'quantity' => 0, 'img' => '../images/wands/hermione.jpg', 'name' => 'Hermione Granger\'s Wand'),
+        'viktorKrum' => array('price' => 95, 'quantity' => 0, 'img' => '../images/wands/viktorkrum.jpg', 'name' => 'Viktor Krum\'s Wand'),
+        'dracoMalfoy' => array('price' => 125, 'quantity' => 0, 'img' => '../images/wands/dracomalfoy.jpg', 'name' => 'Draco Malfoy\'s Wand'),
+        'ronWeasley1' => array('price' => 45, 'quantity' => 0, 'img' => '../images/wands/ronFirst.jpg', 'name' => 'Ron\'s First Wand'),
+        'ronWeasley2' => array('price' => 55, 'quantity' => 0, 'img' => '../images/wands/ronSecond.jpg', 'name' => 'Ron\'s Second Wand'),
+        'horaceSlughorn' => array('price' => 105, 'quantity' => 0, 'img' => '../images/wands/horaceslughorn.jpg', 'name' => 'Horace Slughorn\'s Wand'),
+        'elderWand' => array('price' => 535, 'quantity' => 0, 'img' => '../images/wands/elderwand.jpg', 'name' => 'The Elder Wand'),
+        'nevilleLongbottom' => array('price' => 85, 'quantity' => 0, 'img' => '../images/wands/nevillelongbottom.jpg', 'name' => 'Neville Longbottom\'s Wand'),
+        'remusLupin' => array('price' => 389, 'quantity' => 0, 'img' => '../images/wands/remus.jpg', 'name' => 'Remus Lupin\'s Wand'),
+        'fleurDelacour' => array('price' => 273, 'quantity' => 0, 'img' => '../images/wands/fleur.jpg', 'name' => 'Fleur Delacour\'s Wand'),
+        'cedricDiggory' => array('price' => 199, 'quantity' => 0, 'img' => '../images/wands/cedric.jpg', 'name' => 'Cedric Diggory\'s Wand'),
+        'voldemort' => array('price' => 666, 'quantity' => 0, 'img' => '../images/wands/voldemort.jpg', 'name' => 'Voldemort\'s Wand'),
+        'bellatrixLestrange' => array('price' => 485, 'quantity' => 0, 'img' => '../images/wands/bellatrix.jpg', 'name' => 'Bellatrix Lestrange\'s Wand'),
+        'jamesPotter' => array('price' => 684, 'quantity' => 0, 'img' => '../images/wands/jamespotter.jpg', 'name' => 'James Potter\'s Wand'),
+        'ginnyWeasley' => array('price' => 75, 'quantity' => 0, 'img' => '../images/wands/ginny.jpg', 'name' => 'Ginny Weasley\'s Wand')
     );
 
     if ($_SESSION["activeSession"] != true) {
@@ -93,8 +93,6 @@
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["harryPotter"]["price"]; ?>
-                            <?php var_dump($_SESSION["cart"]["harryPotter"]["quantity"]); ?>
-                            <?php var_dump($_SESSION["activeSession"]); ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -114,8 +112,6 @@
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["hermioneGranger"]["price"]; ?>
-                            <?php var_dump($_SESSION["cart"]["hermioneGranger"]["quantity"]); ?>
-                            <?php var_dump($_SESSION["activeSession"]); ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -135,8 +131,6 @@
                         </div>
                         <div class="card-footer text-muted">
                             $<?php echo $_SESSION["cart"]["viktorKrum"]["price"]; ?>
-                            <?php var_dump($_SESSION["cart"]["viktorKrum"]["quantity"]); ?>
-                            <?php var_dump($_SESSION["activeSession"]); ?>
                         </div>
                     </div>
                     <div class="card mb-4">
