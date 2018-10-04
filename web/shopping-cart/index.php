@@ -1,29 +1,35 @@
 <?php
     session_start();
 
-    $cart = array(
-        'harryPotter' => array('price' => 185, 'quantity' => 0),
-        'hermioneGranger' => array('price' => 185, 'quantity' => 0),
-        'viktorKrum' => array('price' => 185, 'quantity' => 0),
-        'dracoMalfoy' => array('price' => 185, 'quantity' => 0),
-        'ronWeasley1' => array('price' => 185, 'quantity' => 0),
-        'ronWeasley2' => array('price' => 185, 'quantity' => 0),
-        'horaceSlughorn' => array('price' => 185, 'quantity' => 0),
-        'elderWand' => array('price' => 185, 'quantity' => 0),
-        'nevilleLongbottom' => array('price' => 185, 'quantity' => 0),
-        'remusLupin' => array('price' => 185, 'quantity' => 0),
-        'fleurDelacour' => array('price' => 185, 'quantity' => 0),
-        'cedricDiggory' => array('price' => 185, 'quantity' => 0),
-        'voldemort' => array('price' => 185, 'quantity' => 0),
-        'bellatrixLestrange' => array('price' => 185, 'quantity' => 0),
-        'jamesPotter' => array('price' => 185, 'quantity' => 0),
-        'ginnyWeasley' => array('price' => 185, 'quantity' => 0),
-    );
+    if (!isset($_SESSION["activeSession"])) {
+        $cart = array(
+            'harryPotter' => array('price' => 185, 'quantity' => 0),
+            'hermioneGranger' => array('price' => 185, 'quantity' => 0),
+            'viktorKrum' => array('price' => 185, 'quantity' => 0),
+            'dracoMalfoy' => array('price' => 185, 'quantity' => 0),
+            'ronWeasley1' => array('price' => 185, 'quantity' => 0),
+            'ronWeasley2' => array('price' => 185, 'quantity' => 0),
+            'horaceSlughorn' => array('price' => 185, 'quantity' => 0),
+            'elderWand' => array('price' => 185, 'quantity' => 0),
+            'nevilleLongbottom' => array('price' => 185, 'quantity' => 0),
+            'remusLupin' => array('price' => 185, 'quantity' => 0),
+            'fleurDelacour' => array('price' => 185, 'quantity' => 0),
+            'cedricDiggory' => array('price' => 185, 'quantity' => 0),
+            'voldemort' => array('price' => 185, 'quantity' => 0),
+            'bellatrixLestrange' => array('price' => 185, 'quantity' => 0),
+            'jamesPotter' => array('price' => 185, 'quantity' => 0),
+            'ginnyWeasley' => array('price' => 185, 'quantity' => 0),
+        );
+    }
+    
+    $_SESSION["activeSession"] = true;
 
-    $_SESSION["cart"] = $cart;
+    if (!isset($_SESSION["cart"])) {
+        $_SESSION["cart"] = $cart;
+    }
 
     if (isset($_POST["name"])) {
-        $_SESSION["cart"][$_POST["name"]["quantity"]]++;
+        $_SESSION["cart"][$_POST["name"]]["quantity"]++;
     }
 ?>
 
@@ -253,7 +259,7 @@
                         <div class="card-body d-flex flex-column" id="bellatrixLestrange">
                             <h5 class="card-title">Bellatrix Lestrange's Wand</h5>
                             <p class="card-text">
-                                12 3/4" walnut, dragon heartstring, unyielding
+                                12 3/4" walnut, dragon heartstring (unyielding)
                             </p>
                             <input type="submit" name="bellatrixLestrange" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
