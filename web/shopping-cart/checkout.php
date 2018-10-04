@@ -19,7 +19,7 @@
 	<meta name="author" content="">
 	<link rel="shortcut icon" type="image/png" href="https://cdn1.iconfinder.com/data/icons/outlined-medieval-icons-pack/200/magic_staff-512.png">
 	<title>Ozzy's Wizard Shop</title>
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
 	<link href="styles.css" rel="stylesheet">
@@ -73,7 +73,7 @@
 													</div>
 													<div class='col-2 col-sm-2 col-md-2 text-right m-auto'>
 														<button type='button' class='btn btn-outline-danger btn-xs'>
-														<i class='fa fa-trash'></i>
+														<i class='fas fa-trash'></i>
 														</button>
 													</div>
 												</div>
