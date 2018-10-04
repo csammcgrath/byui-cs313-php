@@ -3,22 +3,22 @@
 
     if (!isset($_SESSION["activeSession"])) {
         $cart = array(
-            'harryPotter' => array('price' => 185, 'quantity' => 0),
-            'hermioneGranger' => array('price' => 185, 'quantity' => 0),
-            'viktorKrum' => array('price' => 185, 'quantity' => 0),
-            'dracoMalfoy' => array('price' => 185, 'quantity' => 0),
-            'ronWeasley1' => array('price' => 185, 'quantity' => 0),
-            'ronWeasley2' => array('price' => 185, 'quantity' => 0),
-            'horaceSlughorn' => array('price' => 185, 'quantity' => 0),
-            'elderWand' => array('price' => 185, 'quantity' => 0),
-            'nevilleLongbottom' => array('price' => 185, 'quantity' => 0),
-            'remusLupin' => array('price' => 185, 'quantity' => 0),
-            'fleurDelacour' => array('price' => 185, 'quantity' => 0),
-            'cedricDiggory' => array('price' => 185, 'quantity' => 0),
-            'voldemort' => array('price' => 185, 'quantity' => 0),
-            'bellatrixLestrange' => array('price' => 185, 'quantity' => 0),
-            'jamesPotter' => array('price' => 185, 'quantity' => 0),
-            'ginnyWeasley' => array('price' => 185, 'quantity' => 0),
+            'harryPotter' => array('price' => 685, 'quantity' => 0),
+            'hermioneGranger' => array('price' => 145, 'quantity' => 0),
+            'viktorKrum' => array('price' => 95, 'quantity' => 0),
+            'dracoMalfoy' => array('price' => 125, 'quantity' => 0),
+            'ronWeasley1' => array('price' => 45, 'quantity' => 0),
+            'ronWeasley2' => array('price' => 55, 'quantity' => 0),
+            'horaceSlughorn' => array('price' => 105, 'quantity' => 0),
+            'elderWand' => array('price' => 535, 'quantity' => 0),
+            'nevilleLongbottom' => array('price' => 85, 'quantity' => 0),
+            'remusLupin' => array('price' => 389, 'quantity' => 0),
+            'fleurDelacour' => array('price' => 273, 'quantity' => 0),
+            'cedricDiggory' => array('price' => 199, 'quantity' => 0),
+            'voldemort' => array('price' => 666, 'quantity' => 0),
+            'bellatrixLestrange' => array('price' => 485, 'quantity' => 0),
+            'jamesPotter' => array('price' => 684, 'quantity' => 0),
+            'ginnyWeasley' => array('price' => 75, 'quantity' => 0),
         );
     }
     
@@ -72,7 +72,7 @@
             <form action="checkout.php" method="post">
                 <div class="row">
                     <div class="col-lg-12">
-                        <input type="submit" name="hermioneGranger" class="btn btn-primary float-right m-3" value="Checkout"></input>
+                        <input type="submit" class="btn btn-primary float-right m-3" value="Checkout"></input>
                     </div>
                 </div>
             </form>
@@ -89,7 +89,7 @@
                             <input type="submit" name="harryPotter" class="btn btn-primary mt-auto" value="Add to cart"> 
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["harryPotter"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["harryPotter"]["price"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -102,7 +102,7 @@
                             <input type="submit" name="hermioneGranger" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["hermioneGranger"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["hermioneGranger"]["price"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -115,7 +115,7 @@
                             <input type="submit" name="viktorKrum" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["viktorKrum"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["viktorKrum"]["price"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -128,7 +128,7 @@
                             <input type="submit" name="dracoMalfoy" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["dracoMalfoy"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["dracoMalfoy"]["price"]; ?>
                         </div>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
                                 <input type="submit" name="ronWeasley1" class="btn btn-primary mt-auto" value="Add to cart">
                             </div>
                             <div class="card-footer text-muted">
-                                <?php echo $_SESSION["cart"]["ronWeasley1"]["quantity"]; ?>
+                                <?php echo $_SESSION["cart"]["ronWeasley1"]["price"]; ?>
                             </div>
                         </div>
                     <div class="card mb-4">
@@ -156,7 +156,7 @@
                             <input type="submit" name="ronWeasley2" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["ronWeasley2"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["ronWeasley2"]["price"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -169,7 +169,7 @@
                             <input type="submit" name="horaceSlughorn" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["horaceSlughorn"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["horaceSlughorn"]["price"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -182,7 +182,7 @@
                             <input type="submit" name="elderWand" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["elderWand"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["elderWand"]["price"]; ?>
                         </div>
                     </div>
                 </div>
@@ -197,7 +197,7 @@
                             <input type="submit" name="nevilleLongbottom" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["nevilleLongbottom"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["nevilleLongbottom"]["price"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -210,7 +210,7 @@
                             <input type="submit" name="remusLupin" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["remusLupin"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["remusLupin"]["price"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -223,7 +223,7 @@
                             <input type="submit" name="fleurDelacour" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["fleurDelacour"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["fleurDelacour"]["price"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -236,7 +236,7 @@
                             <input type="submit" name="cedricDiggory" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["cedricDiggory"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["cedricDiggory"]["price"]; ?>
                         </div>
                     </div>
                 </div>
@@ -251,7 +251,7 @@
                             <input type="submit" name="voldemort" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["voldemort"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["voldemort"]["price"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -264,7 +264,7 @@
                             <input type="submit" name="bellatrixLestrange" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["bellatrixLestrange"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["bellatrixLestrange"]["price"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -277,7 +277,7 @@
                             <input type="submit" name="jamesPotter" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["jamesPotter"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["jamesPotter"]["price"]; ?>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -290,7 +290,7 @@
                             <input type="submit" name="ginnyWeasley" class="btn btn-primary mt-auto" value="Add to cart">
                         </div>
                         <div class="card-footer text-muted">
-                            <?php echo $_SESSION["cart"]["ginnyWeasley"]["quantity"]; ?>
+                            <?php echo $_SESSION["cart"]["ginnyWeasley"]["price"]; ?>
                         </div>
                     </div>
                 </div>
