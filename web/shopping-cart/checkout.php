@@ -50,9 +50,6 @@
 		</header>
 		<header class="jumbotron my-4">
 			<h1>Your cart:</h1>
-			<?php
-				var_dump($_POST);
-			?>
 			<form action="" method="post">
 				<div class="container">
 					<div class="card">
@@ -91,7 +88,7 @@
 							<div class="row">
 								<div class="col-12 col-md-4">
 									<form>
-										<button class="btn btn-warning mb-5" type="submit" formaction="">Go back<i class='fas fa-arrow-left'></i></button>
+										<button class="btn btn-warning mb-5" type="submit" formaction=""><i class='fas fa-arrow-left'></i>&nbsp;Go back</button>
 									</form>
 								</div>
 								<div class="col-12 col-md-4">
@@ -101,7 +98,7 @@
 								</div>
 								<div class="col-12 col-md-4">
 									<form>
-										<button class="btn btn-success" type="submit" formaction="">Proceed<i class='fas fa-arrow-right'></i></button>
+										<button class="btn btn-success" type="submit" formaction="">Proceed&nbsp;<i class='fas fa-arrow-right'></i></button>
 									</form>
 								</div>
 							</div>
