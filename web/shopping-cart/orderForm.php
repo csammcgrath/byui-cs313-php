@@ -70,7 +70,7 @@
 						?>
 						<hr>
 						<div class="container">
-							<div class="row text-right">
+							<div class="row float-right mr-5">
 								Total: $<?php echo $_SESSION['total']; ?>
 							</div>
 						</div>	
