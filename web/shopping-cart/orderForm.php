@@ -68,6 +68,12 @@
 								}
 							}
 						?>
+						<hr>
+						<div class="container">
+							<div class="row text-right">
+								Total: $<?php echo $_SESSION['total']; ?>
+							</div>
+						</div>	
 					</div>
 					<div class="col-12 col-md-4 m-auto">
 						<div class="control-group form-group">
@@ -146,12 +152,12 @@
 							<input type="number" class="form-control" name="zip" style="width: 40%;">
 						</div>
 						<div class="container">
-							<div class="row m-5">
-								<div class="col-12 col-md-6 float-left">
+							<div class="row mt-4">
+								<div class="float-left ml-4 mr-4">
 									<button class="btn btn-warning mb-5" type="submit" formaction="./index.php"><i class='fas fa-arrow-left'></i>&nbsp;Go
 										back</button>
 								</div>
-								<div class="col-12 col-md-6 float-right">
+								<div class="float-right">
 									<form>
 										<button class="btn btn-success" name="back" type="submit" formaction="">Purchase&nbsp;<i class='fas fa-shopping-cart'></i></button>
 									</form>
