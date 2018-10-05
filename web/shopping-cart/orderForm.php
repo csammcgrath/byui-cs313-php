@@ -41,7 +41,7 @@
 		</header>
 		<header class="jumbotron my-4">
 			<h1>Enter shipping information: </h1>
-			<div class="container">
+			<div class="container mt-5">
 				<div class="row">
 					<div class="col-12 col-md-8">
 						<h5>Items Purchasing:</h5>
