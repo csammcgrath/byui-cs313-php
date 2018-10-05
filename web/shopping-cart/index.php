@@ -120,7 +120,7 @@
                         <h5 class="card-title">Viktor Krum's Wand</h5>
                             <p class="card-text">
                                 10 1/4" hornbeam, dragon heartstring (rigid)
-                            </p>
+                            </p
                             <?php
                                 if ($_SESSION["cart"]["viktorKrum"]["quantity"] == 1) {
                                     echo "<button type='button' class='btn btn-success mt-auto' disabled>Added to cart</button>";
