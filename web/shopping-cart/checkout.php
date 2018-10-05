@@ -109,8 +109,8 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-12 col-md-4">
-									<!-- change to normal button and go back... -->
-									<button class="btn btn-warning mb-5" href="./index.php"><i class='fas fa-arrow-left'></i>&nbsp;Go back</button>
+									<form action="./index.php">
+										<button class="btn btn-warning mb-5" href="./index.php"><i class='fas fa-arrow-left'></i>&nbsp;Go back</button>
 								</div>
 								<div class="col-12 col-md-4">
 									<b>
