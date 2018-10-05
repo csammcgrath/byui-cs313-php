@@ -37,170 +37,248 @@
 			<h1>Enter shipping information: </h1>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="well well-sm">
-							<form class="form-horizontal" method="post">
-								<fieldset>
-									<legend class="text-center header">Contact us</legend>
+					<div class="col-12 col-md-8">
+						<div class='card-body'>
+							<div class='row'>
+								<div class='col-12 col-sm-12 col-md-2 text-center'>
+									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
+								</div>
+								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
+									<h4 class='product-name'>Placeholder 1</h4>
+								</div>
+								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
+									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
+										<h6>$500</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class='card-body'>
+							<div class='row'>
+								<div class='col-12 col-sm-12 col-md-2 text-center'>
+									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
+								</div>
+								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
+									<h4 class='product-name'>Placeholder 1</h4>
+								</div>
+								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
+									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
+										<h6>$500</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class='card-body'>
+							<div class='row'>
+								<div class='col-12 col-sm-12 col-md-2 text-center'>
+									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
+								</div>
+								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
+									<h4 class='product-name'>Placeholder 1</h4>
+								</div>
+								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
+									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
+										<h6>$500</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class='card-body'>
+							<div class='row'>
+								<div class='col-12 col-sm-12 col-md-2 text-center'>
+									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
+								</div>
+								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
+									<h4 class='product-name'>Placeholder 1</h4>
+								</div>
+								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
+									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
+										<h6>$500</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class='card-body'>
+							<div class='row'>
+								<div class='col-12 col-sm-12 col-md-2 text-center'>
+									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
+								</div>
+								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
+									<h4 class='product-name'>Placeholder 1</h4>
+								</div>
+								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
+									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
+										<h6>$500</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class='card-body'>
+							<div class='row'>
+								<div class='col-12 col-sm-12 col-md-2 text-center'>
+									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
+								</div>
+								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
+									<h4 class='product-name'>Placeholder 1</h4>
+								</div>
+								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
+									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
+										<h6>$500</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class='card-body'>
+							<div class='row'>
+								<div class='col-12 col-sm-12 col-md-2 text-center'>
+									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
+								</div>
+								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
+									<h4 class='product-name'>Placeholder 1</h4>
+								</div>
+								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
+									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
+										<h6>$500</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class='card-body'>
+							<div class='row'>
+								<div class='col-12 col-sm-12 col-md-2 text-center'>
+									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
+								</div>
+								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
+									<h4 class='product-name'>Placeholder 1</h4>
+								</div>
+								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
+									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
+										<h6>$500</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class='card-body'>
+							<div class='row'>
+								<div class='col-12 col-sm-12 col-md-2 text-center'>
+									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
+								</div>
+								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
+									<h4 class='product-name'>Placeholder 1</h4>
+								</div>
+								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
+									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
+										<h6>$500</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
 
-									<div class="form-group">
-										<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-										<div class="col-md-8">
-											<input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
-										</div>
-									</div>
-									<div class="form-group">
-										<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-										<div class="col-md-8">
-											<input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group">
-										<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-										<div class="col-md-8">
-											<input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group">
-										<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-										<div class="col-md-8">
-											<input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group">
-										<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-										<div class="col-md-8">
-											<textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days."
-											 rows="7"></textarea>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<div class="col-md-12 text-center">
-											<button type="submit" class="btn btn-primary btn-lg">Submit</button>
-										</div>
-									</div>
-								</fieldset>
-							</form>
+					</div>
+					<div class="col-12 col-md-4 m-auto">
+						<div class="control-group form-group">
+							<div class="controls">
+								<label>Name:</label>
+								<input type="text" class="form-control">
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group form-group">
+							<div class="controls">
+								<label>Street Address:</label>
+								<input class="form-control">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="city_id" class="control-label">City;</label>
+							<input type="text" class="form-control" name="city">
+						</div>
+						<div class="form-inline">
+							<label class="control-label">&nbsp;State&nbsp;</label>
+							<select class="form-control" style="width: 30%;">
+								<option value="AL">Alabama</option>
+								<option value="AK">Alaska</option>
+								<option value="AZ">Arizona</option>
+								<option value="AR">Arkansas</option>
+								<option value="CA">California</option>
+								<option value="CO">Colorado</option>
+								<option value="CT">Connecticut</option>
+								<option value="DE">Delaware</option>
+								<option value="DC">District Of Columbia</option>
+								<option value="FL">Florida</option>
+								<option value="GA">Georgia</option>
+								<option value="HI">Hawaii</option>
+								<option value="ID">Idaho</option>
+								<option value="IL">Illinois</option>
+								<option value="IN">Indiana</option>
+								<option value="IA">Iowa</option>
+								<option value="KS">Kansas</option>
+								<option value="KY">Kentucky</option>
+								<option value="LA">Louisiana</option>
+								<option value="ME">Maine</option>
+								<option value="MD">Maryland</option>
+								<option value="MA">Massachusetts</option>
+								<option value="MI">Michigan</option>
+								<option value="MN">Minnesota</option>
+								<option value="MS">Mississippi</option>
+								<option value="MO">Missouri</option>
+								<option value="MT">Montana</option>
+								<option value="NE">Nebraska</option>
+								<option value="NV">Nevada</option>
+								<option value="NH">New Hampshire</option>
+								<option value="NJ">New Jersey</option>
+								<option value="NM">New Mexico</option>
+								<option value="NY">New York</option>
+								<option value="NC">North Carolina</option>
+								<option value="ND">North Dakota</option>
+								<option value="OH">Ohio</option>
+								<option value="OK">Oklahoma</option>
+								<option value="OR">Oregon</option>
+								<option value="PA">Pennsylvania</option>
+								<option value="RI">Rhode Island</option>
+								<option value="SC">South Carolina</option>
+								<option value="SD">South Dakota</option>
+								<option value="TN">Tennessee</option>
+								<option value="TX">Texas</option>
+								<option value="UT">Utah</option>
+								<option value="VT">Vermont</option>
+								<option value="VA">Virginia</option>
+								<option value="WA">Washington</option>
+								<option value="WV">West Virginia</option>
+								<option value="WI">Wisconsin</option>
+								<option value="WY">Wyoming</option>
+							</select>
+							<label for="zip" class="control-label">&nbsp;&nbsp;Zip&nbsp;&nbsp;</label>
+							<input type="number" class="form-control" name="zip" style="width: 40%;">
+						</div>
+						<div class="container">
+							<div class="row m-5">
+								<div class="col-12 col-md-6 float-left">
+									<button class="btn btn-warning mb-5" type="submit" formaction="./index.php"><i class='fas fa-arrow-left'></i>&nbsp;Go
+										back</button>
+								</div>
+								<div class="col-12 col-md-6 float-right">
+									<form>
+										<button class="btn btn-success" name="back" type="submit" formaction="">Purchase&nbsp;<i class='fas fa-shopping-cart'></i></button>
+									</form>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			Associated CSS:
 
-			.header {
-			color: #36A0FF;
-			font-size: 27px;
-			padding: 10px;
-			}
-
-			.bigicon {
-			font-size: 35px;
-			color: #36A0FF;
-			}
-			→ Source: PreBootstrap
-
-			Address form
-
-			Here is a pretty complete form, featuring basically everything you need to collect a postal address from a (US)
-			customer. Use it as it is or customize it as needed!
-
-			<form>
-				<div class="form-group">
-					<label for="full_name_id" class="control-label">Full Name</label>
-					<input type="text" class="form-control" name="full_name" placeholder="John Deer">
-				</div>
-
-				<div class="form-group">
-					<label for="street1_id" class="control-label">Street Address 1</label>
-					<input type="text" class="form-control" name="street1" placeholder="Street address, P.O. box, company name, c/o">
-				</div>
-
-				<div class="form-group">
-					<label for="street2_id" class="control-label">Street Address 2</label>
-					<input type="text" class="form-control" name="street2" placeholder="Apartment, suite, unit, building, floor, etc.">
-				</div>
-
-				<div class="form-group">
-					<label for="city_id" class="control-label">City</label>
-					<input type="text" class="form-control" name="city" placeholder="Salt Lake City">
-				</div>
-
-				<div class="form-group">
-					<label class="control-label">State</label>
-					<select class="form-control">
-						<option value="AL">Alabama</option>
-						<option value="AK">Alaska</option>
-						<option value="AZ">Arizona</option>
-						<option value="AR">Arkansas</option>
-						<option value="CA">California</option>
-						<option value="CO">Colorado</option>
-						<option value="CT">Connecticut</option>
-						<option value="DE">Delaware</option>
-						<option value="DC">District Of Columbia</option>
-						<option value="FL">Florida</option>
-						<option value="GA">Georgia</option>
-						<option value="HI">Hawaii</option>
-						<option value="ID">Idaho</option>
-						<option value="IL">Illinois</option>
-						<option value="IN">Indiana</option>
-						<option value="IA">Iowa</option>
-						<option value="KS">Kansas</option>
-						<option value="KY">Kentucky</option>
-						<option value="LA">Louisiana</option>
-						<option value="ME">Maine</option>
-						<option value="MD">Maryland</option>
-						<option value="MA">Massachusetts</option>
-						<option value="MI">Michigan</option>
-						<option value="MN">Minnesota</option>
-						<option value="MS">Mississippi</option>
-						<option value="MO">Missouri</option>
-						<option value="MT">Montana</option>
-						<option value="NE">Nebraska</option>
-						<option value="NV">Nevada</option>
-						<option value="NH">New Hampshire</option>
-						<option value="NJ">New Jersey</option>
-						<option value="NM">New Mexico</option>
-						<option value="NY">New York</option>
-						<option value="NC">North Carolina</option>
-						<option value="ND">North Dakota</option>
-						<option value="OH">Ohio</option>
-						<option value="OK">Oklahoma</option>
-						<option value="OR">Oregon</option>
-						<option value="PA">Pennsylvania</option>
-						<option value="RI">Rhode Island</option>
-						<option value="SC">South Carolina</option>
-						<option value="SD">South Dakota</option>
-						<option value="TN">Tennessee</option>
-						<option value="TX">Texas</option>
-						<option value="UT">Utah</option>
-						<option value="VT">Vermont</option>
-						<option value="VA">Virginia</option>
-						<option value="WA">Washington</option>
-						<option value="WV">West Virginia</option>
-						<option value="WI">Wisconsin</option>
-						<option value="WY">Wyoming</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label for="zip_id" class="control-label">Zip Code</label>
-					<input type="text" class="form-control" name="zip" placeholder="#####">
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-md-6">
-							<button class="btn btn-warning mb-5" type="submit" formaction="./index.php"><i class='fas fa-arrow-left'></i>&nbsp;Go back</button>
-						</div>
-						<div class="col-12 col-md-6">
-							<button type="submit" class="btn btn-primary">Purchase&nbsp;<i class='fas fa-shopping-cart'></i></button>
-						</div>
-					</div>
-				</div>
-			</form>
-		</header>
+	</div>
+	</header>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 	 crossorigin="anonymous"></script>
