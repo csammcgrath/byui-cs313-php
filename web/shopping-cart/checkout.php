@@ -109,9 +109,7 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-12 col-md-4">
-									<form action="./index.php" method="post">
-										<button class="btn btn-warning mb-5" type="submit" formaction="./index.php"><i class='fas fa-arrow-left'></i>&nbsp;Go back</button>
-									</form>
+									<button class="btn btn-warning mb-5" type="submit" formaction="./index.php"><i class='fas fa-arrow-left'></i>&nbsp;Go back</button>
 								</div>
 								<div class="col-12 col-md-4">
 									<b>
