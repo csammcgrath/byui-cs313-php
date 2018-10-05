@@ -44,7 +44,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-md-8">
-						<h2>Items Purchasing:</h2>
+						<h5>Items Purchasing:</h5>
 						<hr>
 						<?php
 							foreach ($_SESSION['cart'] as $name => $props) {
