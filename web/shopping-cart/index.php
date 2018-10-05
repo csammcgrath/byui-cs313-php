@@ -25,7 +25,7 @@
         $_SESSION["cart"] = $cart;
     } 
 
-    if (isset($_POST)) {
+    if (isset($_POST) && key($_POST) !== "back") {
         $_SESSION["cart"][key($_POST)]["quantity"]++;
     }
 ?>
