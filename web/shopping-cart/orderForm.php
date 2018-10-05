@@ -1,3 +1,9 @@
+<?php
+	session_start();
+
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -38,151 +44,30 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-md-8">
-						<div class='card-body'>
-							<div class='row'>
-								<div class='col-12 col-sm-12 col-md-2 text-center'>
-									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
-								</div>
-								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
-									<h4 class='product-name'>Placeholder 1</h4>
-								</div>
-								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
-									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
-										<h6>$500</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<br>
-						<div class='card-body'>
-							<div class='row'>
-								<div class='col-12 col-sm-12 col-md-2 text-center'>
-									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
-								</div>
-								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
-									<h4 class='product-name'>Placeholder 1</h4>
-								</div>
-								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
-									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
-										<h6>$500</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<br>
-						<div class='card-body'>
-							<div class='row'>
-								<div class='col-12 col-sm-12 col-md-2 text-center'>
-									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
-								</div>
-								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
-									<h4 class='product-name'>Placeholder 1</h4>
-								</div>
-								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
-									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
-										<h6>$500</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<br>
-						<div class='card-body'>
-							<div class='row'>
-								<div class='col-12 col-sm-12 col-md-2 text-center'>
-									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
-								</div>
-								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
-									<h4 class='product-name'>Placeholder 1</h4>
-								</div>
-								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
-									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
-										<h6>$500</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<br>
-						<div class='card-body'>
-							<div class='row'>
-								<div class='col-12 col-sm-12 col-md-2 text-center'>
-									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
-								</div>
-								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
-									<h4 class='product-name'>Placeholder 1</h4>
-								</div>
-								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
-									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
-										<h6>$500</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<br>
-						<div class='card-body'>
-							<div class='row'>
-								<div class='col-12 col-sm-12 col-md-2 text-center'>
-									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
-								</div>
-								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
-									<h4 class='product-name'>Placeholder 1</h4>
-								</div>
-								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
-									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
-										<h6>$500</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<br>
-						<div class='card-body'>
-							<div class='row'>
-								<div class='col-12 col-sm-12 col-md-2 text-center'>
-									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
-								</div>
-								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
-									<h4 class='product-name'>Placeholder 1</h4>
-								</div>
-								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
-									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
-										<h6>$500</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<br>
-						<div class='card-body'>
-							<div class='row'>
-								<div class='col-12 col-sm-12 col-md-2 text-center'>
-									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
-								</div>
-								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
-									<h4 class='product-name'>Placeholder 1</h4>
-								</div>
-								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
-									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
-										<h6>$500</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<br>
-						<div class='card-body'>
-							<div class='row'>
-								<div class='col-12 col-sm-12 col-md-2 text-center'>
-									<img src="http://placehold.it/120x80" alt="cool" width='120' height='80'>
-								</div>
-								<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
-									<h4 class='product-name'>Placeholder 1</h4>
-								</div>
-								<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
-									<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
-										<h6>$500</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<br>
-
+						<?php
+							foreach ($_SESSION['cart'] as $name => $props) {
+								if ($props['quantity'] == 1) {
+									echo "
+										<div class='card-body'>
+											<div class='row'>
+												<div class='col-12 col-sm-12 col-md-2 text-center'>
+													<img src=" . $props['img'] . " alt=" . $name ." width='120' height='80'>
+												</div>
+												<div class='col-12 text-sm-center col-sm-12 text-md-center col-md-6'>
+													<h4 class='product-name'>" . $props['name'] . "</h4>
+												</div>
+												<div class='col-12 col-sm-12 text-sm-center col-md-4 text-md-center row'>
+													<div class='col-3 col-sm-3 col-md-6 text-md-center m-auto'>
+														<h6>$" . $props['price'] ."</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+										<br>
+									";
+								}
+							}
+						?>
 					</div>
 					<div class="col-12 col-md-4 m-auto">
 						<div class="control-group form-group">
@@ -276,7 +161,6 @@
 					</div>
 				</div>
 			</div>
-
 	</div>
 	</header>
 	</div>

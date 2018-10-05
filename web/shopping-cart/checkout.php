@@ -117,8 +117,8 @@
 									</b>
 								</div>
 								<div class="col-12 col-md-4">
-									<form>
-										<button class="btn btn-success" name="back" type="submit" formaction="">Proceed&nbsp;<i class='fas fa-arrow-right'></i></button>
+									<form action="orderForm.php" method="post">
+										<button class="btn btn-success" name="back" type="submit">Proceed&nbsp;<i class='fas fa-arrow-right'></i></button>
 									</form>
 								</div>
 							</div>
