@@ -22,23 +22,21 @@
 
     $_SESSION['bought'] = false;
     $_SESSION['removed'] = false;
-    $_SESSION['firstTime'] = true;
-
-    if (isset($_POST) && !$_SESSION['firstTime'] && $_SESSION["cart"][key($_POST)]["quantity"] != 1) {
-        $_SESSION['bought'] = true;
-        $_SESSION['removed'] = false;
-        $_SESSION["cart"][key($_POST)]["quantity"]++;
-    } else if (isset($_POST) && !$_SESSION['firstTime'] &&  $_SESSION["cart"][key($_POST)]["quantity"] == 1) {
-        $_SESSION['bought'] = false;
-        $_SESSION['removed'] = true;
-        $_SESSION["cart"][key($_POST)]["quantity"] = 0;
-    }
 
     if (!isset($_SESSION["activeSession"])) {
         $_SESSION["activeSession"] = true;
         $_SESSION["cart"] = $cart;
-        $_SESSION['firstTime'] = false;
     } 
+
+    if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] != 1) {
+        $_SESSION['bought'] = true;
+        $_SESSION['removed'] = false;
+        $_SESSION["cart"][key($_POST)]["quantity"]++;
+    } else if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] == 1) {
+        $_SESSION['bought'] = false;
+        $_SESSION['removed'] = true;
+        $_SESSION["cart"][key($_POST)]["quantity"] = 0;
+    }
 ?>
 
 <!doctype html>
