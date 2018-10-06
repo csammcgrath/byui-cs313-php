@@ -29,7 +29,7 @@
     } 
 
     if (key($_POST) == 'back') {
-        $_SESSION['firstTime'] = false;
+        $_SESSION['firstTime'] = true;
     }
 
     if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] != 1) {
