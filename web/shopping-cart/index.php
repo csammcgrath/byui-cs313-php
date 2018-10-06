@@ -22,19 +22,12 @@
 
     if (!isset($_SESSION["activeSession"])) {
         $_SESSION["activeSession"] = true;
-        $_SESSION['bought'] = false;
-        $_SESSION['removed'] = false;
-        $_SESSION['firstTime'] = true;
         $_SESSION["cart"] = $cart;
     } 
 
     if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] != 1) {
-        $_SESSION['bought'] = true;
-        $_SESSION['removed'] = false;
         $_SESSION["cart"][key($_POST)]["quantity"]++;
     } else if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] == 1) {
-        $_SESSION['bought'] = false;
-        $_SESSION['removed'] = true;
         $_SESSION["cart"][key($_POST)]["quantity"] = 0;
     }
 ?>
@@ -75,28 +68,6 @@
         </header>
         <header class="jumbotron my-4">
             <h1>Wand Selection</h1>
-            <?php
-                if ($_SESSION['bought'] && !$_SESSION['firstTime']) {
-                    echo "
-                        <div id='alert_message' class='alert alert-success alert-dismissible'>
-                            <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-                            <strong>Success!</strong> Item has been added to the cart.
-                        </div>
-                    ";
-                }
-
-                if ($_SESSION['removed'] && !$_SESSION['firstTime']) {
-                    echo "
-                        <div id='alert_message' class='alert alert-danger alert-dismissible'>
-                            <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-                            <strong>Success!</strong> Item has been removed from the cart.
-                        </div>
-                    ";
-                }
-
-                $_SESSION['firstTime'] = false;
-
-            ?>
             <form action="checkout.php" method="post">
                 <div class="row">
                     <div class="col-lg-12">
