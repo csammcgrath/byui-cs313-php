@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-    $name = htmlspecialchars($_POST['customerName']);
+    $customerName = htmlspecialchars($_POST['customerName']);
     $address = htmlspecialchars($_POST['address']);
     $city = htmlspecialchars($_POST['city']);
     $state = htmlspecialchars($_POST['state']);
@@ -90,7 +90,7 @@
                        <h5>Customer's information:</h6>
                        <p><b>Name: </b><?php echo $customerName; ?></p>
                        <p><b>Street Address: </b><?php echo $address; ?></p>
-                       <p><b>City, State, Zip: </b><?php echo $city; ?> <?php echo $state; ?> <?php echo $zip; ?></p>
+                       <p><b>City, State, Zip: </b><?php echo $city; ?>, <?php echo $state; ?> <?php echo $zip; ?></p>
                     </div>
                 </div>
             </div>
