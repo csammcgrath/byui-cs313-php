@@ -80,7 +80,7 @@
         <header class="jumbotron my-4">
             <h1>Wand Selection</h1>
             <?php
-
+                var_dump($_POST);
                 if ($_SESSION['bought'] && !$_SESSION['firstTime']) {
                     echo "
                         <div id='alert_message' class='alert alert-success alert-dismissible'>
