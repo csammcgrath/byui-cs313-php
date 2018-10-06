@@ -1,11 +1,11 @@
 <?php
 	session_start();
 
-    $name = $_POST['name'];
-    $address = $_POST['address'];
-    $city = $_POST['city'];
-    $state = $_POST['state'];
-    $zip = $_POST['zip'];
+    $name = htmlspecialchars($_POST['customerName']);
+    $address = htmlspecialchars($_POST['address']);
+    $city = htmlspecialchars($_POST['city']);
+    $state = htmlspecialchars($_POST['state']);
+    $zip = htmlspecialchars($_POST['zip']);
 ?>
 
 <!doctype html>
@@ -88,9 +88,9 @@
                     </div>
                     <div class="col-12 col-md-4 m-auto">
                        <h5>Customer's information:</h6>
-                       <p><b>Name: </b><?php echo $name; ?></p>
+                       <p><b>Name: </b><?php echo $customerName; ?></p>
                        <p><b>Street Address: </b><?php echo $address; ?></p>
-                       <p><b>City, State, Zip: </b><?php echo $name; echo $state; echo $zip; ?></p>
+                       <p><b>City, State, Zip: </b><?php echo $city; ?> <?php echo $state; ?> <?php echo $zip; ?></p>
                     </div>
                 </div>
             </div>

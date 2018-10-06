@@ -82,18 +82,18 @@
 							<div class="control-group form-group">
 								<div class="controls">
 									<label>Name:</label>
-									<input type="text" name="name" class="form-control">
+									<input type="text" name="customerName" class="form-control" required>
 								</div>
 							</div>
 							<div class="control-group form-group">
 								<div class="controls">
 									<label>Street Address:</label>
-									<input type="text" name='address' class="form-control">
+									<input type="text" name='address' class="form-control" required>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="city_id" class="control-label">City;</label>
-								<input type="text" name="city" class="form-control">
+								<input type="text" name="city" class="form-control" required>
 							</div>
 							<div class="form-inline">
 								<label class="control-label">&nbsp;State&nbsp;</label>
@@ -151,7 +151,7 @@
 									<option value="WY">Wyoming</option>
 								</select>
 								<label for="zip" class="control-label">&nbsp;&nbsp;Zip&nbsp;&nbsp;</label>
-								<input type="number" name="zip" class="form-control" style="width: 40%;">
+								<input type="number" name="zip" class="form-control" style="width: 40%;" required>
 							</div>
 							<div class="container">
 								<div class="row mt-4">
