@@ -28,11 +28,11 @@
         $_SESSION["cart"] = $cart;
     } 
 
-    if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] != 1) {
+    if (isset($_POST) && key($_POST) != 'remove' && $_SESSION["cart"][key($_POST)]["quantity"] != 1) {
         $_SESSION['bought'] = true;
         $_SESSION['removed'] = false;
         $_SESSION["cart"][key($_POST)]["quantity"]++;
-    } else if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] == 1) {
+    } else if (isset($_POST) && key($_POST) != 'remove' && $_SESSION["cart"][key($_POST)]["quantity"] == 1) {
         $_SESSION['bought'] = false;
         $_SESSION['removed'] = true;
         $_SESSION["cart"][key($_POST)]["quantity"] = 0;
@@ -115,7 +115,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["harryPotter"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='harryPotter' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -134,7 +134,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["hermioneGranger"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='hermioneGranger' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -153,7 +153,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["viktorKrum"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='viktorKrum' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -172,7 +172,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["dracoMalfoy"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='dracoMalfoy' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -193,7 +193,7 @@
                                 </p>
                             <?php
                                 if ($_SESSION["cart"]["ronWeasley1"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='ronWeasley1' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -212,7 +212,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["ronWeasley2"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='ronWeasley2' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -231,7 +231,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["horaceSlughorn"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='horaceSlughorn' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -250,7 +250,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["elderWand"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='elderWand' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -271,7 +271,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["nevilleLongbottom"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='nevilleLongbottom' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -290,7 +290,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["remusLupin"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='remusLupin' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -309,7 +309,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["fleurDelacour"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='fleurDelacour' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -328,7 +328,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["cedricDiggory"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='cedricDiggory' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -349,7 +349,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["voldemort"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='voldemort' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -368,7 +368,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["bellatrixLestrange"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='bellatrixLestrange' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -387,7 +387,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["jamesPotter"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='jamesPotter' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
@@ -406,7 +406,7 @@
                             </p>
                             <?php
                                 if ($_SESSION["cart"]["ginnyWeasley"]["quantity"] == 1) {
-                                    echo "<input type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</input>";
+                                    echo "<button type='submit' name='remove' class='btn btn-danger mt-auto'>Remove from cart</button>";
                                 } else {
                                     echo "<input type='submit' name='ginnyWeasley' class='btn btn-primary mt-auto' value='Add to cart'>"; 
                                 }
