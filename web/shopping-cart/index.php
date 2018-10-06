@@ -28,10 +28,6 @@
         $_SESSION["cart"] = $cart;
     } 
 
-    if (key($_POST) == 'back') {
-        $_SESSION['firstTime'] = true;
-    }
-
     if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] != 1) {
         $_SESSION['bought'] = true;
         $_SESSION['removed'] = false;
