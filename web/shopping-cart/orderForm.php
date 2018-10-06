@@ -78,7 +78,7 @@
 						</div>	
 					</div>
 					<div class="col-12 col-md-4 m-auto">
-						<form>
+						<form action="confirmation.php" method="post">
 							<div class="control-group form-group">
 								<div class="controls">
 									<label>Name:</label>
@@ -159,7 +159,7 @@
 										<button class="btn btn-warning mb-5" type="submit" formaction="./index.php"><i class='fas fa-arrow-left'></i>&nbsp;Go back</button>
 									</div>
 									<div class="float-right">
-										<button class="btn btn-success" name="back" type="submit" formaction="">Purchase&nbsp;<i class='fas fa-shopping-cart'></i></button>
+										<button class="btn btn-success" type="submit">Purchase&nbsp;<i class='fas fa-shopping-cart'></i></button>
 									</div>
 								</div>
 							</div>
