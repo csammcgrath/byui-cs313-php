@@ -24,17 +24,17 @@
         $_SESSION["activeSession"] = true;
         $_SESSION['bought'] = false;
         $_SESSION['removed'] = false;
-        $_SESSION['firstTime'] = false;
+        $_SESSION['firstTime'] = true;
         $_SESSION["cart"] = $cart;
     } 
 
     if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] != 1) {
-        $_SESSION['firstTime'] = true;
+        $_SESSION['firstTime'] = false;
         $_SESSION['bought'] = true;
         $_SESSION['removed'] = false;
         $_SESSION["cart"][key($_POST)]["quantity"]++;
     } else if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] == 1) {
-        $_SESSION['firstTime'] = true;
+        $_SESSION['firstTime'] = false;
         $_SESSION['bought'] = false;
         $_SESSION['removed'] = true;
         $_SESSION["cart"][key($_POST)]["quantity"] = 0;
