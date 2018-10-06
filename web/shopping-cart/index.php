@@ -20,11 +20,11 @@
         'ginnyWeasley' => array('price' => 75, 'quantity' => 0, 'img' => '../images/wands/ginny.jpg', 'name' => 'Ginny Weasley\'s Wand')
     );
 
-    $_SESSION['bought'] = false;
-    $_SESSION['removed'] = false;
-
     if (!isset($_SESSION["activeSession"])) {
         $_SESSION["activeSession"] = true;
+        $_SESSION['bought'] = false;
+        $_SESSION['removed'] = false;
+        $_SESSION['firstTime'] = true;
         $_SESSION["cart"] = $cart;
     } 
 
@@ -33,6 +33,7 @@
         $_SESSION['removed'] = false;
         $_SESSION["cart"][key($_POST)]["quantity"]++;
     } else if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] == 1) {
+        $_SESSION['firstTime'] = false;
         $_SESSION['bought'] = false;
         $_SESSION['removed'] = true;
         $_SESSION["cart"][key($_POST)]["quantity"] = 0;
@@ -77,7 +78,7 @@
             <h1>Wand Selection</h1>
             <?php
 
-                if ($_SESSION['bought']) {
+                if ($_SESSION['bought'] && !$_SESSION['firstTime']) {
                     echo "
                         <div id='alert_message' class='alert alert-success alert-dismissible'>
                             <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
@@ -86,7 +87,7 @@
                     ";
                 }
 
-                if ($_SESSION['removed']) {
+                if ($_SESSION['removed'] && !$_SESSION['firstTime']) {
                     echo "
                         <div id='alert_message' class='alert alert-danger alert-dismissible'>
                             <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
