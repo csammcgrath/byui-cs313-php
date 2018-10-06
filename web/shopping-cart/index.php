@@ -25,9 +25,9 @@
         $_SESSION["cart"] = $cart;
     } 
 
-    if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] != 1) {
+    if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] != 1 && key($_POST) != 'customerName') {
         $_SESSION["cart"][key($_POST)]["quantity"]++;
-    } else if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] == 1) {
+    } else if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] == 1 && key($_POST) != 'customerName') {
         $_SESSION["cart"][key($_POST)]["quantity"] = 0;
     }
 ?>
