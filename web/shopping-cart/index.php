@@ -32,7 +32,7 @@
         $_SESSION['bought'] = true;
         $_SESSION['removed'] = false;
         $_SESSION["cart"][key($_POST)]["quantity"]++;
-    } else if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] == 1) {
+    } else if (isset($_POST) && $_SESSION["cart"][key($_POST)]["quantity"] != 1) {
         $_SESSION['bought'] = false;
         $_SESSION['removed'] = true;
         $_SESSION["cart"][key($_POST)]["quantity"] = 0;
