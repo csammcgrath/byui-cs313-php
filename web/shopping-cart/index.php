@@ -68,9 +68,6 @@
         </header>
         <header class="jumbotron my-4">
             <h1>Wand Selection</h1>
-            <?php
-                var_dump($_POST);
-            ?>
             <form action="checkout.php" method="post">
                 <div class="row">
                     <div class="col-lg-12">
