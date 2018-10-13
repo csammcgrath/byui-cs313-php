@@ -1,4 +1,4 @@
-DROP TABLE user CASCADE;
+DROP TABLE users CASCADE;
 DROP TABLE blog_post CASCADE;
 DROP TABLE comment CASCADE;
 
@@ -22,4 +22,16 @@ CREATE TABLE comment
     id              SERIAL              PRIMARY KEY,
     blogId          INT                 NOT NULL REFERENCES blog_post(id),
     comment         VARCHAR(250)        NOT NULL
+);
+
+INSERT INTO users (username, password) VALUES
+(
+    'sammcgrath67',
+    'hunter12'
+);
+
+INSERT INTO users (username, password) VALUES
+(
+    'blogger',
+    'blog1'
 );
