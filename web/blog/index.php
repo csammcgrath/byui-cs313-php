@@ -3,6 +3,8 @@
   session_start();
   $db = get_db();
 
+  var_dump($_GET);
+
   if (isset($_GET['sortTerm'])) {
     $sortTerm = $_GET['sortTerm'];
 
