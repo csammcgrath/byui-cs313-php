@@ -3,6 +3,8 @@
   session_start();
   $db = get_db();
 
+  var_dump($_POST);
+
   if (isset($_POST)) {
     foreach ($_POST['sortTerm'] as $key => $value) {
       $sortBy = $value;
