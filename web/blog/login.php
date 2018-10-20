@@ -41,22 +41,26 @@
 
             $stmt->execute();
             $dbUser = $stmt->fetch(PDO::FETCH_ASSOC);
-
+        
             if ($dbUser['username'] === $user && $dbUser['password'] === $pass) {
                 $_SESSION['loggedIn'] = true;
                 $_SESSION['user'] = $user;
 
                 header('index.php');
+                exit;
             } else {
                 alert('Login credentials not found!');
+                exit;
             }
         } catch (PDOException $ex) {
             die();
         }
     }
-
-    $db = get_db();
-    loginUser($db);
+    
+    if (isset($_POST)) {
+        $db = get_db();
+        loginUser($db);
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,7 +77,6 @@
     <link href="styles.css" rel="stylesheet">
   </head>
   <body>
-      <p>test</p>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Simple dev.to clone</a>
