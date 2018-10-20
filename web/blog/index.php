@@ -60,7 +60,7 @@
               }
 
               echo "
-                <div class='card mb-4'>
+                <div class='card mb-4 shadow-lg'>
                   <div class='card-body'>
                     <h2 class='card-title'>$title</h2>
                     <p class='card-text'>$body</p>
