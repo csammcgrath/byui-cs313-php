@@ -1,0 +1,48 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.btn-hover {
+  border-radius: 4px;
+  background-color: #337ab7;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  width: 90px;
+  height: 35px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn-hover {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-hover:after {
+  content: '➞';
+  position: absolute;
+  opacity: 0;  
+  top: 6px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-hover:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.btn-hover:hover:after {
+  opacity: 1;
+  right: 10px;
+}
