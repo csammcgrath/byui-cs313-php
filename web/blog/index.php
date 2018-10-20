@@ -3,7 +3,7 @@
   session_start();
   $db = get_db();
 
-  var_dump(array_values($_POST['sortTerm']));
+  var_dump($_POST['sortTerm']);
 
   if (isset($_POST)) {
     $sortBy = array_values($_POST['sortTerm'])[0];
