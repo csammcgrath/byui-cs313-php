@@ -2,7 +2,6 @@
     session_start();
 
     function get_db() {
-        echo "test";
         $db = NULL;
         $production = false;
 
@@ -74,6 +73,7 @@
     <link href="styles.css" rel="stylesheet">
   </head>
   <body>
+      <p>test</p>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Simple dev.to clone</a>
