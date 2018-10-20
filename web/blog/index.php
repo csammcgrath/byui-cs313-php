@@ -57,8 +57,12 @@
           <?php
             foreach($blogs as $blogPost) {
               $title = $blogPost['title'];
-              $body = substr($blogPost['body'], 0, 30);
+              $body = substr($blogPost['body'], 0, 100);
               $comments = $blogPost['comment'];
+
+              if ($body != $blogPost['body']) {
+                $body .= '...';
+              }
 
               echo "
                 <div class='card mb-4'>
