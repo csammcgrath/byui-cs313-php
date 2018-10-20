@@ -9,7 +9,7 @@
     }
 
     $stmt = $db->prepare("SELECT id, title, body from blog_post
-                            WHERE title LIKE %$sortBy%
+                            WHERE title LIKE '%$sortBy%'
                             ORDER BY title DESC;");
   } else {
     $stmt = $db->prepare('SELECT id, title, body FROM blog_post;');
