@@ -4,7 +4,7 @@
 
   $db = get_db();
 
-  $stmt = $db->prepare('SELECT title, body FROM blog_post;');
+  $stmt = $db->prepare('SELECT id, title, body FROM blog_post;');
 
   $stmt->execute();
   $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -62,11 +62,12 @@
           <h1 class="my-4">Posts</h1>
           <hr style="width:80%;margin-left:0px;"/>
           <?php
-            foreach($blogs as $blogPost) {
-              $title = $blogPost['title'];
-              $body = substr($blogPost['body'], 0, 250);
+            foreach($blogs as $blog) {
+              $id = $blog['id'];
+              $title = $blog['title'];
+              $body = substr($blog['body'], 0, 250);
 
-              if ($body != $blogPost['body']) {
+              if ($body != $blog['body']) {
                 $body .= '...';
               }
 
@@ -75,7 +76,7 @@
                   <div class='card-body'>
                     <h2 class='card-title'>$title</h2>
                     <p class='card-text'>$body</p>
-                    <button class='btn-hover float-right'><span>Read</span></button>
+                    <button class='btn-hover float-right' href='post.php?id=$id'><span>Read</span></button>
                   </div>
                 </div>
               ";

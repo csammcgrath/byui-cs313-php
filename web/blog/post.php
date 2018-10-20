@@ -1,3 +1,12 @@
+<?php
+  require('dbConnect.php');
+  session_start();
+
+  $db = get_db();
+
+  $postId = $_GET['id'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +15,7 @@
     <meta name="description" content="Blog">
     <meta name="author" content="Sam McGrath">
 
-    <title>Blog Post - Start Bootstrap Template</title>
+    <title>Simple dev.to clone</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
@@ -21,39 +30,85 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
+            <?php
+              if (isset($_SESSION['name'])) {
+                $name = $_SESSION['name'];
+
+                echo "
+                  <li class='nav-item'>
+                    Welcome $user
+                  </li>
+                ";
+              } else {
+                echo "
+                  <li class='nav-item'>
+                    <a class='nav-link' href='login.php'>Login</a>
+                  </li>
+                ";
+              }
+            ?>
           </ul>
         </div>
       </div>
     </nav>
+
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
-          <h1 class="mt-4">Post Title</h1>
-          <p class="lead">
-            by
-            <a href="#">Start Bootstrap</a>
-          </p>
-          <hr>
-          <p>Posted on January 1, 2018 at 12:00 PM</p><br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
-          <hr><br><br>
 
-           <ul class="list-unstyled">
-             <li class="media">
-               <div class="media-body">
-                 <h5 class="mt-0 mb-1">Comment Name</h5>
-                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-               </div>
-             </li>
-           </ul>
+          <?php
+            $stmt = $db->prepare('SELECT bp.id, bp.title, bp.body, u.username FROM blog_post bp
+                                    JOIN users u
+                                        ON bp.userId = u.id
+                                    WHERE bp.id = :id;
+            ');
+
+            $stmt->bindValue(':id', $postId, PDO::PARAM_INT);
+            $stmt->execute();
+            $postObj = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            $title = $postObj['title'];
+            $author = $postId['username'];
+            $body = $postId['body'];
+
+            echo "
+
+              <h1 class='mt-4'>$title</h1>
+              <p class='lead'>
+                by
+                $author
+              </p>
+              <hr>
+              <p>$body</p>
+              <hr><br><br>
+            ";
+
+            $stmt = $db->prepare('SELECT c.comment FROM comment c
+                                    JOIN blog_post bp
+                                        ON c.blogId = bp.id
+                                    WHERE bp.id = :id;
+            ');
+
+            $stmt->bindValue(':id', $postId, PDO::PARAM_INT);
+            $stmt->execute();
+            $commentsArray = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            echo "<ul class='list-unstyled'>";
+
+            foreach ($commentsArray as $comment) {
+              echo "
+                <li class='media'>
+                  <div class='media-body'>
+                    <h6 class='mt-0 mb-1'>Comment</h6>
+                    $comment
+                  </div>
+                </li>
+              ";
+            }
+
+            echo "</ul>";
+          ?>
+
            <div class="card my-4">
             <h5 class="card-header">Leave a Comment:</h5>
             <div class="card-body">
