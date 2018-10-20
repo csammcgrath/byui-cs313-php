@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Blog">
     <meta name="author" content="Sam McGrath">
+    <link rel="shortcut icon" type="image/png" href="../images/blog/blog.png">
 
     <title>Simple dev.to clone</title>
 
