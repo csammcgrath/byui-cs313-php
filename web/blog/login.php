@@ -1,7 +1,7 @@
 <?php
-    session_start();
-
     require('dbConnect.php');
+    
+    session_start();
     $db = get_db();
 
     function loginUser($db) {
