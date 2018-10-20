@@ -7,14 +7,13 @@
     foreach ($_POST['sortTerm'] as $key => $value) {
       $sortBy = $value;
     }
-
+    echo $sortBy;
     $stmt = $db->prepare("SELECT id, title, body from blog_post
                             WHERE title LIKE '%$sortBy%'
                             ORDER BY title DESC;");
   } else {
     $stmt = $db->prepare('SELECT id, title, body FROM blog_post;');
   }
-
 
   $stmt->execute();
   $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
