@@ -1,6 +1,6 @@
 <?php
     echo "test";
-    require('dbConnect.php');
+    require('./dbConnect.php');
     
     session_start();
     $db = get_db();
@@ -21,7 +21,8 @@
                 $_SESSION['user'] = $user;
 
                 header('index.php');
-                exit;
+            } else {
+                alert('Login credentials not found!');
             }
         } catch (PDOException $ex) {
             die();
