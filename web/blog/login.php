@@ -1,4 +1,34 @@
+<?php
+    session_start();
 
+    require('dbConnect.php');
+    $db = get_db();
+
+    function loginUser($db) {
+        $user = $_POST['username'];
+        $pass = $_POST['password'];
+
+        try {
+            $stmt = $db->prepare("SELECT username, password FROM users 
+                                    WHERE username = $user;");
+
+            $stmt->execute();
+            $dbUser = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            if ($dbUser['username'] === $user && $dbUser['password'] === $pass) {
+                $_SESSION['loggedIn'] = true;
+                $_SESSION['user'] = $user;
+
+                header('index.php');
+                exit;
+            }
+        } catch (PDOException $ex) {
+            die();
+        }
+    }
+
+    loginUser($db);
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,10 +54,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="">Login</a>
                     </li>
                 </ul>
             </div>
@@ -35,18 +65,16 @@
     </nav>
 
     <div class="container">
-      <form class="form-signin">
+      <form class="form-signin" action="" method="POST">
         <h2 class="form-signin-heading">Login</h2>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Enter username..." required autofocus><br>
+        <input class="form-control" placeholder="Enter username..." required autofocus><br>
         <input type="password" id="inputPassword" class="form-control" placeholder="Enter password..." required><br>
             <div class="row mt-4">
                 <div class="float-left ml-4 mr-4">
-                    <form method="">
-                        <button class="btn btn-secondary" type="submit">Don't have an account?</button>
-                    </form>
+                    <button class="btn btn-secondary" name="username" type="submit">Don't have an account?</button>
                 </div>
                 <div class="float-right">
-                    <button class="btn btn-secondary" id="submitButton" type="submit" onclick="alert('clicked');">Sign in</button>
+                    <button class="btn btn-secondary" name="password" type="submit">Sign in</button>
                 </div>
             </div>
       </form>
@@ -59,15 +87,6 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script>
-        var input = document.getElementById("submitButton");
-
-        input.addEventListener("keyup", function(event) {
-            event.preventDefault();
-
-            if (event.keyCode === 13) document.getElementById("submitButton").click();
-        });
-    </script>
   </body>
 
 </html>

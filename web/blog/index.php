@@ -1,5 +1,6 @@
 <?php
   require('dbConnect.php');
+  session_start();
   $db = get_db();
 
   $stmt = $db->prepare('SELECT title, body FROM blog_post;');
@@ -32,14 +33,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
+            <?php
+              if (isset($_SESSION['name'])) {
+                $name = $_SESSION['name'];
+
+                echo "
+                  <li class='nav-item'>
+                    Welcome $user
+                  </li>
+                ";
+              } else {
+                echo "
+                  <li class='nav-item'>
+                    <a class='nav-link' href='login.php'>Login</a>
+                  </li>
+                ";
+              }
+            ?>
           </ul>
         </div>
       </div>
