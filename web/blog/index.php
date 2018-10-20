@@ -1,6 +1,7 @@
 <?php
   require('dbConnect.php');
   session_start();
+
   $db = get_db();
 
   $stmt = $db->prepare('SELECT title, body FROM blog_post;');
