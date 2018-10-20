@@ -25,11 +25,15 @@ CREATE TABLE comment
 );
 
 -- QUERIES
+
+
 -- SELECT bp.title, c.comment, u.username FROM blog_post bp
 --     JOIN comment c
 --         ON c.blogId = bp.id
 --     JOIN users u
 --         ON u.id = bp.userId;
+
+SELECT title FROM blog_post;
 
 -- SELECT title from blog_post
 -- WHERE title LIKE 'Lorem Ipsum 1%'
@@ -54,7 +58,7 @@ INSERT INTO blog_post (userId, title, body) VALUES
 (2,  'Lorem Ipsum 2 First', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et quam consectetur dolor egestas rhoncus. Suspendisse aliquam blandit condimentum. Quisque elementum consequat mauris ac condimentum. Cras egestas convallis mattis. Nunc sit amet erat neque. Integer lobortis, ligula ac suscipit feugiat, mi arcu placerat nunc, non lacinia felis nulla id nulla. Donec gravida, quam sit amet convallis imperdiet, tortor quam euismod nibh, vitae sagittis orci lorem in nunc. Nam non augue vulputate, feugiat sem a, gravida tortor. Fusce ornare eros vitae scelerisque eleifend. Sed a erat ac odio varius aliquet. Suspendisse nisl metus, venenatis quis mauris nec, pretium tincidunt velit. Donec et tortor quis lacus scelerisque eleifend at sodales felis. Vivamus non risus tortor. Sed lacinia justo vulputate, viverra massa a, iaculis lacus. Duis at neque vitae tellus luctus porttitor. Praesent condimentum sed justo vulputate dignissim. Quisque justo elit, scelerisque non mollis vel, fermentum tincidunt risus. Sed in venenatis arcu. Nulla condimentum aliquet nibh, eget eleifend metus finibus a. Praesent et placerat felis. Sed sit amet urna sagittis, consectetur massa in, luctus felis. Donec tincidunt tellus non lacus dapibus, lacinia rutrum diam dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra convallis risus, quis rutrum magna vehicula et. Nam scelerisque fermentum lectus in posuere. Phasellus sollicitudin magna eget metus aliquam hendrerit. In porta pulvinar erat at ultricies. Proin nec volutpat lorem. Aenean nulla odio, accumsan at tellus eget, bibendum dictum dui. Pellentesque ligula est, congue placerat dignissim vitae, suscipit nec dui.');
 
 INSERT INTO blog_post (userId, title, body) VALUES
-(1, 'Lorem Ipsum 1 Second', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et quam consectetur dolor egestas rhoncus. Suspendisse aliquam blandit condimentum. Quisque elementum consequat mauris ac condimentum. Cras egestas convallis mattis. Nunc sit amet erat neque. Integer lobortis, ligula ac suscipit feugiat, mi arcu placerat nunc, non lacinia felis nulla id nulla. Donec gravida, quam sit amet convallis imperdiet, tortor quam euismod nibh, vitae sagittis orci lorem in nunc. Nam non augue vulputate, feugiat sem a, gravida tortor. Fusce ornare eros vitae scelerisque eleifend. Sed a erat ac odio varius aliquet. Suspendisse nisl metus, venenatis quis mauris nec, pretium tincidunt velit. Donec et tortor quis lacus scelerisque eleifend at sodales felis. Vivamus non risus tortor. Sed lacinia justo vulputate, viverra massa a, iaculis lacus. Duis at neque vitae tellus luctus porttitor.');
+(1, 'Lorem Ipsum 1 Second', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.');
 
 INSERT INTO comment (blogId, comment) VALUES
 (1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.');

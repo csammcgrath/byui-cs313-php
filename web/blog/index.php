@@ -2,11 +2,7 @@
   require('dbConnect.php');
   $db = get_db();
 
-  $stmt = $db->prepare('SELECT bp.title, bp.body, c.comment, u.username FROM blog_post bp
-                            JOIN comment c
-                                ON c.blogId = bp.id
-                            JOIN users u
-                                ON u.id = bp.userId;');
+  $stmt = $db->prepare('SELECT title, body FROM blog_post;');
 
   $stmt->execute();
   $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -58,7 +54,6 @@
             foreach($blogs as $blogPost) {
               $title = $blogPost['title'];
               $body = substr($blogPost['body'], 0, 250);
-              $comments = $blogPost['comment'];
 
               if ($body != $blogPost['body']) {
                 $body .= '...';
@@ -83,7 +78,7 @@
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search for name...">
                 <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button">Search</button>
+                  <button class="btn btn-secondary ml-2" type="button">Search</button>
                 </span>
               </div>
             </div>
