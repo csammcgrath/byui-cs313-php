@@ -1,6 +1,6 @@
 <?php
     echo "test";
-    require('./dbConnect.php');
+    require(dirname(__FILE__) . '/dbConnect.php');
     
     session_start();
     $db = get_db();
