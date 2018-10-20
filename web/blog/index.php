@@ -5,8 +5,8 @@
 
   var_dump($_POST['sortTerm']);
 
-  if (isset($_POST)) {
-    $sortBy = array_values($_POST['sortTerm'])[0];
+  if (isset($_POST['sortTerm'])) {
+    $sortBy = $_POST['sortTerm'];
 
     echo $sortBy;
     $stmt = $db->prepare("SELECT id, title, body from blog_post
