@@ -91,7 +91,7 @@
                         </div>
                     </div>
                     <div class="card mb-4">
-                        <img src="./images/main/blog.svg" alt="Simple dev.to clone">
+                        <img src="./images/main/comingSoon.png" alt="Simple dev.to clone">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">PHP Project</h5>
                             <p class="card-text">
