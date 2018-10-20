@@ -3,14 +3,11 @@
   session_start();
   $db = get_db();
 
-  var_dump($_POST['sortTerm']);
-
   if (isset($_POST['sortTerm'])) {
-    $sortBy = $_POST['sortTerm'];
+    $sortBy = strtolower($_POST['sortTerm']);
 
-    echo $sortBy;
     $stmt = $db->prepare("SELECT id, title, body from blog_post
-                            WHERE title LIKE '%$sortBy%'
+                            WHERE lower(title) LIKE '%$sortBy%'
                             ORDER BY title DESC;");
   } else {
     $stmt = $db->prepare('SELECT id, title, body FROM blog_post;');
