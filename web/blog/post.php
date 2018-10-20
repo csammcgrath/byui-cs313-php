@@ -67,21 +67,25 @@
             $stmt->execute();
             $postObj = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-            $title = $postObj['title'];
-            $author = $postId['username'];
-            $body = $postId['body'];
+            foreach($postObj as $details) {
+              $title = $details['title'];
+              $author = $details['username'];
+              $body = $details['body'];
 
-            echo "
+              echo "
 
-              <h1 class='mt-4'>$title</h1>
-              <p class='lead'>
-                by
-                $author
-              </p>
-              <hr>
-              <p>$body</p>
-              <hr><br><br>
-            ";
+                <h1 class='mt-4'>$title</h1>
+                <p class='lead'>
+                  by
+                  $author
+                </p>
+                <hr>
+                <p>$body</p>
+                <hr><br><br>
+              ";
+            }
+
+            
 
             $stmt = $db->prepare('SELECT c.comment FROM comment c
                                     JOIN blog_post bp
@@ -96,11 +100,12 @@
             echo "<ul class='list-unstyled'>";
 
             foreach ($commentsArray as $comment) {
+              $c = $comment['comment'];
               echo "
                 <li class='media'>
                   <div class='media-body'>
                     <h6 class='mt-0 mb-1'>Comment</h6>
-                    $comment
+                    $c
                   </div>
                 </li>
               ";
