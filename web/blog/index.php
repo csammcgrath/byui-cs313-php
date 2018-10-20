@@ -1,10 +1,18 @@
 <?php
   require('dbConnect.php');
   session_start();
-
   $db = get_db();
 
-  $stmt = $db->prepare('SELECT id, title, body FROM blog_post;');
+  if (isset($_GET['sortTerm'])) {
+    $sortTerm = $_GET['sortTerm'];
+
+    $stmt = $db->prepare("SELECT id, title, body from blog_post
+                            WHERE title LIKE %$sortTerm%
+                            ORDER BY title DESC;");
+  } else {
+    $stmt = $db->prepare('SELECT id, title, body FROM blog_post;');
+  }
+
 
   $stmt->execute();
   $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -87,12 +95,14 @@
           <div class="card my-4">
             <h5 class="card-header">Search</h5>
             <div class="card-body">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for name...">
-                <span class="input-group-btn">
-                  <button class="btn btn-secondary ml-2" type="button">Search</button>
-                </span>
-              </div>
+              <form action="" method="POST">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for name...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary ml-2" name='sortTerm' type="button">Search</button>
+                  </span>
+                </div>
+              </form>
             </div>
           </div>
         </div>
