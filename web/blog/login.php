@@ -2,6 +2,7 @@
     session_start();
 
     function get_db() {
+        echo "test";
         $db = NULL;
         $production = false;
 
