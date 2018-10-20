@@ -3,10 +3,10 @@
   session_start();
   $db = get_db();
 
-  var_dump(array_values($_POST['sortTerm'][0]));
+  var_dump(array_values($_POST['sortTerm']));
 
   if (isset($_POST)) {
-    $sortBy = array_values($_POST['sortTerm'][0]);
+    $sortBy = array_values($_POST['sortTerm'])[0];
 
     echo $sortBy;
     $stmt = $db->prepare("SELECT id, title, body from blog_post
