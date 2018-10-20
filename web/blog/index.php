@@ -99,9 +99,9 @@
             <div class="card-body">
               <form action="" method="POST">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search for name...">
+                  <input type="text" class="form-control" name='sortTerm' placeholder="Search for name...">
                   <span class="input-group-btn">
-                    <button class="btn btn-secondary ml-2" name='sortTerm' type="submit">Search</button>
+                    <button class="btn btn-secondary ml-2" type="submit">Search</button>
                   </span>
                 </div>
               </form>
