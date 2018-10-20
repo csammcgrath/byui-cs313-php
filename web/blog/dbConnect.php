@@ -1,8 +1,7 @@
 <?php
-$production = false;
-
 function get_db() {
-	$db = NULL;
+    $db = NULL;
+    $production = false;
 
 	try {
 		$dbUrl = getenv('DATABASE_URL');
