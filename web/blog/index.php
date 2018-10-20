@@ -76,7 +76,7 @@
                   <div class='card-body'>
                     <h2 class='card-title'>$title</h2>
                     <p class='card-text'>$body</p>
-                    <button class='btn-hover float-right' href='post.php?id=$id'><span>Read</span></button>
+                    <a class='btn-hover float-right' href='post.php?id=$id'><span>Read</span></a>
                   </div>
                 </div>
               ";
