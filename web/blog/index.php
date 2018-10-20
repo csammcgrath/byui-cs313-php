@@ -3,12 +3,11 @@
   session_start();
   $db = get_db();
 
-  var_dump($_POST);
+  var_dump(array_values($_POST['sortTerm'][0]));
 
   if (isset($_POST)) {
-    foreach ($_POST['sortTerm'] as $key => $value) {
-      $sortBy = $value;
-    }
+    $sortBy = array_values($_POST['sortTerm'][0]);
+
     echo $sortBy;
     $stmt = $db->prepare("SELECT id, title, body from blog_post
                             WHERE title LIKE '%$sortBy%'
