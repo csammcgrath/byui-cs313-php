@@ -91,13 +91,13 @@
                         </div>
                     </div>
                     <div class="card mb-4">
-                        <img src="./images/main/comingSoon.png" alt="Coming soon">
+                        <img src="./images/main/blog.svg" alt="Simple dev.to clone">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">W04 Assignment</h5>
+                            <h5 class="card-title">PHP Project</h5>
                             <p class="card-text">
-                                Insert assignment description
+                                A simple dev.to clone!
                             </p>
-                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
+                            <a href="./blog/index.php" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
                                 Page
                             </a>
                         </div>
