@@ -72,24 +72,28 @@
           <h1 class="my-4">Posts</h1>
           <hr style="width:80%;margin-left:0px;"/>
           <?php
-            foreach($blogs as $blog) {
-              $id = $blog['id'];
-              $title = $blog['title'];
-              $body = substr($blog['body'], 0, 250);
+            if (count($blogs) === 0) {
+              echo "<h5>No blog associated with your search found!</h5>";
+            } else {
+              foreach($blogs as $blog) {
+                $id = $blog['id'];
+                $title = $blog['title'];
+                $body = substr($blog['body'], 0, 250);
 
-              if ($body != $blog['body']) {
-                $body .= '...';
-              }
+                if ($body != $blog['body']) {
+                  $body .= '...';
+                }
 
-              echo "
-                <div class='card mb-4 shadow-lg'>
-                  <div class='card-body'>
-                    <h2 class='card-title'>$title</h2>
-                    <p class='card-text'>$body</p>
-                    <a class='btn-hover float-right pt-2' style='text-decoration:none;color:white;'href='post.php?id=$id'><span>Read</span></a>
+                echo "
+                  <div class='card mb-4 shadow-lg'>
+                    <div class='card-body'>
+                      <h2 class='card-title'>$title</h2>
+                      <p class='card-text'>$body</p>
+                      <a class='btn-hover float-right pt-2' style='text-decoration:none;color:white;'href='post.php?id=$id'><span>Read</span></a>
+                    </div>
                   </div>
-                </div>
-              ";
+                ";
+              }
             }
           ?>
         </div>
