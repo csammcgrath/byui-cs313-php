@@ -58,6 +58,8 @@
     }
 
     echo isset($_POST);
+    echo isset($_POST['username']);
+    echo isset($_POST['password']);
     
     // if (isset($_POST)) {
     //     $db = get_db();
