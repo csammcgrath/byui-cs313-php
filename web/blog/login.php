@@ -57,10 +57,10 @@
         }
     }
     
-    if (isset($_POST)) {
-        $db = get_db();
-        loginUser($db);
-    }
+    // if (isset($_POST)) {
+    //     $db = get_db();
+    //     loginUser($db);
+    // }
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -33,15 +33,16 @@ CREATE TABLE comment
 --     JOIN users u
 --         ON u.id = bp.userId;
 
-SELECT c.comment FROM comment c
-    JOIN blog_post bp
-        ON c.blogId = bp.id;
+-- SELECT c.comment FROM comment c
+--     JOIN blog_post bp
+--         ON c.blogId = bp.id
+--     WHERE bp.id = 2;
 
 
 -- SELECT title FROM blog_post;
 
 -- SELECT title from blog_post
--- WHERE title LIKE 'Lorem Ipsum 1%'
+-- WHERE title LIKE '%Lorem Ipsum 1%'
 -- ORDER BY title DESC;
 
 -- SELECT bp.id, bp.title, u.username FROM blog_post bp
