@@ -14,6 +14,7 @@
         $t = $db->query('SELECT name FROM topics;');
         $t->execute();
         $topics = $t->fetchAll(PDO::FETCH_ASSOC);
+        echo $topics;
     }
     catch(PDOException $ex)
     {
