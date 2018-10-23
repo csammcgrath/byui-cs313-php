@@ -27,8 +27,10 @@
         $verse = $_POST['verse'];
         $cont = $_POST['content'];
 
+        $tops = $_POST['topics'];
 
-        $query = 'INSERT INTO scriptures (book, chapter, verse, content VALUES
+
+        $query = 'INSERT INTO scriptures (book, chapter, verse, content) VALUES
         (:book, :chapter, :verse, :content)';
 
         $stmt = $db->prepare($query);
@@ -37,6 +39,21 @@
         $stmt->bindValue(':verse', $verse, PDO::PARAM_INT);
         $stmt->bindValue(':content', $cont, PDO::PARAM_STR);
         $stmt->execute();
+
+        
+
+        foreach ($tops as $top) {
+            $topicQuery = 'INSERT INTO scriptures_topics (scriptureId, topicsId) VALUES
+                            (:scriptureId, :topicsId)';
+
+            $stmt = $db->prepare($query);
+            $lastScriptureId = $db->lastInsertId();
+            $stmt->bindValue(':scriptureId', $lastScriptureId, PDO::PARAM_INT);
+            $stmt->bindValue(':topicsId', $top, PDO::PARAM_INT);
+            $stmt->execute();
+        }
+
+        
     }
 ?>
 
@@ -52,10 +69,10 @@
         Content: <textarea rows="4" cols="50"></textarea><br>
 
         <?php
-            foreach($topics as $topic) {
+            foreach($topics as $topic => $i) {
                 $top = $topic['name'];
                 echo "
-                    <input type='checkbox' name='$top'> $top<br>
+                    <input type='checkbox' name='topics[]' value='$i'> $top<br>
                 ";
             }
         ?>
