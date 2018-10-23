@@ -37,7 +37,7 @@
 
         try {
             $stmt = $db->prepare("SELECT username, password FROM users 
-                                    WHERE username = $user;");
+                                    WHERE username = '$user';");
 
             $stmt->execute();
             $dbUser = $stmt->fetch(PDO::FETCH_ASSOC);
