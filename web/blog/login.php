@@ -56,6 +56,8 @@
             die();
         }
     }
+
+    echo isset($_POST);
     
     // if (isset($_POST)) {
     //     $db = get_db();
