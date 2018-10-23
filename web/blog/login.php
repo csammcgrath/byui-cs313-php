@@ -41,9 +41,6 @@
 
             $stmt->execute();
             $dbUser = $stmt->fetch(PDO::FETCH_ASSOC);
-        
-            echo $dbUser['username'] == $user;
-            echo $dbUser['password'] == $pass;
 
             if ($dbUser['username'] == $user && $dbUser['password'] == $pass) {
                 $_SESSION['loggedIn'] = true;
@@ -53,11 +50,14 @@
                 exit;
             } else {
                 alert('Login credentials not found!');
-                exit;
             }
         } catch (PDOException $ex) {
             die();
         }
+    }
+
+    function alert($msg) {
+        echo "<script type='text/javascript'>alert('$msg');</script>";
     }
 
     if (isset($_POST['username']) && isset($_POST['password'])) {
