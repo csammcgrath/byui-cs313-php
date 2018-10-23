@@ -41,8 +41,6 @@
 
             $stmt->execute();
             $dbUser = $stmt->fetch(PDO::FETCH_ASSOC);
-            echo $user;
-            echo $pass;
         
             if ($dbUser['username'] === $user && $dbUser['password'] === $pass) {
                 $_SESSION['loggedIn'] = true;
@@ -60,9 +58,11 @@
     }
 
     if (isset($_POST['username']) && isset($_POST['password'])) {
+        echo "hit0";
         $db = get_db();
         loginUser($db);
     }
+    echo "hit1";
 ?>
 <!DOCTYPE html>
 <html lang="en">
