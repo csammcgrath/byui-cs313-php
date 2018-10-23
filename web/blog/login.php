@@ -57,14 +57,10 @@
         }
     }
 
-    echo isset($_POST);
-    echo isset($_POST['username']);
-    echo isset($_POST['password']);
-    
-    // if (isset($_POST)) {
-    //     $db = get_db();
-    //     loginUser($db);
-    // }
+    if (isset($_POST['username']) && isset($_POST['password'])) {
+        $db = get_db();
+        loginUser($db);
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
