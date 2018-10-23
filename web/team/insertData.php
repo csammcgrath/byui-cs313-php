@@ -20,6 +20,24 @@
         echo 'ERROR!: ' . $ex->getMessage();
         die();
     }
+
+    if (isset($_POST)) {
+        $bk = $_POST['book'];
+        $ch = $_POST['chapter'];
+        $verse = $_POST['verse'];
+        $cont = $_POST['content'];
+
+
+        $query = 'INSERT INTO scriptures (book, chapter, verse, content VALUES
+        (:book, :chapter, :verse, :content)';
+
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(':book', $bk, PDO::PARAM_STR);
+        $stmt->bindValue(':chapter', $ch, PDO::PARAM_INT);
+        $stmt->bindValue(':verse', $verse, PDO::PARAM_INT);
+        $stmt->bindValue(':content', $cont, PDO::PARAM_STR);
+        $stmt->execute();
+    }
 ?>
 
 <html>
@@ -42,7 +60,7 @@
             }
         ?>
 
-        <button type="submit">Insert</button>
+        <button name="insert" type="submit">Insert</button>
     </form>
 </body>
 </html>
