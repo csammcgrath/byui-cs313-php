@@ -103,14 +103,14 @@
     <div class="container">
       <form class="form-signin" action="" method="POST">
         <h2 class="form-signin-heading">Login</h2>
-        <input class="form-control" placeholder="Enter username..." required autofocus><br>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Enter password..." required><br>
+        <input class="form-control" name="username" placeholder="Enter username..." required autofocus><br>
+        <input type="password" id="inputPassword"  name="password" class="form-control" placeholder="Enter password..." required><br>
             <div class="row mt-4">
                 <div class="float-left ml-4 mr-4">
-                    <button class="btn btn-secondary" name="username" type="submit">Don't have an account?</button>
+                    <button class="btn btn-secondary" type="submit">Don't have an account?</button>
                 </div>
                 <div class="float-right">
-                    <button class="btn btn-secondary" name="password" type="submit">Sign in</button>
+                    <button class="btn btn-secondary" type="submit">Sign in</button>
                 </div>
             </div>
       </form>
