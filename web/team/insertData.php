@@ -11,7 +11,9 @@
 
         $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPwd);
 
-        $topics = $db->query('SELECT name FROM topics;');
+        $t = $db->query('SELECT name FROM topics;');
+        $t->execute();
+        $topics = $t->fetchAll(PDO::FETCH_ASSOC);
     }
     catch(PDOException $ex)
     {
