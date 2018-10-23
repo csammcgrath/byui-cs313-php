@@ -14,7 +14,6 @@
         $t = $db->query('SELECT name FROM topics;');
         $t->execute();
         $topics = $t->fetchAll(PDO::FETCH_ASSOC);
-        echo $topics;
     }
     catch(PDOException $ex)
     {
@@ -36,8 +35,9 @@
 
         <?php
             foreach($topics as $topic) {
+                $top = $topic['name'];
                 echo "
-                    <input type='checkbox' name='$topic'> $topic<br>
+                    <input type='checkbox' name='$top'> $top<br>
                 ";
             }
         ?>
