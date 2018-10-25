@@ -85,12 +85,13 @@
 							<h4 class="card-title">Login</h4>
 							<form action="" method="POST" class="my-login-validation" novalidate="">
 								<div class="form-group">
-									<label for="email">E-Mail Address</label>
+									<label for="email">Username: </label>
 									<input id="email" type="email" class="form-control" name="user" value="" required autofocus>
 									<div class="invalid-feedback">Email is invalid</div>
 								</div>
 
 								<div class="form-group">
+                                    <label for="password">Password
 									<input id="password" type="password" class="form-control" name="pass" required>
 								    <div class="invalid-feedback">Password is required</div>
 								</div>
