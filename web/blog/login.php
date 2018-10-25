@@ -90,8 +90,7 @@
     </div>
     <div class="container" id="registration">
         <div id="signupButton">
-            <h1>Heading</h1>
-            <p>Some content</p>
+            <a href="signUp.php">Don't have an account?</a>
         </div>
     </div>
 

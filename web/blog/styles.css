@@ -87,4 +87,6 @@ body {
 
 #inner {
   margin: auto;
+  text-decoration: underline;
+  color: #6c757d;
 }
