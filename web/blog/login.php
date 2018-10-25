@@ -9,7 +9,7 @@
         echo $user;
         try {
             $stmt = $db->prepare("SELECT username, password FROM users 
-                                    WHERE username = ':usr';");
+                                    WHERE username = :usr;");
 
             $stmt->bindValue(':usr', $user, PDO::PARAM_STR);
             $stmt->execute();
