@@ -47,7 +47,7 @@
                 $name = $_SESSION['name'];
 
                 echo "
-                  <li class='nav-item'>
+                  <li class='nav-item active'>
                     <a class='nav-link'>Welcome $name</a>
                   </li>
                   <li class='nav-item'>
