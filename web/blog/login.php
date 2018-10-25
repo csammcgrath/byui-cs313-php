@@ -76,7 +76,7 @@
     </nav>
 
     <section class="h-100">
-		<div class="container h-100">
+		<div class="container h-100 pt-5">
             <?php unset($_SESSION['name']); $_SESSION['loggedIn'] = false; ?>
 			<div class="row justify-content-md-center h-100">
 				<div class="card-wrapper">
@@ -99,7 +99,7 @@
 									<button type="submit" class="btn btn-primary btn-block">Login</button>
 								</div>
 								<div class="mt-4 text-center">
-									Don't have an account? <a href="signUp.php">Create One</a>
+									<a href="signUp.php">Don't have an account?</a>
 								</div>
 							</form>
 						</div>
