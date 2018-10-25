@@ -87,9 +87,12 @@
                 </div>
             </div>
       </form>
-      <div class="row">
-          <a href="signUp.php" class="text-center" style="text-decoration:underline;">Don't have an account?</a>
-      </div>
+    </div>
+    <div class="container" id="registration">
+        <div id="signupButton">
+            <h1>Heading</h1>
+            <p>Some content</p>
+        </div>
     </div>
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
