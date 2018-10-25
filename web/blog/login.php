@@ -82,24 +82,12 @@
         <input class="form-control" name="user" placeholder="Enter username..." required autofocus><br>
         <input type="password" id="inputPassword"  name="pass" class="form-control" placeholder="Enter password..." required><br>
             <div class="row mt-4">
-                <div class="float-left ml-4 mr-4">
-                    <?php 
-                        echo "
-                            <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
-                            <script type='text/javascript'>
-                                $('#createBtn').click(function(){
-                                    $('[required]').removeAttr('required');
-                                });
-                            </script>
-                        ";
-                    ?>
-                    <button class="btn btn-secondary" id="createBtn" type="submit">Don't have an account?</button>
-                </div>
-                <div class="float-right">
+                <div class="text-center">
                     <button class="btn btn-secondary" type="submit">Sign in</button>
                 </div>
             </div>
       </form>
+      <a href="signUp.php" class="text-center" style="text-decoration:underline;">Don't have an account?</a>
     </div>
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
