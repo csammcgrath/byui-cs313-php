@@ -13,7 +13,7 @@
 
             $stmt->bindValue(':usr', $user, PDO::PARAM_STR);
             $stmt->execute();
-            $dbUser = $stmt->fetch(PDO::FETCH_ASSOC);
+            $dbUser = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             if ($dbUser['username'] == $user && $dbUser['password'] == $pass) {
                 $_SESSION['loggedIn'] = true;
