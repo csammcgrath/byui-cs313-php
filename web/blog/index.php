@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <?php
-              if (!$_SESSION['loggedIn']) {
+              if ($_SESSION['loggedIn']) {
                 $name = $_SESSION['name'];
 
                 echo "
