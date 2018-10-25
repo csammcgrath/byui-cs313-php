@@ -76,14 +76,23 @@
     </nav>
 
     <div class="container">
-    <?php unset($_SESSION['name']); $_SESSION['loggedIn'] = false; ?>
+      <?php unset($_SESSION['name']); $_SESSION['loggedIn'] = false; ?>
       <form class="form-signin" action="" method="POST">
         <h2 class="form-signin-heading">Login</h2>
         <input class="form-control" name="user" placeholder="Enter username..." required autofocus><br>
         <input type="password" id="inputPassword"  name="pass" class="form-control" placeholder="Enter password..." required><br>
             <div class="row mt-4">
                 <div class="float-left ml-4 mr-4">
-                    <button class="btn btn-secondary" type="submit">Don't have an account?</button>
+                    <?php 
+                        echo "
+                            <script type='text/javascript'>
+                                $('#createBtn').click(function(){
+                                    $('[required]').removeAttr('required');
+                                });
+                            </script>
+                        ";
+                    ?>
+                    <button class="btn btn-secondary" id="createBtn" type="submit">Don't have an account?</button>
                 </div>
                 <div class="float-right">
                     <button class="btn btn-secondary" type="submit">Sign in</button>
