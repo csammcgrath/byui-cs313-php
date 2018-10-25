@@ -1,35 +1,7 @@
 <?php
+    require('dbConnect.php');
     session_start();
-
-    function get_db() {
-        $db = NULL;
-        $production = false;
-
-        try {
-            $dbUrl = getenv('DATABASE_URL');
-
-            $dbopts = parse_url($dbUrl);
-
-            $dbHost = $dbopts["host"];
-            $dbPort = $dbopts["port"];
-            $dbUser = $dbopts["user"];
-            $dbPassword = $dbopts["pass"];
-            $dbName = ltrim($dbopts["path"],'/');
-
-            $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        }
-        catch (PDOException $ex) {
-            if (!$production) {
-                echo "Error connecting to DB. Details: $ex";
-            }
-            
-            die();
-        }
-
-        return $db;
-    }
+    $db = get_db();
 
     function loginUser($db) {
         $user = $_POST['username'];
@@ -37,14 +9,15 @@
 
         try {
             $stmt = $db->prepare("SELECT username, password FROM users 
-                                    WHERE username = '$user';");
+                                    WHERE username = ':usr';");
 
+            $stmt->bindValue(':usr', $user, PDO::PARAM_STR);
             $stmt->execute();
             $dbUser = $stmt->fetch(PDO::FETCH_ASSOC);
 
             if ($dbUser['username'] == $user && $dbUser['password'] == $pass) {
                 $_SESSION['loggedIn'] = true;
-                $_SESSION['user'] = $user;
+                $_SESSION['name'] = $user;
 
                 header('index.php');
                 exit;
@@ -52,6 +25,7 @@
                 alert('Login credentials not found!');
             }
         } catch (PDOException $ex) {
+            echo $ex;
             die();
         }
     }
