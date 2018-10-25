@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <?php
-              if (isset($_SESSION['name'])) {
+              if (isset($_SESSION['loggedIn'])) {
                 $name = $_SESSION['name'];
 
                 echo "
@@ -51,7 +51,7 @@
                     <a class='nav-link'>Welcome $name</a>
                   </li>
                   <li class='nav-item'>
-                    <a class='nav-link' href='login.php'><?php unset({$_SESSION['name']}); ?>Sign Out</a>
+                    <a class='nav-link' href='login.php'><?php session_unset(); ?>Sign Out</a>
                   </li>
                 ";
               } else {

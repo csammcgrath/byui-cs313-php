@@ -6,7 +6,7 @@
     function loginUser($db) {
         $user = $_POST['user'];
         $pass = $_POST['pass'];
-        echo $user;
+        
         try {
             $stmt = $db->prepare("SELECT username, password FROM users 
                                     WHERE username = :usr;");
@@ -76,7 +76,7 @@
     </nav>
 
     <div class="container">
-    <?php echo $_SESSION['name']; ?>
+    <?php unset($_SESSION['name']); echo $_SESSION['name']; ?>
       <form class="form-signin" action="" method="POST">
         <h2 class="form-signin-heading">Login</h2>
         <input class="form-control" name="user" placeholder="Enter username..." required autofocus><br>
