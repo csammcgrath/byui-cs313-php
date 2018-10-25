@@ -75,24 +75,6 @@
         </div>
     </nav>
 
-    <div class="container">
-      <form class="form-signin" action="" method="POST">
-        <h2 class="form-signin-heading">Login</h2>
-        <input class="form-control" name="user" placeholder="Enter username..." required autofocus><br>
-        <input type="password" id="inputPassword"  name="pass" class="form-control" placeholder="Enter password..." required><br>
-            <div class="row mt-4">
-                <div class="text-center">
-                    <button class="btn btn-secondary" type="submit">Sign in</button>
-                </div>
-            </div>
-      </form>
-    </div>
-    <div class="container" id="registration">
-        <div id="signupButton">
-            <a href="signUp.php">Don't have an account?</a>
-        </div>
-    </div>
-
     <section class="h-100">
 		<div class="container h-100">
             <?php unset($_SESSION['name']); $_SESSION['loggedIn'] = false; ?>
@@ -121,9 +103,6 @@
 								</div>
 							</form>
 						</div>
-					</div>
-					<div class="footer">
-						Copyright &copy; 2017 &mdash; Your Company 
 					</div>
 				</div>
 			</div>
