@@ -48,7 +48,7 @@
 
                 echo "
                   <li class='nav-item'>
-                    Welcome $user
+                    <a class='nav-link'>Welcome $name</a>
                   </li>
                   <li class='nav-item'>
                     <a class='nav-link' href='login.php'>Sign Out</a>
