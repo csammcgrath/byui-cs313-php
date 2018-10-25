@@ -19,7 +19,7 @@
                 $_SESSION['loggedIn'] = true;
                 $_SESSION['name'] = $user;
 
-                header('index.php');
+                header('Location: index.php');
                 exit;
             } else {
                 alert('Login credentials not found!');

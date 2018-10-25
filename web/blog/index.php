@@ -50,6 +50,9 @@
                   <li class='nav-item'>
                     Welcome $user
                   </li>
+                  <li class='nav-item'>
+                    <a class='nav-link' href='login.php'>Sign Out</a>
+                  </li>
                 ";
               } else {
                 echo "
