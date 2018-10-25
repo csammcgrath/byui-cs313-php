@@ -6,8 +6,7 @@
     function loginUser($db) {
         $user = $_POST['user'];
         $pass = $_POST['pass'];
-        echo gettype($user);
-
+        echo $user;
         try {
             $stmt = $db->prepare("SELECT username, password FROM users 
                                     WHERE username = ':usr';");
