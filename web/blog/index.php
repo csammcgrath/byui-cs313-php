@@ -51,7 +51,7 @@
                     <a class='nav-link'>Welcome $name</a>
                   </li>
                   <li class='nav-item'>
-                    <a class='nav-link' href='login.php'><?php $_SESSION = array(); session_destroy(); ?>Sign Out</a>
+                    <a class='nav-link' href='index.php'><?php $_SESSION = array(); session_destroy(); ?>Sign Out</a>
                   </li>
                 ";
               } else {
