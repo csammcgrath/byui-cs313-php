@@ -76,6 +76,16 @@
     </nav>
 
     <div class="container">
+      <?php
+        if (isset($_SESSION['signedOut'])) {
+            echo "
+                <div class='alert alert-warning' role='alert'>
+                    This is a warning alert—check it out!
+                </div>
+            ";
+        }
+      ?>
+
       <form class="form-signin" action="" method="POST">
         <h2 class="form-signin-heading">Login</h2>
         <input class="form-control" name="user" placeholder="Enter username..." required autofocus><br>
