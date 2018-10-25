@@ -8,7 +8,7 @@
 
     $stmt = $db->prepare("SELECT id, title, body from blog_post
                             WHERE lower(title) LIKE '%$sortBy%'
-                            ORDER BY title DESC;");
+                            ORDER BY title ASC;");
   } else {
     $stmt = $db->prepare('SELECT id, title, body FROM blog_post;');
   }
@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <?php
-              if (isset($_SESSION['loggedIn'])) {
+              if (!$_SESSION['loggedIn']) {
                 $name = $_SESSION['name'];
 
                 echo "
