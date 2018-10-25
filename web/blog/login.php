@@ -76,8 +76,7 @@
     </nav>
 
     <div class="container">
-    <?php unset($_SESSION['name']); $_SESSION['logIn'] = false; ?>
-    <?php echo $_SESSION['logIn']; ?>
+    <?php unset($_SESSION['name']); $_SESSION['loggedIn'] = false; ?>
       <form class="form-signin" action="" method="POST">
         <h2 class="form-signin-heading">Login</h2>
         <input class="form-control" name="user" placeholder="Enter username..." required autofocus><br>
