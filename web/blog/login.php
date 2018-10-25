@@ -34,7 +34,7 @@
         echo "<script type='text/javascript'>alert('$msg');</script>";
     }
 
-    if (isset($_POST['username']) && isset($_POST['password'])) {
+    if (isset($_POST['user']) && isset($_POST['pass'])) {
         $db = get_db();
         loginUser($db);
     }
