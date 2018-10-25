@@ -79,14 +79,31 @@ body {
   border-top-right-radius: 0;
 }
 
-#registration {
-  width: 100%;
-  height: 100vh;
-  display: flex;
+.my-login-page .card-wrapper {
+	width: 400px;
 }
 
-#inner {
-  margin: auto;
-  text-decoration: underline;
-  color: #6c757d;
+.my-login-page .card {
+	border-color: transparent;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+.my-login-page .card.fat {
+	padding: 10px;
+}
+
+.my-login-page .card .card-title {
+	margin-bottom: 30px;
+}
+
+.my-login-page .form-control {
+	border-width: 2.3px;
+}
+
+.my-login-page .form-group label {
+	width: 100%;
+}
+
+.my-login-page .btn.btn-block {
+	padding: 12px 10px;
 }

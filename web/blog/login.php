@@ -76,7 +76,6 @@
     </nav>
 
     <div class="container">
-      <?php unset($_SESSION['name']); $_SESSION['loggedIn'] = false; ?>
       <form class="form-signin" action="" method="POST">
         <h2 class="form-signin-heading">Login</h2>
         <input class="form-control" name="user" placeholder="Enter username..." required autofocus><br>
@@ -93,6 +92,43 @@
             <a href="signUp.php">Don't have an account?</a>
         </div>
     </div>
+
+    <section class="h-100">
+		<div class="container h-100">
+            <?php unset($_SESSION['name']); $_SESSION['loggedIn'] = false; ?>
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">Login</h4>
+							<form action="" method="POST" class="my-login-validation" novalidate="">
+								<div class="form-group">
+									<label for="email">E-Mail Address</label>
+									<input id="email" type="email" class="form-control" name="user" value="" required autofocus>
+									<div class="invalid-feedback">Email is invalid</div>
+								</div>
+
+								<div class="form-group">
+									<input id="password" type="password" class="form-control" name="pass" required>
+								    <div class="invalid-feedback">Password is required</div>
+								</div>
+
+								<div class="form-group m-0">
+									<button type="submit" class="btn btn-primary btn-block">Login</button>
+								</div>
+								<div class="mt-4 text-center">
+									Don't have an account? <a href="signUp.php">Create One</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="footer">
+						Copyright &copy; 2017 &mdash; Your Company 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
