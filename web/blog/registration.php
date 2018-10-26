@@ -30,7 +30,12 @@
         $pass0 = htmlspecialchars($_POST['pass0']);
         $pass1 = htmlspecialchars($_POST['pass1']);
         
-        if ($pass0 != $pass1) {
+        if (!$user || !$pass0 || $pass1) {
+            alert('Please make sure all fields are filled!');
+
+            header('Location: signUp.php');
+            die();
+        } else if ($pass0 != $pass1) {
             alert('Please ensure that passwords match!');
 
             header('Location: signUp.php');
