@@ -10,7 +10,7 @@
         
         if ($pass0 != $pass1) {
             alert('Please ensure that passwords match!');
-            
+
             header('Location: signUp.php');
             die();
         } else {
@@ -27,7 +27,8 @@
                 header('Location: index.php');
                 die();
             } catch (PDOException $ex) {
-                echo "Error has occurred. Please nod your head to prompt the NSA to engage their code monkeys to fix the code.";
+                echo "Error has occurred. Please nod your head to prompt the NSA to engage their code monkeys to fix the code.\n";
+                echo $ex;
                 die();
             }
         }
