@@ -99,6 +99,7 @@
                                     <input type="password" class="form-control form-control-lg rounded-0" name="pass" required>
                                     <div class="invalid-feedback">Please enter your password.</div>
                                 </div>
+                                <button href="signUp.php" class="btn btn-secondary btn-lg float-left">Don't have an account?</button>
                                 <button type="submit" class="btn btn-secondary btn-lg float-right">Login</button>
                             </form>
                         </div>
