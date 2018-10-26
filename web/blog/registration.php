@@ -37,6 +37,9 @@
             die();
         }  else if (!checkUsername($db, $user)) {
             alert('Username has already been claimed!');
+
+            header('Location: signUp.php');
+            die();
         } else {
             try {
                 $stmt = $db->prepare("INSERT INTO users(username, password) VALUES (:usr, :pass);");
