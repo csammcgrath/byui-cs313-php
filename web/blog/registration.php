@@ -24,8 +24,9 @@
 
         return $isFound;
     }
+    
 
-    function loginUser($db) {
+    function registerUser($db) {
         $user = htmlspecialchars($_POST['user']);
         $pass0 = htmlspecialchars($_POST['pass0']);
         $pass1 = htmlspecialchars($_POST['pass1']);
@@ -37,6 +38,9 @@
             die();
         }  else if (!checkUsername($db, $user)) {
             alert('Username has already been claimed!');
+
+            header('Location: signUp.php');
+            die();
         } else {
             try {
                 $stmt = $db->prepare("INSERT INTO users(username, password) VALUES (:usr, :pass);");
@@ -64,6 +68,6 @@
 
     if (isset($_POST['user']) && isset($_POST['pass0']) && isset($_POST['pass1'])) {
         $db = get_db();
-        loginUser($db);
+        registerUser($db);
     }
 ?>
