@@ -36,18 +36,38 @@
         </div>
     </nav>
 
-    <div class="container">
-        <form class="form-signin" action="" method="POST">
-            <h2 class="form-signin-heading">Sign Up</h2>
-            <input class="form-control" placeholder="Enter username..." required autofocus><br>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Enter password..." required><br>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Enter password again..." required><br>
-            <div class="row mt-4">
-                <div class="float-right">
-                    <button class="btn btn-secondary" name="password" type="submit">Sign up!</button>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center text-white mb-4">Registration Form.</h2>
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <div class="card rounded-0">
+                            <div class="card-header">
+                                <h3 class="mb-0">Register</h3>
+                            </div>
+                            <div class="card-body">
+                                <form action="registration.php" method="POST">
+                                    <div class="form-group">
+                                        <label for="user">Please enter an username</label>
+                                        <input type="text" class="form-control form-control-lg rounded-0" name="user" required autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Please enter a password</label>
+                                        <input type="password" class="form-control form-control-lg rounded-0" name="pass0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Please re-enter your password</label>
+                                        <input type="password" class="form-control form-control-lg rounded-0" name="pass1" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-secondary btn-lg float-right">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
