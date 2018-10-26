@@ -38,13 +38,11 @@
         } else if ($pass0 != $pass1) {
             alert('Please ensure that passwords match!');
 
-            header('Location: signUp.php');
-            die();
+            echo "BAD2";
         }  else if (!checkUsername($db, $user)) {
             alert('Username has already been claimed!');
 
-            header('Location: signUp.php');
-            die();
+            echo "BAD3";
         } else {
             try {
                 $stmt = $db->prepare("INSERT INTO users(username, password) VALUES (:usr, :pass);");
