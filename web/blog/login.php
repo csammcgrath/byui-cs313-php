@@ -77,6 +77,7 @@
 
     <div class="container py-5">
     <div class="row">
+        <?php unset($_SESSION['name']); $_SESSION['loggedIn'] = false; ?>
         <div class="col-md-12">
             <h2 class="text-center text-white mb-4">Please login.</h2>
             <div class="row">
