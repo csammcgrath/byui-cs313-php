@@ -60,7 +60,7 @@
                                         <label>Please re-enter your password</label>
                                         <input type="password" class="form-control form-control-lg rounded-0" name="pass1" required>
                                     </div>
-                                    <button type="submit" class="btn btn-secondary btn-lg float-right">Signup</button>
+                                    <button type="submit" class="btn btn-secondary btn-lg float-right">Sign up</button>
                                 </form>
                             </div>
                         </div>
