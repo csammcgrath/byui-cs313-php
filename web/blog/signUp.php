@@ -28,8 +28,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">Login</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Login</a>
                     </li>
                 </ul>
             </div>

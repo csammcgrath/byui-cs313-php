@@ -75,40 +75,37 @@
         </div>
     </nav>
 
-    <section class="h-100">
-		<div class="container h-100 pt-5">
-            <?php unset($_SESSION['name']); $_SESSION['loggedIn'] = false; ?>
-			<div class="row justify-content-md-center h-100">
-				<div class="card-wrapper">
-					<div class="card fat">
-						<div class="card-body">
-							<h4 class="card-title">Login</h4>
-							<form action="" method="POST" class="my-login-validation" novalidate="">
-								<div class="form-group">
-									<label for="email">Username: </label>
-									<input id="email" type="email" class="form-control" name="user" value="" required autofocus>
-									<div class="invalid-feedback">Email is invalid</div>
-								</div>
-
-								<div class="form-group">
-                                    <label for="password">Password
-									<input id="password" type="password" class="form-control" name="pass" required>
-								    <div class="invalid-feedback">Password is required</div>
-								</div>
-
-								<div class="form-group m-0">
-									<button type="submit" class="btn btn-primary btn-block">Login</button>
-								</div>
-								<div class="mt-4 text-center">
-									<a href="signUp.php">Don't have an account?</a>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="container py-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center text-white mb-4">Please login.</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card rounded-0">
+                        <div class="card-header">
+                            <h3 class="mb-0">Login</h3>
+                        </div>
+                        <div class="card-body">
+                            <form action="" novalidate="" method="POST">
+                                <div class="form-group">
+                                    <label for="user">Username</label>
+                                    <input type="text" class="form-control form-control-lg rounded-0" name="user" required>
+                                    <div class="invalid-feedback">Please enter your username.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control form-control-lg rounded-0" name="pass" required>
+                                    <div class="invalid-feedback">Please enter your password.</div>
+                                </div>
+                                <button type="submit" class="btn btn-secondary btn-lg float-right">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
