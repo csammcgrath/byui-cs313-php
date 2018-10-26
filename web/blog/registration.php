@@ -18,7 +18,7 @@
                 $stmt = $db->prepare("INSERT INTO users(username, password) VALUES (:usr, :pass);");
 
                 $stmt->bindValue(':usr', $user, PDO::PARAM_STR);
-                $stmt->bindValue(':pass', $pass, PDO::PARAM_STR);
+                $stmt->bindValue(':pass', $pass0, PDO::PARAM_STR);
                 $stmt->execute();
                 
                 $_SESSION['loggedIn'] = true;
