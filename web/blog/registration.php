@@ -69,5 +69,7 @@
     if (isset($_POST['user']) && isset($_POST['pass0']) && isset($_POST['pass1'])) {
         $db = get_db();
         registerUser($db);
+    } else {
+        alert('SOMETHING BAD HAPPENED');
     }
 ?>
