@@ -34,12 +34,10 @@
         $pass1 = htmlspecialchars($_POST['pass1']);
         
         if ($pass0 != $pass1) {
-            alert('Please ensure that passwords match!');
-
-            header('Location: signUp.php');
+            alert('Please ensure that passwords match!', 'signUp.php');
             die();
         } else if (checkUsername($db, $user)) {
-            alert('Username has already been claimed!');
+            alert('Username has already been claimed!', 'signUp.php');
 
             header('Location: signUp.php');
             die();
@@ -65,7 +63,10 @@
     }
 
     function alert($msg) {
-        echo "<script type='text/javascript'>alert('$msg');</script>";
+        echo "<script>
+                alert('$msg');
+                window.location.href='$location';
+              </script>";
     }
 
     if (isset($_POST['user']) && isset($_POST['pass0']) && isset($_POST['pass1'])) {
