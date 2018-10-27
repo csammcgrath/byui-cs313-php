@@ -13,10 +13,18 @@
 
             foreach($accounts as $account) {
                 $dbUser = $account['username'];
+                echo "Accounts: ";
+                echo $accounts;
+                echo " Account:";
+                echo $account;
+                echo " dbUser: ";
+                echo $dbUser;
+                echo " User:";
+                echo $user;
+                echo ". ";
                 if ($dbUser == $user) {
                     $isFound = true;
                 }
-                echo $isFound;
             }
         } catch (PDOException $ex) {
             echo "Error has occurred. Please nod your head to prompt the NSA to engage their code monkeys to fix the code.\n";
@@ -40,9 +48,6 @@
             die();
         } else if (!checkUsername($db, $user)) {
             alert('Username has already been claimed!');
-
-            header('Location: signUp.php');
-            die();
         } else {
             try {
                 $stmt = $db->prepare("INSERT INTO users(username, password) VALUES (:usr, :pass);");
