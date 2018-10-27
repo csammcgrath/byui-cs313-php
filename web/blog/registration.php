@@ -13,15 +13,12 @@
 
             foreach($accounts as $account) {
                 $dbUser = $account['username'];
-                echo "Accounts: ";
-                echo $accounts;
-                echo " Account:";
-                echo $account;
-                echo " dbUser: ";
                 echo $dbUser;
                 echo " User:";
                 echo $user;
-                echo ". ";
+                echo ". Equal: ";
+                echo $dbUser == $user;
+                echo " !!! ";
                 if ($dbUser == $user) {
                     $isFound = true;
                 }
