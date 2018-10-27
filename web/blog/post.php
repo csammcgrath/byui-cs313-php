@@ -121,10 +121,10 @@
             <div class="card-body">
               <form action="comment.php" method="POST">
                 <div class="form-group">
-                  <textarea class="form-control" rows="3"></textarea>
+                  <textarea class="form-control" name='comment' rows="3"></textarea>
                 </div>
                 <input type="hidden" name="postId" value="<?php echo $postId; ?>">
-                <button class="btn-hover float-right" name='comment' type="submit"><span>Add</span></button>
+                <button class="btn-hover float-right" type="submit"><span>Add Comment</span></button>
               </form>
             </div>
           </div>
