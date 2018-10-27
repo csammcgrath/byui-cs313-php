@@ -12,12 +12,12 @@
             $accounts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             foreach($accounts as $account) {
-                alert($account);
-                alert($user);
+                echo $account;
+                echo $user;
                 if ($account == $user) {
                     $isFound = true;
                 }
-                alert($isFound);
+                echo $isFound;
             }
         } catch (PDOException $ex) {
             echo "Error has occurred. Please nod your head to prompt the NSA to engage their code monkeys to fix the code.\n";
@@ -25,7 +25,7 @@
             die();
         }
 
-        return true;
+        return $isFound;
     }
     
 
@@ -41,9 +41,6 @@
             die();
         } else if (!checkUsername($db, $user)) {
             alert('Username has already been claimed!');
-
-            header('Location: index.php');
-            die();
         } else {
             try {
                 $stmt = $db->prepare("INSERT INTO users(username, password) VALUES (:usr, :pass);");
