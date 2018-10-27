@@ -49,7 +49,7 @@
                   <li class='nav-item active'>
                     <a class='nav-link'>Welcome $name</a>
                   </li>
-                  <li class='nav-item active'>
+                  <li class='nav-item'>
                     <a class='nav-link' href='createEntry.php'>Create a blog entry</a>
                   </li>
                   <li class='nav-item'>

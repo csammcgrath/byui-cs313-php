@@ -7,7 +7,7 @@
     $stmt = $db->prepare("SELECT bp.id, bp.title, bp.body, u.username FROM blog_post bp
                             JOIN users u
                                 ON bp.userId = u.id
-                            WHERE u.username = $usr;");
+                            WHERE u.username = '$usr';");
     $stmt->execute();
     $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
