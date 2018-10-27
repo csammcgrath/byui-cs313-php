@@ -9,7 +9,8 @@
         $entry = htmlspecialchars($_POST['entry']);
         
         try {
-            $stmt = $db->prepare('INSERT INTO blog_post (userId, title, body) VALUES ($userId, :title, :ent)');
+            $stmt = $db->prepare('INSERT INTO blog_post(userId, title, body) VALUES (:id, :title, :ent)');
+            $stmt->bindValue(':id', $userId, PDO::PARAM_INT);
             $stmt->bindValue(':title', $title, PDO::PARAM_STR);
             $stmt->bindValue(':ent', $entry, PDO::PARAM_STR);
             $stmt->execute();
