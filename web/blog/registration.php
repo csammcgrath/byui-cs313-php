@@ -13,18 +13,10 @@
 
             foreach($accounts as $account) {
                 $dbUser = $account['username'];
-                echo $dbUser;
-                echo " User:";
-                echo $user;
-                echo ". Equal: ";
-                echo $dbUser == $user;
-                echo " !!! ";
+
                 if ($dbUser == $user) {
                     $isFound = true;
                 }
-                echo " ISFOUND: ";
-                echo $isFound;
-                echo " !!!!!!!! ";
             }
         } catch (PDOException $ex) {
             echo "Error has occurred. Please nod your head to prompt the NSA to engage their code monkeys to fix the code.\n";
@@ -32,7 +24,7 @@
             die();
         }
 
-        echo "RETURN: $isFound !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+        echo "RETURN: $isFound\n";
         return $isFound;
     }
     
@@ -47,7 +39,7 @@
 
             header('Location: signUp.php');
             die();
-        } else if (!checkUsername($db, $user)) {
+        } else if (checkUsername($db, $user)) {
             alert('Username has already been claimed!');
         } else {
             try {
