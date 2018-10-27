@@ -37,12 +37,12 @@
         if ($pass0 != $pass1) {
             alert('Please ensure that passwords match!');
 
-            header('Location: signUp.php');
+            header('Location: index.php');
             die();
         } else if (!checkUsername($db, $user)) {
             alert('Username has already been claimed!');
 
-            header('Location: index.php');
+            header('Location: signUp.php');
             die();
         } else {
             try {
