@@ -73,7 +73,7 @@
                 }
 
                 echo "
-                  <div class='card mb-4 shadow-lg'>
+                  <div class='card mb-4'>
                     <div class='card-body'>
                       <h2 class='card-title'>$title</h2>
                       <p class='card-text'>$body</p>
@@ -100,6 +100,7 @@
                             </div>
                             <div class="card-body">
                                 <form action="entry.php" method="POST">
+                                    <input type="hidden" name="userId" value="<?php echo $_SESSION['userId']; ?>">
                                     <div class="form-group">
                                         <label for="user">Title</label>
                                         <input type="text" class="form-control form-control-lg rounded-0" name="title" required autofocus>

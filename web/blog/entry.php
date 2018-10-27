@@ -1,71 +1,33 @@
 <?php
     require('dbConnect.php');
     session_start();
-    $db = get_db();
-
-    function checkUsername($db, $user) {
-        $isFound = false;
-
-        try {
-            $stmt = $db->prepare("SELECT username from users;");
-            $stmt->execute();
-            $accounts = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-            foreach($accounts as $account) {
-                $dbUser = $account['username'];
-
-                if ($dbUser == $user) {
-                    $isFound = true;
-                }
-            }
-        } catch (PDOException $ex) {
-            echo "Error has occurred. Please nod your head to prompt the NSA to engage their code monkeys to fix the code.\n";
-            echo $ex;
-            die();
-        }
-
-        return $isFound;
-    }
-    
+    $db = get_db(); 
 
     function createPost($db) {
-        $user = htmlspecialchars($_POST['user']);
-        $pass0 = htmlspecialchars($_POST['pass0']);
-        $pass1 = htmlspecialchars($_POST['pass1']);
+        $userId = htmlspecialchars($_POST['userId']);
+        $title = htmlspecialchars($_POST['title']);
+        $entry = htmlspecialchars($_POST['entry']);
         
-        if ($pass0 != $pass1) {
-            alert('Please ensure that passwords match!');
+        try {
+            $stmt = $db->prepare('INSERT INTO blog_post (userId, title, body) VALUES ($userId, :title, :ent)');
+            $stmt->bindValue(':title', $title, PDO::PARAM_STR);
+            $stmt->bindValue(':ent', $entry, PDO::PARAM_STR);
+            $stmt->execute();
 
-            header('Location: signUp.php');
+            alert('Blog Post created!');
+            header('Location: index.php');
             die();
-        } else if (checkUsername($db, $user)) {
-            alert('Username has already been claimed!');
-
-            header('Location: signUp.php');
+        } catch(PDOException $ex) {
+            echo "Something bad happened";
             die();
-        } else {
-            try {
-                $stmt = $db->prepare("INSERT INTO users(username, password) VALUES (:usr, :pass) RETURNING id;");
-
-                $stmt->bindValue(':usr', $user, PDO::PARAM_STR);
-                $stmt->bindValue(':pass', $pass0, PDO::PARAM_STR);
-                $id = $stmt->execute();
-                
-                $_SESSION['loggedIn'] = true;
-                $_SESSION['name'] = $user;
-                $_SESSION['userId'] = $id;
-
-                header('Location: index.php');
-                die();
-            } catch (PDOException $ex) {
-                echo "Error has occurred. Please nod your head to prompt the NSA to engage their code monkeys to fix the code.\n";
-                echo $ex;
-                die();
-            }
         }
     }
 
-    if (isset($_POST['user']) && isset($_POST['pass0'])) {
+    function alert($msg) {
+        echo "<script type='text/javascript'>alert('$msg');</script>";
+    }
+
+    if (isset($_POST['userId']) && isset($_POST['title']) && isset($_POST['entry'])) {
         $db = get_db();
         createPost($db);
     }
