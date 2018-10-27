@@ -39,7 +39,7 @@
         }  else if (!checkUsername($db, $user)) {
             alert('Username has already been claimed!');
 
-            header('Location: signUp.php');
+            header('Location: index.php');
             die();
         } else {
             try {
@@ -69,7 +69,5 @@
     if (isset($_POST['user']) && isset($_POST['pass0']) && isset($_POST['pass1'])) {
         $db = get_db();
         registerUser($db);
-    } else {
-        alert('SOMETHING BAD HAPPENED');
     }
 ?>
