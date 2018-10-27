@@ -25,7 +25,7 @@
             die();
         }
 
-        return $isFound;
+        return true;
     }
     
 
@@ -34,10 +34,15 @@
         $pass0 = htmlspecialchars($_POST['pass0']);
         $pass1 = htmlspecialchars($_POST['pass1']);
         
-        if (!checkUsername($db, $user)) {
+        if ($pass0 != $pass1) {
+            alert('Please ensure that passwords match!');
+
+            header('Location: index.php');
+            die();
+        } else if (!checkUsername($db, $user)) {
             alert('Username has already been claimed!');
 
-            header('Location: signUp.php');
+            header('Location: index.php');
             die();
         } else {
             try {
