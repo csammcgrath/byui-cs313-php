@@ -1,7 +1,15 @@
 <?php
+    require('dbConnect.php');
     session_start();
+    $db = get_db();
+    $usr = $_SESSION['name'];
 
-
+    $stmt = $db->prepare("SELECT bp.id, bp.title, bp.body, u.username FROM blog_post bp
+                            JOIN users u
+                                ON bp.userId = u.id
+                            WHERE u.username = $usr;");
+    $stmt->execute();
+    $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,12 +54,46 @@
         </div>
     </nav>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="my-4">Your previous blog posts!</h1>
+          <hr style="width:80%;margin-left:0px;"/>
+          <?php
+            if (count($blogs) === 0) {
+              echo "<h5>No associated blog entries found!</h5>";
+            } else {
+              foreach($blogs as $blog) {
+                $id = $blog['id'];
+                $title = $blog['title'];
+                $body = substr($blog['body'], 0, 250);
+
+                if ($body != $blog['body']) {
+                  $body .= '...';
+                }
+
+                echo "
+                  <div class='card mb-4 shadow-lg'>
+                    <div class='card-body'>
+                      <h2 class='card-title'>$title</h2>
+                      <p class='card-text'>$body</p>
+                      <a class='btn-hover float-right pt-2' style='text-decoration:none;color:white;'href='post.php?id=$id'><span>Read</span></a>
+                    </div>
+                  </div>
+                ";
+              }
+            }
+          ?>
+        </div>
+      </div>
+    </div>
+
     <div class="container py-5">
         <div class="row">
             <div class="col-md-12">
                 <h2 class="text-center text-white mb-4">Create a Blog Post.</h2>
                 <div class="row">
-                    <div class="col-md-6 mx-auto">
+                    <div class="col-md-12 mx-auto">
                         <div class="card rounded-0">
                             <div class="card-header">
                                 <h3 class="mb-0">Post an entry!</h3>
