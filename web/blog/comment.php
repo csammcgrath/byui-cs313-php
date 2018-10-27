@@ -25,5 +25,8 @@
     if (isset($_POST['comment']) && isset($_POST['postId'])) {
         $db = get_db();
         createPost($db);
+    } else {
+        header('Location: index.php');
+        die();
     }
 ?>
