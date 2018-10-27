@@ -119,11 +119,12 @@
            <div class="card my-4">
             <h5 class="card-header">Leave a Comment:</h5>
             <div class="card-body">
-              <form>
+              <form action="comment.php" method="POST">
                 <div class="form-group">
                   <textarea class="form-control" rows="3"></textarea>
                 </div>
-                <button class="btn-hover float-right" type="submit"><span>Add</span></button>
+                <input type="hidden" name="postId" value="<?php echo $postId; ?>">
+                <button class="btn-hover float-right" name='comment' type="submit"><span>Add</span></button>
               </form>
             </div>
           </div>

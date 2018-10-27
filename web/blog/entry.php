@@ -19,8 +19,6 @@
             header('Location: index.php');
             die();
         } catch(PDOException $ex) {
-            echo "Something bad happened\n";
-            echo $ex;
             die();
         }
     }
