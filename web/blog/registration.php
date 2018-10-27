@@ -12,9 +12,12 @@
             $accounts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             foreach($accounts as $account) {
+                alert($account);
+                alert($user);
                 if ($account == $user) {
                     $isFound = true;
                 }
+                alert($isFound);
             }
         } catch (PDOException $ex) {
             echo "Error has occurred. Please nod your head to prompt the NSA to engage their code monkeys to fix the code.\n";
@@ -36,7 +39,7 @@
 
             header('Location: signUp.php');
             die();
-        }  else if (!checkUsername($db, $user)) {
+        } else if (!checkUsername($db, $user)) {
             alert('Username has already been claimed!');
 
             header('Location: index.php');
