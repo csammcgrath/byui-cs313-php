@@ -22,6 +22,9 @@
                 if ($dbUser == $user) {
                     $isFound = true;
                 }
+                echo " ISFOUND: ";
+                echo $isFound;
+                echo " !!!!!!!! ";
             }
         } catch (PDOException $ex) {
             echo "Error has occurred. Please nod your head to prompt the NSA to engage their code monkeys to fix the code.\n";
