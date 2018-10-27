@@ -28,7 +28,7 @@
     }
     
 
-    function registerUser($db) {
+    function createPost($db) {
         $user = htmlspecialchars($_POST['user']);
         $pass0 = htmlspecialchars($_POST['pass0']);
         $pass1 = htmlspecialchars($_POST['pass1']);
@@ -65,12 +65,8 @@
         }
     }
 
-    function alert($msg) {
-        echo "<script type='text/javascript'>alert('$msg');</script>";
-    }
-
-    if (isset($_POST['user']) && isset($_POST['pass0']) && isset($_POST['pass1'])) {
+    if (isset($_POST['user']) && isset($_POST['pass0'])) {
         $db = get_db();
-        registerUser($db);
+        createPost($db);
     }
 ?>

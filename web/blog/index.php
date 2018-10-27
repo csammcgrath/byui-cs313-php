@@ -45,7 +45,6 @@
             <?php
               if ($_SESSION['loggedIn']) {
                 $name = $_SESSION['name'];
-
                 echo "
                   <li class='nav-item active'>
                     <a class='nav-link'>Welcome $name</a>
