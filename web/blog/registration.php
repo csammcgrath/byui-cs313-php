@@ -12,9 +12,8 @@
             $accounts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             foreach($accounts as $account) {
-                echo $account;
-                echo $user;
-                if ($account == $user) {
+                $dbUser = $account['username'];
+                if ($dbUser == $user) {
                     $isFound = true;
                 }
                 echo $isFound;
@@ -37,10 +36,13 @@
         if ($pass0 != $pass1) {
             alert('Please ensure that passwords match!');
 
-            header('Location: index.php');
+            header('Location: signUp.php');
             die();
         } else if (!checkUsername($db, $user)) {
             alert('Username has already been claimed!');
+
+            header('Location: signUp.php');
+            die();
         } else {
             try {
                 $stmt = $db->prepare("INSERT INTO users(username, password) VALUES (:usr, :pass);");
