@@ -14,6 +14,7 @@
             $stmt->execute();
 
             $page = "post.php?id=$postId";
+            echo $page;
 
             header("Location: $page");
             die();
