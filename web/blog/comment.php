@@ -5,7 +5,7 @@
 
     function createPost($db) {
         $userId = htmlspecialchars($_POST['postId']);
-        $title = htmlspecialchars($_POST['comment']);
+        $comment = htmlspecialchars($_POST['comment']);
         
         try {
             $stmt = $db->prepare('INSERT INTO comment (blogId, comment) VALUES (:id, :cmt');
