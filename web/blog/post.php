@@ -124,7 +124,7 @@
                   <textarea class="form-control" name='comment' rows="3"></textarea>
                 </div>
                 <input type="hidden" name="postId" value="<?php echo $postId; ?>">
-                <button class="btn-hover float-right" type="submit"><span>Add Comment</span></button>
+                <button class="btn-hover float-right" type="submit"><span>Add</span></button>
               </form>
             </div>
           </div>

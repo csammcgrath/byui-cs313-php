@@ -49,11 +49,12 @@
 
                 $stmt->bindValue(':usr', $user, PDO::PARAM_STR);
                 $stmt->bindValue(':pass', $pass0, PDO::PARAM_STR);
-                $id = $stmt->execute();
+                $stmt->execute();
+                $userInfo = $stmt->fetch(PDO::FETCH_ASSOC);
                 
                 $_SESSION['loggedIn'] = true;
                 $_SESSION['name'] = $user;
-                $_SESSION['userId'] = $id;
+                $_SESSION['userId'] = $userInfo['id'];
 
                 header('Location: index.php');
                 die();
