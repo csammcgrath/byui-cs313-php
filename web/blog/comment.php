@@ -7,13 +7,16 @@
         $postId = htmlspecialchars($_POST['postId']);
         $comment = htmlspecialchars($_POST['comment']);
 
-        echo "id: $postId - commet: $comment";
+        echo ". id: $postId - comment: $comment";
         
         try {
+            echo " =-= about to insert =-= ";
             $stmt = $db->prepare('INSERT INTO comment (blogId, comment) VALUES (:id, :cmt');
             $stmt->bindValue(':id', $postId, PDO::PARAM_INT);
             $stmt->bindValue(':cmt', $comment, PDO::PARAM_STR);
             $stmt->execute();
+
+            echo " =-= inserted =-= ";
 
             $page = "post.php?id=$postId";
             echo $page;
