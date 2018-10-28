@@ -4,8 +4,10 @@
     $db = get_db(); 
 
     function createPost($db) {
-        $userId = htmlspecialchars($_POST['postId']);
+        $postId = htmlspecialchars($_POST['postId']);
         $comment = htmlspecialchars($_POST['comment']);
+
+        echo "id: $postId - commet: $comment";
         
         try {
             $stmt = $db->prepare('INSERT INTO comment (blogId, comment) VALUES (:id, :cmt');
@@ -24,7 +26,7 @@
     }
 
     echo "hit here";
-    
+
     if (isset($_POST['comment']) && isset($_POST['postId'])) {
         $db = get_db();
         createPost($db);
