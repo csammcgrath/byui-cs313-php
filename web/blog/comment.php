@@ -18,7 +18,7 @@
 
             echo " =-= inserted =-= ";
 
-            $page = "post.php?id=$postId";
+            $page = "post.php?id=$pId";
             echo $page;
 
             header("Location: $page");
