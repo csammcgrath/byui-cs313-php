@@ -4,16 +4,16 @@
     $db = get_db(); 
 
     function createPost($db) {
-        $postId = htmlspecialchars($_POST['postId']);
-        $comment = htmlspecialchars($_POST['comment']);
+        $pId = htmlspecialchars($_POST['postId']);
+        $cmt = htmlspecialchars($_POST['comment']);
 
         echo ". id: $postId - comment: $comment";
         
         try {
             echo " =-= about to insert =-= ";
-            $stmt = $db->prepare('INSERT INTO comment (blogId, comment) VALUES (:id, :cmt');
-            $stmt->bindValue(':id', $postId, PDO::PARAM_INT);
-            $stmt->bindValue(':cmt', $comment, PDO::PARAM_STR);
+            $stmt = $db->prepare('INSERT INTO comment (blogId, comment) VALUES (:id, :cmt)');
+            $stmt->bindValue(':id', $pId, PDO::PARAM_INT);
+            $stmt->bindValue(':cmt', $cmt, PDO::PARAM_STR);
             $stmt->execute();
 
             echo " =-= inserted =-= ";
