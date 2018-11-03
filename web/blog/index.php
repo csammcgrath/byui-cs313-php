@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
+    <link href="alphaCSS.css" rel="stylesheet">
 
   </head>
   <body>
@@ -71,6 +72,15 @@
         </div>
       </div>
     </nav>
+
+    <header class="header" id="header3">
+        <div class="center">
+            <div class="caption">
+                <h2 class="title display-3">Read and comment on blogs!</h2>
+                <p class="text">Inspired by dev.to</p>
+            </div>
+        </div>	
+    </header>
 
     <div class="container">
       <div class="row">
