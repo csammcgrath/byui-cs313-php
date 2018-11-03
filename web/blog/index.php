@@ -139,7 +139,7 @@
               <?php
                 foreach($visits as $visit) {
                   $id = $visit['id'];
-                  $title = substr($visit['title'], 0, 10);
+                  $title = substr($visit['title'], 0, 25);
                   $visitNum = $visit['visits'];
 
                   if ($title != $visit['title']) {
