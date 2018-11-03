@@ -8,7 +8,7 @@
         $title = htmlspecialchars($_POST['title']);
         $entry = htmlspecialchars($_POST['entry']);
         $startVisit = 0;
-        
+
         try {
             $stmt = $db->prepare('INSERT INTO blog_post(userId, title, body, visits) VALUES (:id, :title, :ent, :visits)');
             $stmt->bindValue(':id', $userId, PDO::PARAM_INT);
@@ -31,5 +31,8 @@
     if (isset($_POST['userId']) && isset($_POST['title']) && isset($_POST['entry'])) {
         $db = get_db();
         createPost($db);
+    } else {
+        header('Location: index.php');
+        die();
     }
 ?>
