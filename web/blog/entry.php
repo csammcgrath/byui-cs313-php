@@ -20,6 +20,8 @@
             header('Location: index.php');
             die();
         } catch(PDOException $ex) {
+            echo "\n";
+            echo $ex;
             die();
         }
     }
@@ -34,7 +36,7 @@
     if (isset($_POST['userId']) && isset($_POST['title']) && isset($_POST['entry'])) {
         $db = get_db();
         createPost($db);
-    } else if (sset($_POST['userId']) && !isset($_POST['title']) || !isset($_POST['entry'])) {
+    } else if (isset($_POST['userId']) && !isset($_POST['title']) || !isset($_POST['entry'])) {
         alert('Please fill all fields.');
 
         header('Location: createEntry.php');
