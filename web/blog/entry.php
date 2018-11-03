@@ -20,8 +20,6 @@
             header('Location: index.php');
             die();
         } catch(PDOException $ex) {
-            echo "\n";
-            echo $ex;
             die();
         }
     }
@@ -30,9 +28,6 @@
         echo "<script type='text/javascript'>alert('$msg');</script>";
     }
 
-    echo $_POST['userId'];
-    echo $_POST['title'];
-    echo $_POST['entry'];
     if (isset($_POST['userId']) && isset($_POST['title']) && isset($_POST['entry'])) {
         $db = get_db();
         createPost($db);
