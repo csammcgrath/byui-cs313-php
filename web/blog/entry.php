@@ -28,9 +28,17 @@
         echo "<script type='text/javascript'>alert('$msg');</script>";
     }
 
+    echo $_POST['userId'];
+    echo $_POST['title'];
+    echo $_POST['entry'];
     if (isset($_POST['userId']) && isset($_POST['title']) && isset($_POST['entry'])) {
         $db = get_db();
         createPost($db);
+    } else if (sset($_POST['userId']) && !isset($_POST['title']) || !isset($_POST['entry'])) {
+        alert('Please fill all fields.');
+
+        header('Location: createEntry.php');
+        die();
     } else {
         header('Location: index.php');
         die();
