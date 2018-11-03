@@ -76,7 +76,7 @@
     <header class="header" id="header3">
         <div class="center">
             <div class="caption">
-                <h2 class="title display-3">Read and comment on blogs!</h2>
+                <h2 class="title display-3">Blog</h2>
                 <p class="text">Inspired by dev.to</p>
             </div>
         </div>	
