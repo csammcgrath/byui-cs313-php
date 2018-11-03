@@ -128,7 +128,7 @@
             <div class="card-body">
               <form action="comment.php" method="POST">
                 <div class="form-group">
-                  <textarea class="form-control" name='comment' rows="3"></textarea>
+                  <textarea class="form-control" name='comment' rows="3" maxlength="250" required></textarea>
                 </div>
                 <input type="hidden" name="postId" value="<?php echo $postId; ?>">
                 <button class="btn-hover float-right" type="submit"><span>Add</span></button>

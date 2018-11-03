@@ -112,11 +112,11 @@
                                     <input type="hidden" name="userId" value="<?php echo $_SESSION['userId']; ?>">
                                     <div class="form-group">
                                         <label for="user">Title</label>
-                                        <input type="text" class="form-control form-control-lg rounded-0" name="title" required>
+                                        <input type="text" class="form-control form-control-lg rounded-0" name="title" maxlength="50" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Blog Entry</label>
-                                        <textarea class="form-control form-control-lg rounded-0" name="entry" rows="5"></textarea>
+                                        <textarea class="form-control form-control-lg rounded-0" name="entry" rows="5" required></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-secondary btn-lg float-right">Post</button>
                                 </form>
