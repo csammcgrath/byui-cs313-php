@@ -7,15 +7,16 @@
         $userId = htmlspecialchars($_POST['userId']);
         $title = htmlspecialchars($_POST['title']);
         $entry = htmlspecialchars($_POST['entry']);
+        $startVisit = 0;
         
         try {
-            $stmt = $db->prepare('INSERT INTO blog_post(userId, title, body) VALUES (:id, :title, :ent)');
+            $stmt = $db->prepare('INSERT INTO blog_post(userId, title, body, visits) VALUES (:id, :title, :ent, :visits)');
             $stmt->bindValue(':id', $userId, PDO::PARAM_INT);
             $stmt->bindValue(':title', $title, PDO::PARAM_STR);
             $stmt->bindValue(':ent', $entry, PDO::PARAM_STR);
+            $stmt->bindValue(':visits', $startVisit, PDO::PARAM_INT);
             $stmt->execute();
 
-            alert('Blog Post created!');
             header('Location: index.php');
             die();
         } catch(PDOException $ex) {

@@ -127,6 +127,17 @@
               </form>
             </div>
           </div>
+          <div class="card text-center my-4">
+            <div class="card-header">Most Visited Blog Posts</div>
+            <div class="list-group list-group-flush"> 
+              <a href="#" class="list-group-item"><strong>MongoDB</strong>: NoSQL database</a>
+              <a href="#" class="list-group-item"><strong>Angular</strong>: JavaScript framework </a>
+              <a href="#" class="list-group-item"><strong>Express</strong>: Framework for Node</a>
+              <a href="#" class="list-group-item"><strong>Node.js</strong>: JavaScript environment</a>
+              <a href="#" class="list-group-item"><strong>ES2015</strong>: Latest version of JavaScript</a>
+              <a href="#" class="list-group-item"><strong>Babel</strong>: JavaScript compiler</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
