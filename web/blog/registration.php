@@ -1,6 +1,6 @@
 <?php
-    require('dbConnect.php');
     session_start();
+    require('dbConnect.php');
     $db = get_db();
 
     function checkUsername($db, $user) {
@@ -30,8 +30,8 @@
 
     function registerUser($db) {
         $user = htmlspecialchars($_POST['user']);
-        $pass0 = htmlspecialchars($_POST['pass0']);
-        $pass1 = htmlspecialchars($_POST['pass1']);
+        $pass0 = $_POST['pass0'];
+        $pass1 = $_POST['pass1'];
         
         if ($pass0 != $pass1) {
             alert('Please ensure that passwords match!');
@@ -44,11 +44,12 @@
             header('Location: signUp.php');
             die();
         } else {
+            $hashedPassword = password_hash($pass0, PASSWORD_DEFAULT);
             try {
                 $stmt = $db->prepare("INSERT INTO users(username, password) VALUES (:usr, :pass) RETURNING id;");
 
                 $stmt->bindValue(':usr', $user, PDO::PARAM_STR);
-                $stmt->bindValue(':pass', $pass0, PDO::PARAM_STR);
+                $stmt->bindValue(':pass', $hashedPassword, PDO::PARAM_STR);
                 $stmt->execute();
                 $userInfo = $stmt->fetch(PDO::FETCH_ASSOC);
                 
