@@ -8,11 +8,10 @@
 
   echo $postId;
   // updating visited column
-  $stmt = $db->prepare('UPDATE blog_post 
+  $stmt = $db->prepare("UPDATE blog_post 
                         SET visits = visits + 1
-                        WHERE id = :postId;
-            ');
-  $stmt->bindValue(':id', $postId, PDO::PARAM_INT);
+                        WHERE id = $postId;
+            ");
   $stmt->execute();
 ?>
 
