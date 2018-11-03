@@ -6,6 +6,7 @@
 
   $postId = $_GET['id'];
 
+  echo $postId;
   // updating visited column
   $stmt = $db->prepare('UPDATE blog_post 
                         SET visits = visits + 1
