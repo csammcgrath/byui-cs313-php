@@ -36,4 +36,4 @@ INSERT INTO comment (blogId, comment) VALUES
 
 UPDATE blog_post 
 SET visits = visits + 1
-WHERE id = 1;
+WHERE id = 2;

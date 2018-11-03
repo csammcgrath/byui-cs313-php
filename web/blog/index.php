@@ -7,8 +7,9 @@
     $sortBy = strtolower($_POST['sortTerm']);
 
     $stmt = $db->prepare("SELECT id, title, body from blog_post
-                            WHERE lower(title) LIKE '%$sortBy%'
+                            WHERE lower(title) LIKE :search
                             ORDER BY title ASC;");
+    $stmt->bindValue(':search', "%$sortBy%", PDO::PARAM_STR);
   } else {
     $stmt = $db->prepare('SELECT id, title, body FROM blog_post;');
   }
