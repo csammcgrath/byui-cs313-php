@@ -5,6 +5,14 @@
   $db = get_db();
 
   $postId = $_GET['id'];
+
+  // updating visited column
+  $stmt = $db->prepare('UPDATE blog_post 
+                        SET visits = visits + 1
+                        WHERE id = :postId;
+            ');
+  $stmt->bindValue(':id', $postId, PDO::PARAM_INT);
+  $stmt->execute();
 ?>
 
 <!DOCTYPE html>

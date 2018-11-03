@@ -33,3 +33,7 @@ INSERT INTO comment (blogId, comment) VALUES
 
 INSERT INTO comment (blogId, comment) VALUES
 (3, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla felis.');
+
+UPDATE blog_post 
+SET visits = visits + 1
+WHERE id = 1;
