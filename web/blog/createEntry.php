@@ -4,6 +4,11 @@
     $db = get_db();
     $usr = $_SESSION['name'];
 
+    if (!isset($_SESSION['name'])) {
+        header('Location: index.php');
+        die();
+    }
+
     $stmt = $db->prepare("SELECT bp.id, bp.title, bp.body, u.username FROM blog_post bp
                             JOIN users u
                                 ON bp.userId = u.id
@@ -99,7 +104,7 @@
                     <div class="col-md-12 mx-auto">
                         <div class="card rounded-0">
                             <div class="card-header">
-                                <h3 class="mb-0">Write <?php echo (len($blogs > 0)) ? 'some more blog posts!' : 'your first blog post!'; ?></h3>
+                                <h3 class="mb-0">Write a post!</h3>
                             </div>
                             <div class="card-body">
                                 <form action="entry.php" method="POST">
