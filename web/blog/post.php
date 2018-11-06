@@ -62,6 +62,7 @@
 
     <div class="container">
       <div class="row">
+        <a class='btn-hover pt-2' style='text-decoration:none;color:white;'href='index.php'>Return</a>
         <div class="col-lg-8">
 
           <?php
