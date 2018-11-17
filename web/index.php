@@ -105,11 +105,11 @@
                     <div class="card mb-4">
                         <img src="./images/main/comingSoon.png" alt="Coming soon">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">W05 Assignment</h5>
+                            <h5 class="card-title">Postage Calculator</h5>
                             <p class="card-text">
-                                Insert assignment description
+                                Node.JS + Express
                             </p>
-                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
+                            <a href="https://evening-caverns-79341.herokuapp.com/" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
                                 Page
                             </a>
                         </div>
