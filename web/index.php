@@ -115,23 +115,11 @@
                         </div>
                     </div>
                     <div class="card mb-4">
-                        <img src="./images/main/comingSoon.png" alt="Coming soon">
+                        <img src="./images/main/comgingSoon.png" alt="Coming soon">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">W06 Assignment</h5>
+                            <h5 class="card-title">Node.JS Final Project</h5>
                             <p class="card-text">
-                                Insert assignment description
-                            </p>
-                            <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
-                                Page
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card mb-4">
-                        <img src="./images/main/comingSoon.png" alt="Coming soon">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">W07 Assignment</h5>
-                            <p class="card-text">
-                                Insert assignment description
+                                YouTube and Chat Web Application
                             </p>
                             <a href="#" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Visit
                                 Page
